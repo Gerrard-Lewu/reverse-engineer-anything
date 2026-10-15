@@ -14,7 +14,7 @@ python3 -m venv .venv
 npx -y rea-agents@6.4.0 --version
 ```
 
-Windows equivalents use `python -m venv .venv` and `.venv\Scripts\python.exe`. The helper wraps the npm launcher for Windows; end-to-end verification so far was on Linux. The synthetic browser test harness is POSIX-only.
+Windows equivalents use `python -m venv .venv` and `.venv\Scripts\python.exe`. The helper wraps the npm launcher for Windows. On 15 October 2026 its seven unit checks and a real authenticated Explee capture passed on Windows using the adapter below. Earlier synthetic integration evidence is Linux-only; that harness remains POSIX-only.
 
 ## Expose the source browser
 
@@ -41,6 +41,42 @@ Windows PowerShell, when Chrome is installed at this location:
 ```
 
 A separate profile is required for debugging-port launches on recent Chrome versions. REA attaches to a literal loopback endpoint with an explicit port. The profile and browser remain yours to close after collection.
+
+## Existing signed-in Chrome
+
+This route was verified on Windows with Chrome 155, REA 6.4.0, Python 3.12.14, Node 24.14.0 and isolated `mcp==1.29.0`. Chrome 144+ can let an owner enable debugging for an already running session ([official Chrome guidance](https://developer.chrome.com/docs/devtools/agents/use-cases/auto-connect)). The owner completes `chrome://inspect/#remote-debugging` and any Chrome Allow prompt manually. This grants profile debugging access; inspect only the selected Explee tab. Never copy cookies or profiles.
+
+In the observed Chrome 155 mode, the advertised browser WebSocket worked but `/json/version` and `/json/list` returned HTTP 404. REA 6.4.0 requires those HTTP discovery endpoints and a matching WebSocket port. `scripts/bridge_chrome_discovery.mjs` provides loopback discovery from real `Browser.getVersion`/`Target.getTargets` replies, then routes CDP sessions over the owner-authorized socket. The REA package and capture helper stay unchanged. The adapter advertises/attaches only the initial Explee target, rejects cross-client sessions and browser commands outside its narrow scope, and stops new attachment if that target leaves the source origin. It is transport scoping, not a sandbox for arbitrary CDP scripts: use the passive helper.
+
+Use the already installed REA **6.4.0** package directory; the adapter loads its existing `ws` dependency and does not install anything. Start it in one PowerShell terminal:
+
+```powershell
+node scripts/bridge_chrome_discovery.mjs `
+  --rea-package-root "C:/path/to/node_modules/rea-agents" `
+  --active-port-file "$env:LOCALAPPDATA/Google/Chrome/User Data/DevToolsActivePort" `
+  --ready-file ".capture-staging/chrome-ready.json"
+```
+
+Use a new ready-file path each run. The owner approves Chrome if prompted. Once the adapter prints `ready`, use the emitted endpoint in a second terminal:
+
+```powershell
+$taskChromeReady = Get-Content -Raw .capture-staging/chrome-ready.json | ConvertFrom-Json
+.venv/Scripts/python.exe scripts/capture_explee.py `
+  --cdp-endpoint $taskChromeReady.endpoint `
+  --output evidence/captures/overview-new `
+  --label project-overview-desktop
+```
+
+If npm startup is slow and this exact package is already cached, a process-scoped `NPM_CONFIG_OFFLINE=true` was used successfully. The first initialization attempt exceeded 45 seconds; a later warm/offline launch succeeded. These observations do not prove a network-only cause. Leave Chrome stable during each capture. Stop the adapter with Ctrl+C after collection; it releases its own sessions/socket and leaves Chrome open. Preserve only its safe ready/provenance metadata, never `DevToolsActivePort` or the upstream WebSocket capability URL.
+
+Verify the adapter with `REA_PACKAGE_ROOT` pointing to the installed REA directory:
+
+```powershell
+$env:REA_PACKAGE_ROOT = "C:/path/to/node_modules/rea-agents"
+node --test tests/test_chrome_discovery_bridge.mjs
+```
+
+The first accepted state and exact private commits are in the [sanitized overview record](../evidence/source-state-overview-20261015.json). GitHub Contents API omits binary content above 1 MB; the complete archive is also retained as ordered sub-1-MB parts with `archive-reconstruction.json`. Retrieve every part at the recorded immutable commit, compare full bytes/hashes, concatenate in order and check the archive/member hashes. Keep readback failures explicit.
 
 ## Capture one stable state
 

@@ -1,0 +1,56 @@
+{
+  "recorded_at": "2026-10-15T09:16:18.533Z",
+  "phase": "planning/source investigation",
+  "public_baseline": "33dcf681d583ff2b54c57198045fe00283d1deef",
+  "state_id": "EX-OV-D-001",
+  "status": "accepted",
+  "scope": "Authenticated project overview, initial desktop viewport only",
+  "viewport": {
+    "width": 1366,
+    "height": 577
+  },
+  "source_url": "https://explee.com/app-auto-gtm/p/40610",
+  "rea_version": "6.4.0",
+  "mcp_version": "1.29.0",
+  "private_repository": "Gerrard-Lewu/explee-private-evidence",
+  "artifact_commit": "6604d8fbd765b394f6cf622bf34bb7d4448c7a28",
+  "retrieval_commit": "e20950682af6dd4d2a55d101d6bf9b13936a294c",
+  "acceptance_commit": "5e131f269b5c367b84ddf236286a6e75750d2c60",
+  "artifact_directory": "captures/2026-10-15/EX-OV-D-001",
+  "archive_sha256": "b7d73aa52d5c156819ce019f6f296961afe6447b246689cd9bf921232854d302",
+  "screenshot_sha256": "0a327bbe740e7000bc8bc3b8d542f97be0843c2896ed7d8960fc6648a0c3fd02",
+  "accepted_at": "2026-10-15T09:12:21.675Z",
+  "remote_verification": "All three archive parts retrieved and compared in full; ordered concatenation is byte-identical to the archive. All 11 member hashes checked. Screenshot/manifest/review/provenance and acceptance separately read back.",
+  "evidence_ids": [
+    "ev_ce9af317c82b830071d24f032ed369eb84050f53b16da4db65d29ad3cd42cb64",
+    "ev_f866d55d59f05b35cdc24c6981d5fc25cb2b13b7c2682a4a3655c78e72b34741",
+    "ev_34f9df956c5fe8eef1b0fbea22efe2ac10d51014a098d01215f0390af278c70f"
+  ],
+  "limitations": [
+    "Only initial desktop viewport is accepted. Lower dashboard, mobile, styles and external assets remain pending.",
+    "Passive attach window recorded zero requests; authenticated API shapes remain unresolved.",
+    "REA policy filtering and pre-attach limitations remain in the complete receipt/export.",
+    "Atomic cross-call state identity is not proven; manual screenshot/accessibility alignment was reviewed.",
+    "Chrome discovery adaptation is identified in transport-provenance.json; REA 6.4.0 and capture helper remain unchanged."
+  ],
+  "verification": {
+    "capture_helper_windows": "7/7 unit tests passed; real source capture succeeded",
+    "discovery_adapter": "2/2 Node integration/boundary tests passed; selected target confirmed against browser identity",
+    "credential_review": "No provider-token/JWT/private-key patterns or structured credential values found; REA excludes raw headers, cookies, bodies and storage values.",
+    "api_requests_in_window": 0
+  },
+  "failed_attempts": [
+    "Initial Windows MCP initialization exceeded the helper's 45-second deadline; warm cached/offline launch succeeded. Cause is not attributed to network alone.",
+    "Separate debug Chrome reached the login gate and owner reported freezing; switched to owner-enabled existing Chrome.",
+    "Owner-enabled Chrome advertises a real browser socket but returns HTTP 404 for legacy discovery. Unchanged REA 6.4.0 needed the scoped local discovery adapter.",
+    "Contents API omits files above 1 MB; binary fetch_blob attempted UTF-8 decoding; browser archive download timed out. Exact remotely retrieved parts establish archive retrieval.",
+    "Oversized JavaScript reconstruction was rejected by automatic review. No oversized script was executed; full part equality plus independent ZIP/member checks completed verification."
+  ],
+  "next_actions": [
+    "Capture lower dashboard and desktop/mobile variants.",
+    "Inventory targeting, leads/import, campaigns, inbox, booking/integrations and operations without source mutations.",
+    "Capture styles/assets/read request shapes and reconcile existing contracts before R4."
+  ],
+  "r4_status": "open",
+  "application_build": "not started"
+}

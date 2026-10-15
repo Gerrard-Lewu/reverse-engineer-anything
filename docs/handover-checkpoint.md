@@ -1,6 +1,16 @@
 # Handover checkpoint
 
-## Local continuation — 2026-10-15 06:28:01 UTC
+## Accepted REA overview — 2026-10-15 09:16:18 UTC
+
+**R0 first overview accepted: `EX-OV-D-001`, initial desktop viewport 1366 × 577.** REA 6.4.0 and the unchanged helper ran successfully on Windows with isolated MCP 1.29.0 against the owner-enabled, already signed-in Chrome. A scoped loopback discovery adapter derives real metadata and relays selected-target CDP; it does not replace REA or manufacture evidence.
+
+The [private acceptance record](https://github.com/Gerrard-Lewu/explee-private-evidence/blob/5e131f269b5c367b84ddf236286a6e75750d2c60/captures/2026-10-15/EX-OV-D-001/acceptance.json) identifies artifact commit `6604d8fbd765b394f6cf622bf34bb7d4448c7a28` and retrievable-part commit `e20950682af6dd4d2a55d101d6bf9b13936a294c`. All three parts matched in full; the reconstructed archive is byte-identical and all 11 member hashes checked. The screenshot, manifest, review, provenance and acceptance were separately read back. [Sanitized state record](../evidence/source-state-overview-20261015.json).
+
+Only the initial desktop viewport is accepted. Full vertical/mobile coverage, computed styles/external assets and authenticated API request shapes remain pending; no requests occurred during the idle attach window. R1–R4 remain open. Continue small read-only feature groups using the established connection; retain the settled Ceverio/cloud/Supabase/zero-spend rules.
+
+Tool checks: seven capture-helper unit checks and two discovery-adapter tests passed on Windows, followed by the real source capture. [Reproduction and limitations](local-capture.md#existing-signed-in-chrome). Application build remains unstarted.
+
+## Earlier local continuation — 2026-10-15 06:28:01 UTC (historical)
 
 Private evidence storage is now established: [Gerrard-Lewu/explee-private-evidence](https://github.com/Gerrard-Lewu/explee-private-evidence), verified private with successful write/readback at `555cf94158e029c86a632bddcc5eecc779adeb18`. Fourteen reviewed artifacts at `19866c4199eecf148bb17028d5ef938c7ac11685` were retrieved and compared byte-for-byte.
 
@@ -16,7 +26,7 @@ As of 15 October 2026. **Phase: planning/source investigation. Application build
 
 1. Open the GitHub-backed project in a local Codex task on Windows.
 2. Follow [local-handover.md](local-handover.md), including GitHub write/private-evidence preflight.
-3. Connect the existing Explee browser and real local REA MCP; accept one project-overview capture.
+3. Reuse the established Chrome/REA connection; continue R1/R2 from accepted initial overview `EX-OV-D-001`.
 4. Continue R1–R4 and push each reviewed checkpoint. Do not repeat the requirements questionnaire.
 
 ## Earlier handover baseline (superseded where updated above)
@@ -57,3 +67,5 @@ Do not mark a future capture, private repository, model result, integration or a
 ## Task history
 
 - 2026-10-15 06:28:01 UTC — Executed local preflight against planning baseline `0a86430`. Created and verified private evidence storage; passed seven Windows unit checks; ran real REA MCP and retained failed target-discovery diagnostics; privately archived provisional overview evidence with exact readback at `19866c4199eecf148bb17028d5ef938c7ac11685`; reconciled the blueprint with cloud/Supabase architecture. No accepted REA state, mobile capture, application implementation or live source mutation. Remaining action: owner-opened browser endpoint, then R0–R4. The containing published commit is the public session record.
+
+- 2026-10-15 09:16:18 UTC — Accepted first real authenticated REA overview after pixel/structure and remote-byte checks; private acceptance `5e131f269b5c367b84ddf236286a6e75750d2c60`. Added tested existing-Chrome discovery compatibility tooling; retained startup/profile/discovery/archive-retrieval failures in the sanitized state record. Initial desktop viewport only; R1–R4 open. No application build or source mutations. The containing public commit is this checkpoint publication receipt.

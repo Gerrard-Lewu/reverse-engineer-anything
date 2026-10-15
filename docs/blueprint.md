@@ -12,7 +12,7 @@ The required outcome is a tool that finds relevant leads, researches and scores 
 | --- | --- |
 | Official product copy | Retrieved homepage, pricing, integration, and dataset descriptions. These establish advertised scope, not tested operation. |
 | Published public contracts | Indexed 48 documented method/path pairs across selected API page views. No endpoint was executed; complete OpenAPI JSON is still unavailable. |
-| REA runtime evidence for Explee | None accepted. Native authenticated overview evidence is privately archived as provisional; real REA initializes locally but browser target attachment remains blocked. |
+| REA runtime evidence for Explee | Initial authenticated desktop overview `EX-OV-D-001` accepted through real REA 6.4.0 on Windows and privately verified. Full vertical/mobile/style/API coverage remains pending; native preflight material stays provisional. |
 | REA tool verification | Real MCP connection, passive capture, network body shapes, screenshot pixels, bundle analysis, and Evidence export verified against a synthetic local page. |
 | Internal-tool architecture | Explicit design proposal, separated from claims about Explee's backend. |
 

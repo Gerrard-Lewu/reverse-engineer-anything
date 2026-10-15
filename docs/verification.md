@@ -1,6 +1,14 @@
 # Verification and evidence limits
 
-## Local Windows checks — 2026-10-15 06:28:01 UTC
+## Accepted local REA overview — 2026-10-15 09:16:18 UTC
+
+- Existing helper: seven Windows unit tests passed; actual REA 6.4.0 capture with isolated MCP 1.29.0 succeeded.
+- Discovery adapter: `node --test tests/test_chrome_discovery_bridge.mjs` with `REA_PACKAGE_ROOT` pointing to installed REA 6.4.0: **2/2 passed**. Tests cover 404-only discovery, real reply forwarding, selected-target and client-session isolation, origin/Host rejection and navigation outside scope.
+- Saved screenshot and accessibility evidence agree on the authenticated project/dashboard. No truncation/unavailable sections or dropped events; expected policy/pre-attach limits remain. No requests occurred in the idle observation window.
+- Private artifact/retrieval/acceptance records verified remotely; three complete binary parts match the archive, all 11 member hashes checked, and standalone records read back. Initial desktop viewport only; full vertical/mobile/style/assets/API coverage remains pending.
+- Earlier startup timeout, freezing separate profile, legacy discovery HTTP 404 and binary-retrieval failures are retained in the [sanitized state record](../evidence/source-state-overview-20261015.json). The POSIX synthetic harness was not run on Windows.
+
+## Earlier local Windows checks — 2026-10-15 06:28:01 UTC (historical)
 
 - Python 3.12.14, Node 24.14.0, isolated MCP client 1.29.0 and REA 6.4.0 were exercised locally.
 - `.venv\\Scripts\\python.exe -m unittest discover -s tests -p test_capture_explee.py -v`: **7/7 passed**.
@@ -37,7 +45,7 @@ The real-browser fixture is `tests/fixtures/index.html`; it explicitly identifie
 | Export retained evidence before failure teardown | Confirmed in isolated boundary probes | Export occurs in the session guard; export errors are recorded without replacing the original failure. |
 | Report materially incomplete source capture | Confirmed in unit/boundary probes | Truncated/unavailable/dropped coverage yields `partial`; expected policy/attach limits remain disclosed. |
 | Source-backed product/API baseline | Confirmed for retrieved public scope | Nine source entries and 48 indexed documented public method/path pairs. |
-| Capture signed-in Explee screens and interactions | Blocked | No local browser connection exposed to this cloud chat. |
+| Capture signed-in Explee screens and interactions | Partial | Initial desktop overview `EX-OV-D-001` accepted through real REA on Windows; other states remain pending. |
 | Recover complete public OpenAPI schema | Partial | Only selectively retrieved schema fragments were available. |
 | Verify faithful visual/UI recreation | Unverified | No Explee screenshots/style evidence or recreated app exists yet. |
 | Validate live lead, email, and calendar integration | Unverified | Intended sender/booking configuration and app integrations remain unconfigured. Supabase access/metadata/Free plan are now verified; application grants and host connection are not. No application-level live test was performed. |

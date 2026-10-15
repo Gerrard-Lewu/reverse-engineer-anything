@@ -1,6 +1,6 @@
 # Local Codex handover
 
-> **Current update (2026-10-15 06:28:01 UTC):** private evidence storage and local Windows MCP initialization are verified. The native signed-in overview is provisional; REA target attachment remains pending. Read [the current checkpoint](handover-checkpoint.md) before following the original handover below. The proposed-destination and cloud-access statements below describe the earlier handover state.
+> **Current local status:** first authenticated REA overview `EX-OV-D-001` accepted for its initial desktop viewport. The owner-enabled existing Chrome connection and private remote verification are established. Continue R1–R4 from [the current checkpoint](handover-checkpoint.md); [existing-Chrome instructions](local-capture.md#existing-signed-in-chrome) document the working route. Earlier proposed-destination and cloud-access statements are historical.
 
 Prepared 15 October 2026. **Planning/source investigation only.** This handover authorizes continuation of inspection and GitHub publication within the existing scope, not application implementation or live outreach.
 

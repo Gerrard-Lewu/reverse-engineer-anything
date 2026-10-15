@@ -1,12 +1,12 @@
 # Authenticated source capture checklist
 
-Status: all Explee screen and interaction captures pending. Entries below are investigation targets from the user request and public documentation, not a claim that these exact routes/layouts were observed.
+Status: first initial desktop overview `EX-OV-D-001` accepted; other screen and interaction captures pending. Entries below are investigation targets from the user request and public documentation, not a claim that these exact routes/layouts were observed.
 
-The [15 October completion plan](../specs/reverse-engineering-completion.md) gives the R0–R4 sequence and planning exit criteria. Cloudflare activation does not establish source access; the first source milestone remains one accepted authenticated project-overview capture.
+The [15 October completion plan](../specs/reverse-engineering-completion.md) gives the R0–R4 sequence and planning exit criteria. Cloudflare activation does not establish source access; the first initial desktop overview has passed private remote verification; full vertical/mobile coverage remains pending.
 
 | Capture group | Required state/behavior | Current evidence |
 | --- | --- | --- |
-| Project start | `/app-auto-gtm/p/40610`, navigation, overview, existing records, full vertical extent | Uncaptured |
+| Project start | `/app-auto-gtm/p/40610`, navigation, overview, existing records, full vertical extent | `EX-OV-D-001`: initial desktop viewport accepted; full vertical extent pending |
 | Targeting | Offer/ICP, filters or criteria editor, preview, validation, save behavior | Uncaptured |
 | Leads | Search/results, score/research details, selection, enrichment progress, empty/error results | Documented public contracts only |
 | Import | Existing import controls, field mapping, validation/progress/row errors | Documented public contracts only |

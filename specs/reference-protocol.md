@@ -1,12 +1,12 @@
 # REA and source acceptance protocol
 
-> **Local continuation (2026-10-15 06:28:01 UTC):** the signed-in source is accessible through Codex Browser, and private evidence storage is verified. REA 6.4.0 initializes on Windows, but its source-browser endpoint remains unavailable. Native overview material is provisional only; the owner reaffirmed the real REA acceptance gate. See [the checkpoint](../docs/handover-checkpoint.md) and [sanitized access record](../evidence/local-source-preflight-20261015.json). Earlier cloud-access observations below are historical.
+> **Current local status:** `EX-OV-D-001` is accepted for the initial desktop overview through real REA 6.4.0, complete private export and remote-byte verification. Existing signed-in Chrome is connected through the documented discovery adapter. [Current checkpoint](../docs/handover-checkpoint.md) and [sanitized state record](../evidence/source-state-overview-20261015.json). Earlier cloud-access observations below are historical.
 
 ## Current state
 
-The [reverse-engineering completion plan](reverse-engineering-completion.md) separates remaining R0–R4 evidence/contract work from future cloud integration and implementation. As of 15 October, accepted authenticated Explee states remain zero.
+The [reverse-engineering completion plan](reverse-engineering-completion.md) separates remaining R0–R4 evidence/contract work from future cloud integration and implementation. As of 2026-10-15 09:16:18 UTC, one initial desktop overview is accepted; broader visual/workflow coverage remains pending.
 
-The user selected `https://explee.com/app-auto-gtm/p/40610` in their signed-in browser on Windows. The in-app browser snapshot identifies the requested reference; it is not a capture. This execution environment is a separate cloud machine with no callable desktop-browser control tool or desktop CDP endpoint.
+The user selected `https://explee.com/app-auto-gtm/p/40610` in their signed-in browser on Windows. The in-app browser snapshot identifies the requested reference; it is not a capture. The earlier cloud execution environment had no callable desktop-browser control tool or desktop CDP endpoint; local access is now established as recorded above.
 
 REA 6.4.0 was actually initialized over MCP using the official Python MCP client and `npx rea-agents@6.4.0 mcp`. The target-free session and actual selected schemas are retained in `evidence/rea/`. The installed release skill reports version 37/170 tools; repository-main instructions can be newer. Use the connected schemas, not guessed fields or tool names.
 

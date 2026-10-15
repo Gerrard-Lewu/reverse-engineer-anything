@@ -2,7 +2,7 @@
 
 **Current phase: planning and source inspection only. No application build.**
 
-This repository is the durable project record. Start with [the handover](docs/local-handover.md) and [current checkpoint](docs/handover-checkpoint.md). The project has 43 requirements and 43 acceptance scenarios, a public research baseline and a tested REA capture kit. **No signed-in Explee state has been accepted yet.**
+This repository is the durable project record. Start with [the handover](docs/local-handover.md) and [current checkpoint](docs/handover-checkpoint.md). The project has 43 requirements and 43 acceptance scenarios, a public research baseline and a tested REA capture kit. **The first authenticated REA overview is accepted as `EX-OV-D-001` for its initial desktop viewport; R1–R4 remain open.**
 
 ## On your Windows computer
 
@@ -13,4 +13,4 @@ This repository is the durable project record. Start with [the handover](docs/lo
 
 The laptop runs the browser/capture tools; it does not need to host Laya, a database or the future application. The proposed final application remains cloud-hosted.
 
-All durable eligible work must be committed/pushed to GitHub. Temporary checkouts, screenshot staging and tool caches are necessary during execution. The [private evidence destination](https://github.com/Gerrard-Lewu/explee-private-evidence) is now verified; real REA source acceptance remains blocked on browser attachment. Authenticated captures require rechecking that destination before upload; this public repository must not receive real inboxes, contact exports or browser credentials. Full rules are in [AGENTS.md](AGENTS.md).
+All durable eligible work must be committed/pushed to GitHub. Temporary checkouts, screenshot staging and tool caches are necessary during execution. The [private evidence destination](https://github.com/Gerrard-Lewu/explee-private-evidence) is now verified; the first real REA overview has passed private remote verification. Authenticated captures require rechecking that destination before upload; this public repository must not receive real inboxes, contact exports or browser credentials. Full rules are in [AGENTS.md](AGENTS.md).

@@ -1,6 +1,6 @@
 # Explee reverse-engineering completion plan
 
-> **Local continuation (2026-10-15 06:28:01 UTC):** the private evidence prerequisite is resolved and the local Codex Browser reaches the authenticated project. Real REA MCP initialization works on Windows; target discovery is blocked by an unavailable browser endpoint. Provisional native overview material is privately archived and remains unaccepted. The owner reaffirmed that REA is required. Earlier cloud-only access findings below remain historical; [the checkpoint](../docs/handover-checkpoint.md) records the current critical path.
+> **Current source status (2026-10-15 09:16:18 UTC):** R0 first authenticated REA overview `EX-OV-D-001` accepted for the initial desktop viewport, with complete private export and remote byte verification. Existing signed-in Chrome is connected through a documented loopback discovery adapter. R1–R4 remain open; [the checkpoint](../docs/handover-checkpoint.md) identifies exact artifact/acceptance commits and remaining coverage. Earlier cloud-only findings below are historical.
 
 Status: **planning only, 15 October 2026**. No application build has started. This is the remaining source-investigation plan, not a claim of access to the signed-in app or recovery of Explee's server implementation.
 
@@ -13,7 +13,7 @@ Finish an evidence-backed product, interaction and technical blueprint for the s
 | Requirements/Ceverio context | Reviewed; 43 requirement IDs and 43 acceptance scenarios in the current planning baseline. |
 | Public Explee research | Nine retained source views; 48 documented public method/path pairs. Selective documentation, not authenticated traffic. |
 | REA MCP | Actual 6.4.0 session/schemas retained; synthetic capture checks passed. |
-| Accepted signed-in Explee states | **Zero.** Screens, DOM/styles and account workflows remain uncaptured. |
+| Accepted signed-in Explee states | **One initial desktop viewport (`EX-OV-D-001`).** Remaining desktop/mobile states, style/assets and account workflows await evidence. |
 | Model/database/cloud design | Pinned model comparison, verified Supabase metadata and named provider dependencies. No app/model deployment or inference benchmark. |
 | Ceverio DNS | Cloudflare active; seven mail records and two CNAMEs match the export. DNSSEC pending; user has not added the registrar DS. Separate infrastructure milestone. |
 
@@ -21,7 +21,7 @@ The critical path is **GitHub/private-evidence preflight → browser connection 
 
 ## R0 — Connect REA to the signed-in source
 
-The selected tab is on the user's Windows computer. This cloud shell cannot reach that machine's loopback browser port. The ambient in-app URL does not expose browser control or a REA transport; no callable desktop-browser surface is currently available here.
+Historical cloud context, before local continuation: the selected tab is on the user's Windows computer. That cloud shell could not reach the machine's loopback browser port. The ambient in-app URL does not expose browser control or a REA transport; no callable desktop-browser surface is currently available here.
 
 Fresh access check, 15 October: the user reconfirmed the existing Codex-browser sign-in. Available-tool and complete skill-catalog checks plus plugin discovery still exposed no desktop Browser/Node REPL connection. The native browser-panel command returned only a queued UI request, not page access. [The access record](../evidence/source-inspection-access-check.json) preserves the outcome. The missing prerequisite is a browser connection for this task, not another login. A question about enabling Browser or using local execution is pending; no Explee source was captured.
 
@@ -29,7 +29,7 @@ Use the existing [local capture instructions](../docs/local-capture.md): REA run
 
 The helper connects through the real REA MCP, discovers targets and validates the exact origin/URL/target. Use actual tool schemas; do not expose the debugging endpoint publicly or scan cloud-local ports as though they belonged to the user.
 
-**First deliverable:** one accepted project-overview capture from `https://explee.com/app-auto-gtm/p/40610`, including receipt and complete export. Inspect its saved pixels/structure before accepting it or collecting further groups.
+**R0 first deliverable achieved for the initial desktop viewport:** one accepted project-overview capture from `https://explee.com/app-auto-gtm/p/40610`, including receipt and complete export. Inspect its saved pixels/structure before accepting it or collecting further groups.
 
 ## R1 — Inventory the account and state coverage
 
@@ -96,4 +96,4 @@ These remain in [remaining layers](remaining-layers.md), [decisions](decisions.m
 | Prospect sender | Establish permitted transport and exact sender account; DNS parity is not campaign permission or deliverability. |
 | Booking/testing | Confirm Ceverio booking link/account and controlled test addresses/events. |
 
-**Next source milestone: R0's accepted overview, then R1/R2 captures in small groups and R3 contracts.** Cloud setup cannot replace missing reference evidence.
+**Next source milestone: R1/R2 captures in small groups, including full vertical/mobile overview coverage, followed by R3 contracts.** Cloud setup cannot replace missing reference evidence.
