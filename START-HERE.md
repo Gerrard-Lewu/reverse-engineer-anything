@@ -13,4 +13,4 @@ This repository is the durable project record. Start with [the handover](docs/lo
 
 The laptop runs the browser/capture tools; it does not need to host Laya, a database or the future application. The proposed final application remains cloud-hosted.
 
-All durable eligible work must be committed/pushed to GitHub. Temporary checkouts, screenshot staging and tool caches are necessary during execution. Authenticated captures need a **verified private GitHub destination**; this public repository must not receive real inboxes, contact exports or browser credentials. Full rules are in [AGENTS.md](AGENTS.md).
+All durable eligible work must be committed/pushed to GitHub. Temporary checkouts, screenshot staging and tool caches are necessary during execution. The [private evidence destination](https://github.com/Gerrard-Lewu/explee-private-evidence) is now verified; real REA source acceptance remains blocked on browser attachment. Authenticated captures require rechecking that destination before upload; this public repository must not receive real inboxes, contact exports or browser credentials. Full rules are in [AGENTS.md](AGENTS.md).

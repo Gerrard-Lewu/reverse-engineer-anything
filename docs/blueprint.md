@@ -12,7 +12,7 @@ The required outcome is a tool that finds relevant leads, researches and scores 
 | --- | --- |
 | Official product copy | Retrieved homepage, pricing, integration, and dataset descriptions. These establish advertised scope, not tested operation. |
 | Published public contracts | Indexed 48 documented method/path pairs across selected API page views. No endpoint was executed; complete OpenAPI JSON is still unavailable. |
-| REA runtime evidence for Explee | None. This chat cannot connect to the signed-in browser on the owner's computer. |
+| REA runtime evidence for Explee | None accepted. Native authenticated overview evidence is privately archived as provisional; real REA initializes locally but browser target attachment remains blocked. |
 | REA tool verification | Real MCP connection, passive capture, network body shapes, screenshot pixels, bundle analysis, and Evidence export verified against a synthetic local page. |
 | Internal-tool architecture | Explicit design proposal, separated from claims about Explee's backend. |
 
@@ -69,7 +69,7 @@ Published interfaces expose search/enrichment, asynchronous jobs, projects/campa
 
 The public API uses an API-key contract. Its complete schema, live account-plan behavior, pagination edge cases, rate limits, errors, and equivalence to private frontend requests remain unverified. A generated client should wait for a complete valid schema or focused verified contracts.
 
-The proposed internal system uses a local UI/API, SQLite, a durable worker, and data/mail/calendar adapters. See [the architecture](internal-tool-architecture.md) for records, recovery, deduplication, message/thread correlation, budgets, and meeting invariants. Those choices describe the future tool, not recovered Explee internals.
+The approved direction is a privately hosted cloud UI/API and durable worker, Supabase/PostgreSQL persistence, and independent data/mail/calendar adapters. The owner's Windows browser is a client; it does not host the application or inference. [The cloud deployment plan](../specs/cloud-deployment.md), [product specification](../specs/product.md), and [current contracts](../specs/contracts.md) govern this topology. The [architecture](internal-tool-architecture.md) describes recovery, deduplication, message/thread correlation, budgets, and meeting invariants within that direction. This supersedes the earlier local/SQLite recommendation in this blueprint. These are independent design decisions, not recovered Explee internals.
 
 ## Material recreation dependencies
 

@@ -1,5 +1,15 @@
 # Handover checkpoint
 
+## Local continuation — 2026-10-15 06:28:01 UTC
+
+Private evidence storage is now established: [Gerrard-Lewu/explee-private-evidence](https://github.com/Gerrard-Lewu/explee-private-evidence), verified private with successful write/readback at `555cf94158e029c86a632bddcc5eecc779adeb18`. Fourteen reviewed artifacts at `19866c4199eecf148bb17028d5ef938c7ac11685` were retrieved and compared byte-for-byte.
+
+The signed-in Explee project is accessible through the local Codex Browser. Its overview screenshots and bounded style/structure records are preserved privately as **provisional, not accepted**. Later native frames are horizontally clipped. The owner explicitly retained real REA capture as a requirement.
+
+REA 6.4.0 actually initialized through the local Windows MCP helper; seven unit checks passed. Source target discovery returned `provider_unavailable / endpoint_unreachable` for the documented loopback endpoint. The in-app CDP surface provides commands but no supported endpoint discovery. Automatic approval review rejected launching dedicated debug-enabled Chrome with “blocked by policy.” The owner agreed to open that separate browser. **Accepted REA source states: zero; R0–R4 remain open.**
+
+Next: validate the owner-opened endpoint, capture and remotely verify one overview, then continue the original inventory. Do not repeat REA installation or treat its successful handshake as browser attachment. The [sanitized local record](../evidence/local-source-preflight-20261015.json) includes versions, checks, artifact references, failures and remaining limitations.
+
 As of 15 October 2026. **Phase: planning/source investigation. Application build: not started.**
 
 ## Resume here
@@ -9,7 +19,7 @@ As of 15 October 2026. **Phase: planning/source investigation. Application build
 3. Connect the existing Explee browser and real local REA MCP; accept one project-overview capture.
 4. Continue R1–R4 and push each reviewed checkpoint. Do not repeat the requirements questionnaire.
 
-## Completed versus outstanding
+## Earlier handover baseline (superseded where updated above)
 
 | Work | Recorded status |
 | --- | --- |
@@ -43,3 +53,7 @@ As of 15 October 2026. **Phase: planning/source investigation. Application build
 Future updates name the exact planning branch/remote commit, private artifact commit/asset reference and hashes, source state IDs and accepted/blocked coverage, actual verification, source limitations, unresolved questions and next action. Public entries exclude lead/message contents, credentials and internal machine/session identifiers.
 
 Do not mark a future capture, private repository, model result, integration or application as complete merely because it is described in this handover.
+
+## Task history
+
+- 2026-10-15 06:28:01 UTC — Executed local preflight against planning baseline `0a86430`. Created and verified private evidence storage; passed seven Windows unit checks; ran real REA MCP and retained failed target-discovery diagnostics; privately archived provisional overview evidence with exact readback at `19866c4199eecf148bb17028d5ef938c7ac11685`; reconciled the blueprint with cloud/Supabase architecture. No accepted REA state, mobile capture, application implementation or live source mutation. Remaining action: owner-opened browser endpoint, then R0–R4. The containing published commit is the public session record.

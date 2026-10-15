@@ -1,0 +1,123 @@
+{
+  "schema_version": 1,
+  "recorded_at": "2026-10-15 06:28:01 UTC",
+  "phase": "source_investigation_no_application_build",
+  "planning_baseline": "0a86430fd86e9f6dc20fa898bf0737728095c7eb",
+  "private_storage": {
+    "repository": "Gerrard-Lewu/explee-private-evidence",
+    "visibility": "private",
+    "write_readback_verified": true,
+    "preflight_commit": "555cf94158e029c86a632bddcc5eecc779adeb18",
+    "artifact_commit": "19866c4199eecf148bb17028d5ef938c7ac11685",
+    "verified_artifact_count": 14,
+    "all_remote_bytes_match": true
+  },
+  "tooling": {
+    "host": "Windows",
+    "python": "3.12.14",
+    "node": "24.14.0",
+    "mcp_client": "1.29.0",
+    "rea": "6.4.0",
+    "unit_checks": {
+      "command": ".venv\\Scripts\\python.exe -m unittest discover -s tests -p test_capture_explee.py -v",
+      "passed": 7,
+      "failed": 0
+    },
+    "actual_mcp": "Initialized successfully; binary_session and tool schema records retained privately",
+    "source_discovery": {
+      "result": "failed",
+      "operation": "list_browser_targets",
+      "code": "provider_unavailable",
+      "reason": "endpoint_unreachable",
+      "endpoint": "http://127.0.0.1:9222"
+    },
+    "end_to_end_windows_source_capture": "not_verified"
+  },
+  "source": {
+    "authenticated_codex_browser_access": "confirmed",
+    "native_overview": "provisional, privately preserved",
+    "accepted_rea_states": 0,
+    "mobile_states": "not_collected",
+    "native_capture_limitations": [
+      "Later screenshot frames have horizontal clipping",
+      "Style sample is incomplete",
+      "No REA Evidence IDs for native captures"
+    ],
+    "owner_decision": "Keep REA mandatory; owner will open the separate debug-enabled Chrome profile"
+  },
+  "failures": [
+    {
+      "action": "Launch dedicated Chrome with a loopback debugging endpoint",
+      "result": "Automatic approval review rejected the command",
+      "reason_returned": "blocked by policy"
+    },
+    {
+      "action": "Discover browser endpoint through in-app raw CDP",
+      "result": "Browser.getBrowserCommandLine is unsupported"
+    },
+    {
+      "action": "Enumerate FontFaceSet through the read-only DOM scope",
+      "result": "Unsupported iteration; computed font families retained instead"
+    }
+  ],
+  "next_action": "Connect REA to the owner-opened browser endpoint, accept one overview capture, then continue R1-R4",
+  "public_data_policy": "Contains no contacts, messages, credentials, browser profiles or private account settings",
+  "private_artifacts": [
+    {
+      "path": "records/private-repository-created.jpg",
+      "sha256": "16df740f2a5100f6e4af452964fe4fc4e65f694456b3b282efa9672d72cd9190"
+    },
+    {
+      "path": "captures/2026-10-15/native-overview-provisional/accessibility.txt",
+      "sha256": "871b596626109f94e501ff6691fa44428b012e427850246a9c1362787b95515f"
+    },
+    {
+      "path": "captures/2026-10-15/native-overview-provisional/accessibility-lower.txt",
+      "sha256": "663e88ea57873fc30faaf0f6e3725fc9f75670eef0a9da326e55c6e05db5cde6"
+    },
+    {
+      "path": "captures/2026-10-15/native-overview-provisional/structure-style.json",
+      "sha256": "f35c4278a31e5eb9337996adf9fa118c4f00d48ff970b9f4aa7fb0107020c296"
+    },
+    {
+      "path": "captures/2026-10-15/native-overview-provisional/screenshot.jpg",
+      "sha256": "d7d66765c42a2e52c6e03333cb00caf6c65894c695c4c46242cd1cc5ee0d6493"
+    },
+    {
+      "path": "captures/2026-10-15/native-overview-provisional/screenshot-checklist-collapsed.jpg",
+      "sha256": "43edeb67b6c82ea2b551046cf04f4065ef1b30a860dc7571a1540334372822e2"
+    },
+    {
+      "path": "captures/2026-10-15/native-overview-provisional/screenshot-lower.jpg",
+      "sha256": "1bcd5444101c7d4e236fd293fd5377c02664ee9da0bb6c61486b41cfb9b1736d"
+    },
+    {
+      "path": "diagnostics/2026-10-15/windows-connection-check/binary_session.json",
+      "sha256": "40b1d1bbf895d6d7f2c476312e6da1f3dfdab0070cb9858d0bd901d07be61a11"
+    },
+    {
+      "path": "diagnostics/2026-10-15/windows-connection-check/tool-schemas.json",
+      "sha256": "e378940f942a73f57cff6c175f95b1872b75e43e1245d04d82c0e804818920e1"
+    },
+    {
+      "path": "diagnostics/2026-10-15/windows-connection-check/list_browser_targets.json",
+      "sha256": "c070bf76a45c729bc98124014cfcc01ffdf8f48dfe80aeaab4244d7094da438c"
+    },
+    {
+      "path": "diagnostics/2026-10-15/windows-connection-check/export_evidence_bundle.json",
+      "sha256": "b23186731747515ccb6d1362b6295d0be305e3bf2db88f582cc8bd17b071b363"
+    },
+    {
+      "path": "diagnostics/2026-10-15/windows-connection-check/evidence-bundle.json",
+      "sha256": "000bef2a45fbd4b17adc4e2ab0acd65b076ef5c25f0d8479244c8088730de9cd"
+    },
+    {
+      "path": "diagnostics/2026-10-15/windows-connection-check/receipt.json",
+      "sha256": "2e5bb6e44418302bab0657fcebec882c8ee02f6af08e88b6a4d6c6b51d005eab"
+    },
+    {
+      "path": "captures/2026-10-15/native-overview-provisional/manifest.json",
+      "sha256": "d620ae546ce1b1d4edb9ee49e67b155145e613c734e5456b81a1fa81de10f843"
+    }
+  ]
+}

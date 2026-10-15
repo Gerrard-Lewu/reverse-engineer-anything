@@ -1,5 +1,15 @@
 # Verification and evidence limits
 
+## Local Windows checks — 2026-10-15 06:28:01 UTC
+
+- Python 3.12.14, Node 24.14.0, isolated MCP client 1.29.0 and REA 6.4.0 were exercised locally.
+- `.venv\\Scripts\\python.exe -m unittest discover -s tests -p test_capture_explee.py -v`: **7/7 passed**.
+- The actual helper initialized REA MCP, retained its session/schema records and exported diagnostics. `list_browser_targets` failed with `provider_unavailable / endpoint_unreachable`; no successful Windows source capture or real-browser integration pass is claimed.
+- Private storage visibility, write/retrieval and all 14 archived artifact bytes were verified. Native source overview material remains provisional; later screenshot frames are clipped and no mobile state was collected.
+- Automatic approval review rejected dedicated Chrome launch (“blocked by policy”). The owner retained the REA gate and agreed to open the browser.
+
+[Current checkpoint](handover-checkpoint.md) and [sanitized machine-readable record](../evidence/local-source-preflight-20261015.json). Original Linux verification below remains historical evidence.
+
 Updated 15 October 2026. The capture kit and document package are implemented. The internal lead-to-meeting app is a proposed future build. Authenticated Explee workflows are unverified. DNS follow-up below is read-only; original capture-kit test results remain dated to their prior execution.
 
 Current phase: **planning**. The application build has not started. The [specification](../specs/README.md) now contains 43 unique requirements and 43 Given/When/Then scenarios. Their references and local links were checked. An independent read-only review covered the earlier 36-scenario baseline; model/cloud/DNS/GitHub additions received a local consistency review. These are specification checks, not executed app or DNS-cutover acceptance tests.

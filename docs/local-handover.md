@@ -1,5 +1,7 @@
 # Local Codex handover
 
+> **Current update (2026-10-15 06:28:01 UTC):** private evidence storage and local Windows MCP initialization are verified. The native signed-in overview is provisional; REA target attachment remains pending. Read [the current checkpoint](handover-checkpoint.md) before following the original handover below. The proposed-destination and cloud-access statements below describe the earlier handover state.
+
 Prepared 15 October 2026. **Planning/source investigation only.** This handover authorizes continuation of inspection and GitHub publication within the existing scope, not application implementation or live outreach.
 
 ## Outcome

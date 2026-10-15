@@ -34,6 +34,10 @@ Status: requirements baseline with named integration dependencies. User instruct
 | DEC-26 | Cloudflare full DNS setup for ceverio.com is now active; keep GoDaddy registration and Zoho ordinary mail; proposed private app host leads.ceverio.com. | 15 October GET-only MCP verifies active zone and nine comparable GoDaddy records matching. DNSSEC pending; user has not added DS at GoDaddy. WebsiteBuilder alias prevents literal A comparison; parent-chain/live service checks remain. |
 | DEC-27 | GitHub is the durable source of truth; eligible completed work/checkpoints are committed and pushed. Local files are temporary working material. Private captures require a verified private GitHub destination; secrets/browser profiles are never uploaded. | User's local-handover instruction, 15 October 2026. Public planning repo verified public and empty before publication. AGENTS.md and local-handover.md define publication verification and recovery. |
 
+## Local source-continuation decision
+
+DEC-28 — On 15 October 2026, the owner explicitly retained real REA capture as the source acceptance gate after being offered native Codex Browser/CDP capture. Native source evidence stays provisional. DEP-11's private-storage preflight is now verified; the browser endpoint is the remaining R0 blocker. See [the local access record](../evidence/local-source-preflight-20261015.json).
+
 ## Builder defaults
 
 | Decision | Selected default | Consequence |

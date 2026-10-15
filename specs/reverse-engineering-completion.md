@@ -1,5 +1,7 @@
 # Explee reverse-engineering completion plan
 
+> **Local continuation (2026-10-15 06:28:01 UTC):** the private evidence prerequisite is resolved and the local Codex Browser reaches the authenticated project. Real REA MCP initialization works on Windows; target discovery is blocked by an unavailable browser endpoint. Provisional native overview material is privately archived and remains unaccepted. The owner reaffirmed that REA is required. Earlier cloud-only access findings below remain historical; [the checkpoint](../docs/handover-checkpoint.md) records the current critical path.
+
 Status: **planning only, 15 October 2026**. No application build has started. This is the remaining source-investigation plan, not a claim of access to the signed-in app or recovery of Explee's server implementation.
 
 ## Goal and critical path

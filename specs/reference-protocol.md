@@ -1,5 +1,7 @@
 # REA and source acceptance protocol
 
+> **Local continuation (2026-10-15 06:28:01 UTC):** the signed-in source is accessible through Codex Browser, and private evidence storage is verified. REA 6.4.0 initializes on Windows, but its source-browser endpoint remains unavailable. Native overview material is provisional only; the owner reaffirmed the real REA acceptance gate. See [the checkpoint](../docs/handover-checkpoint.md) and [sanitized access record](../evidence/local-source-preflight-20261015.json). Earlier cloud-access observations below are historical.
+
 ## Current state
 
 The [reverse-engineering completion plan](reverse-engineering-completion.md) separates remaining R0–R4 evidence/contract work from future cloud integration and implementation. As of 15 October, accepted authenticated Explee states remain zero.
