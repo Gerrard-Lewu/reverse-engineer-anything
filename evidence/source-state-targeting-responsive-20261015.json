@@ -96,5 +96,12 @@
   ],
   "accepted_total": 4,
   "r4_status": "open",
-  "application_build": "not started"
+  "application_build": "not started",
+  "session_end": {
+    "recorded_at": "2026-10-15 14:45:13 UTC",
+    "browser_control": "unavailable",
+    "adapter": "task-owned adapter stopped",
+    "viewport_reset": "could not be confirmed after browser disconnected; check/reset on reconnect",
+    "next_owner_help": "Keep the existing signed-in Chrome and Codex extension connected for the next capture. No new login or wider access is requested."
+  }
 }

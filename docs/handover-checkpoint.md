@@ -8,7 +8,7 @@ Matching native style/layout measurements and inline SVG inventory supplement ta
 
 Limitations: intermittent REA screenshot timeouts; latest Project docs attempt failed before source artifacts (startup/discovery timeout). The helper now allows 120-second initialization and reports its stage; seven unit checks pass. The adapter gives the owner up to 180 seconds to approve its handshake; two adapter checks pass. An operator-driven observer preserves request shapes and now checks the final URL; syntax passes, revised live validation pending. Historical failures are retained privately. No application build.
 
-Next: stabilize real REA captures, capture Project docs/campaigns/leads/inbox/integrations/operations and overview mobile/lower views, then reconcile contracts and review R4. No further login or owner input is currently required.
+Next: stabilize real REA captures, capture Project docs/campaigns/leads/inbox/integrations/operations and overview mobile/lower views, then reconcile contracts and review R4. Login and owner approval were sufficient for the completed captures. At session end Chrome control became unavailable; the next capture needs Chrome/extension connectivity restored. Temporary viewport reset could not be confirmed after disconnect; check/reset it on reconnect. The task-owned loopback adapter was stopped without closing the owner browser.
 
 ## Targeting and assets — 2026-10-15 09:43:46 UTC
 
