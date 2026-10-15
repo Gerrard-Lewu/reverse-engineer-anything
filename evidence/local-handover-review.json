@@ -1,0 +1,18 @@
+{
+  "reviewed_on": "2026-10-15",
+  "scope": "Public local handover, existing planning package and capture kit",
+  "github_target": "Gerrard-Lewu/reverse-engineer-anything",
+  "target_visibility": "public (verified by GitHub MCP)",
+  "remote_before_publication": "Empty; no branches returned",
+  "eligible_files_before_this_report": 65,
+  "credential_pattern_findings": [],
+  "broken_local_links": [],
+  "unique_requirement_ids": 43,
+  "unique_acceptance_scenarios": 43,
+  "public_private_boundaries_checked": true,
+  "authenticated_source_states_accepted": 0,
+  "app_build_started": false,
+  "checks": "Local publication/structural review; no app, Windows source, DNS or live mail tests run",
+  "private_evidence_repository": "Proposed only; not created or verified",
+  "historical_test_results": "Unchanged; do not reinterpret prior synthetic checks as fresh Windows or Explee evidence"
+}

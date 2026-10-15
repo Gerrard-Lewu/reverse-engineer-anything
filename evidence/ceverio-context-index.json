@@ -1,0 +1,112 @@
+{
+  "inspected_on": "2026-10-14",
+  "repository": "Gerrard-Lewu/Ceverio",
+  "git_commit_id": "e544cbaac0034f68221c01970d824d2dffeece94",
+  "branch_at_inspection": "feat/outbound-launch-prep",
+  "classification": "inspected_repository_material_not_current_external_account_verification",
+  "retention": "source pointers and returned Git object IDs; operating document contents remain outside the distributable repository",
+  "sources": [
+    {
+      "source_id": "CTX-CEV-001",
+      "path": "AGENTS.md",
+      "git_blob_id": "baf05061f34d97ef6ea0a330e4ee0a00c439d654",
+      "url": "https://github.com/Gerrard-Lewu/Ceverio/blob/e544cbaac0034f68221c01970d824d2dffeece94/AGENTS.md"
+    },
+    {
+      "source_id": "CTX-CEV-002",
+      "path": "CODEX_START_HERE.md",
+      "git_blob_id": "d97f96b295d1e0ea7f5afd0a411d545467484057",
+      "url": "https://github.com/Gerrard-Lewu/Ceverio/blob/e544cbaac0034f68221c01970d824d2dffeece94/CODEX_START_HERE.md"
+    },
+    {
+      "source_id": "CTX-CEV-003",
+      "path": "PROJECT_STATUS.md",
+      "git_blob_id": "d7148644c014ec8da7e6050b0722335986933883",
+      "url": "https://github.com/Gerrard-Lewu/Ceverio/blob/e544cbaac0034f68221c01970d824d2dffeece94/PROJECT_STATUS.md"
+    },
+    {
+      "source_id": "CTX-CEV-004",
+      "path": "BACKLOG.md",
+      "git_blob_id": "216ea942ae2564b48384c6c61d27c09b32ebee48",
+      "url": "https://github.com/Gerrard-Lewu/Ceverio/blob/e544cbaac0034f68221c01970d824d2dffeece94/BACKLOG.md"
+    },
+    {
+      "source_id": "CTX-CEV-005",
+      "path": "knowledge/BUSINESS_CONTEXT.md",
+      "git_blob_id": "83dd10b71002443e4e1ab14e7735ca281b1dd505",
+      "url": "https://github.com/Gerrard-Lewu/Ceverio/blob/e544cbaac0034f68221c01970d824d2dffeece94/knowledge/BUSINESS_CONTEXT.md"
+    },
+    {
+      "source_id": "CTX-CEV-006",
+      "path": "knowledge/DECISION_LOG.md",
+      "git_blob_id": "09eb9ff12e867f561d4db4476e9de2c6eb2e6087",
+      "url": "https://github.com/Gerrard-Lewu/Ceverio/blob/e544cbaac0034f68221c01970d824d2dffeece94/knowledge/DECISION_LOG.md"
+    },
+    {
+      "source_id": "CTX-CEV-007",
+      "path": "knowledge/OFFER_AND_PRICING.md",
+      "git_blob_id": "a764ec9061c472aa18112c3b791900e4d92ddcd6",
+      "url": "https://github.com/Gerrard-Lewu/Ceverio/blob/e544cbaac0034f68221c01970d824d2dffeece94/knowledge/OFFER_AND_PRICING.md"
+    },
+    {
+      "source_id": "CTX-CEV-008",
+      "path": "sales/ICP_AND_SCORECARD.md",
+      "git_blob_id": "c474dc543e98fd191422326b20ba17e21eca21ce",
+      "url": "https://github.com/Gerrard-Lewu/Ceverio/blob/e544cbaac0034f68221c01970d824d2dffeece94/sales/ICP_AND_SCORECARD.md"
+    },
+    {
+      "source_id": "CTX-CEV-009",
+      "path": "sales/OUTREACH_PLAYBOOK.md",
+      "git_blob_id": "29e4b82bc69989be26578a3c17bc8e99fe6e8e67",
+      "url": "https://github.com/Gerrard-Lewu/Ceverio/blob/e544cbaac0034f68221c01970d824d2dffeece94/sales/OUTREACH_PLAYBOOK.md"
+    },
+    {
+      "source_id": "CTX-CEV-010",
+      "path": "sales/SENDING_PROVIDER_DECISION.md",
+      "git_blob_id": "326d278588f60a57bedce20e45e6ea37e1b06645",
+      "url": "https://github.com/Gerrard-Lewu/Ceverio/blob/e544cbaac0034f68221c01970d824d2dffeece94/sales/SENDING_PROVIDER_DECISION.md"
+    },
+    {
+      "source_id": "CTX-CEV-011",
+      "path": "sales/EMAIL_VERIFICATION_DECISION.md",
+      "git_blob_id": "98ab015eabcae48e7dc1ce049433f3274048ef3e",
+      "url": "https://github.com/Gerrard-Lewu/Ceverio/blob/e544cbaac0034f68221c01970d824d2dffeece94/sales/EMAIL_VERIFICATION_DECISION.md"
+    },
+    {
+      "source_id": "CTX-CEV-012",
+      "path": "automation/COST_CONTROLS.md",
+      "git_blob_id": "96b3f91392c63f19a36e8a6021e70599960c3a71",
+      "url": "https://github.com/Gerrard-Lewu/Ceverio/blob/e544cbaac0034f68221c01970d824d2dffeece94/automation/COST_CONTROLS.md"
+    },
+    {
+      "source_id": "CTX-CEV-013",
+      "path": "automation/LEAD_GENERATION_SPEC.md",
+      "git_blob_id": "23a90eedf0c6be289768dddb3b0c506d778efffd",
+      "url": "https://github.com/Gerrard-Lewu/Ceverio/blob/e544cbaac0034f68221c01970d824d2dffeece94/automation/LEAD_GENERATION_SPEC.md"
+    },
+    {
+      "source_id": "CTX-CEV-014",
+      "path": "crm/ZOHO_CRM_ARCHITECTURE.md",
+      "git_blob_id": "4af28e41be98f3c5e9758a6e96be9e0bebd9eda1",
+      "url": "https://github.com/Gerrard-Lewu/Ceverio/blob/e544cbaac0034f68221c01970d824d2dffeece94/crm/ZOHO_CRM_ARCHITECTURE.md"
+    },
+    {
+      "source_id": "CTX-CEV-015",
+      "path": "integrations/zoho/README.md",
+      "git_blob_id": "35be2b6dcc51b03fd2094620e1b1bdcf8976a32d",
+      "url": "https://github.com/Gerrard-Lewu/Ceverio/blob/e544cbaac0034f68221c01970d824d2dffeece94/integrations/zoho/README.md"
+    },
+    {
+      "source_id": "CTX-CEV-016",
+      "path": "brand/email-footers/CEVERIO_EMAIL_SIGNATURES.md",
+      "git_blob_id": "604051d4f49806a33aa1210644be5fde312fca65",
+      "url": "https://github.com/Gerrard-Lewu/Ceverio/blob/e544cbaac0034f68221c01970d824d2dffeece94/brand/email-footers/CEVERIO_EMAIL_SIGNATURES.md"
+    }
+  ],
+  "limitations": [
+    "Repository main contains a migration README; the inspected operating branch is separate.",
+    "Historical account checks in these documents are not a fresh account audit.",
+    "The owner's Windows filesystem and signed-in Explee browser were not inspected.",
+    "No actual contacts, inbox bodies, private phone numbers or credentials are copied into this index."
+  ]
+}

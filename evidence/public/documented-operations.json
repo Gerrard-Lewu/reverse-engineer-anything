@@ -1,0 +1,541 @@
+{
+  "scope": "Selected public documented operations returned in page views. This is not exhaustive and is not private app traffic.",
+  "operations": [
+    {
+      "method": "POST",
+      "path": "/public/api/v1/search/companies",
+      "classification": "documented_public_contract_not_executed",
+      "source_id": "EX-PUB-004",
+      "source_url": "https://api.explee.com/public/api/docs",
+      "documentation_line": 10,
+      "response_ids": [
+        "PUB-005"
+      ]
+    },
+    {
+      "method": "POST",
+      "path": "/public/api/v1/search/companies-by-domains",
+      "classification": "documented_public_contract_not_executed",
+      "source_id": "EX-PUB-004",
+      "source_url": "https://api.explee.com/public/api/docs",
+      "documentation_line": 28,
+      "response_ids": [
+        "PUB-005"
+      ]
+    },
+    {
+      "method": "POST",
+      "path": "/public/api/v1/search/people",
+      "classification": "documented_public_contract_not_executed",
+      "source_id": "EX-PUB-004",
+      "source_url": "https://api.explee.com/public/api/docs",
+      "documentation_line": 44,
+      "response_ids": [
+        "PUB-005"
+      ]
+    },
+    {
+      "method": "POST",
+      "path": "/public/api/v1/search/people-by-domains",
+      "classification": "documented_public_contract_not_executed",
+      "source_id": "EX-PUB-004",
+      "source_url": "https://api.explee.com/public/api/docs",
+      "documentation_line": 62,
+      "response_ids": [
+        "PUB-005"
+      ]
+    },
+    {
+      "method": "POST",
+      "path": "/public/api/v1/search/nl-to-filters",
+      "classification": "documented_public_contract_not_executed",
+      "source_id": "EX-PUB-004",
+      "source_url": "https://api.explee.com/public/api/docs",
+      "documentation_line": 78,
+      "response_ids": [
+        "PUB-005"
+      ]
+    },
+    {
+      "method": "POST",
+      "path": "/public/api/v1/enrich/email",
+      "classification": "documented_public_contract_not_executed",
+      "source_id": "EX-PUB-004",
+      "source_url": "https://api.explee.com/public/api/docs",
+      "documentation_line": 94,
+      "response_ids": [
+        "PUB-005"
+      ]
+    },
+    {
+      "method": "POST",
+      "path": "/public/api/v1/enrich/phone",
+      "classification": "documented_public_contract_not_executed",
+      "source_id": "EX-PUB-004",
+      "source_url": "https://api.explee.com/public/api/docs",
+      "documentation_line": 109,
+      "response_ids": [
+        "PUB-005"
+      ]
+    },
+    {
+      "method": "POST",
+      "path": "/public/api/v1/enrich/email/batch",
+      "classification": "documented_public_contract_not_executed",
+      "source_id": "EX-PUB-004",
+      "source_url": "https://api.explee.com/public/api/docs",
+      "documentation_line": 125,
+      "response_ids": [
+        "PUB-005"
+      ]
+    },
+    {
+      "method": "GET",
+      "path": "/public/api/v1/enrich/email/batch/{task_id}",
+      "classification": "documented_public_contract_not_executed",
+      "source_id": "EX-PUB-004",
+      "source_url": "https://api.explee.com/public/api/docs",
+      "documentation_line": 140,
+      "response_ids": [
+        "PUB-005"
+      ]
+    },
+    {
+      "method": "POST",
+      "path": "/public/api/v1/find-and-enrich",
+      "classification": "documented_public_contract_not_executed",
+      "source_id": "EX-PUB-004",
+      "source_url": "https://api.explee.com/public/api/docs",
+      "documentation_line": 158,
+      "response_ids": [
+        "PUB-005"
+      ]
+    },
+    {
+      "method": "GET",
+      "path": "/public/api/v1/find-and-enrich/{task_id}",
+      "classification": "documented_public_contract_not_executed",
+      "source_id": "EX-PUB-004",
+      "source_url": "https://api.explee.com/public/api/docs",
+      "documentation_line": 174,
+      "response_ids": [
+        "PUB-005"
+      ]
+    },
+    {
+      "method": "GET",
+      "path": "/public/api/v1/tasks",
+      "classification": "documented_public_contract_not_executed",
+      "source_id": "EX-PUB-004",
+      "source_url": "https://api.explee.com/public/api/docs",
+      "documentation_line": 190,
+      "response_ids": [
+        "PUB-005"
+      ]
+    },
+    {
+      "method": "GET",
+      "path": "/public/api/v1/agents",
+      "classification": "documented_public_contract_not_executed",
+      "source_id": "EX-PUB-004",
+      "source_url": "https://api.explee.com/public/api/docs",
+      "documentation_line": 204,
+      "response_ids": [
+        "PUB-005"
+      ]
+    },
+    {
+      "method": "POST",
+      "path": "/public/api/v1/agents/{agent_id}/runs",
+      "classification": "documented_public_contract_not_executed",
+      "source_id": "EX-PUB-004",
+      "source_url": "https://api.explee.com/public/api/docs",
+      "documentation_line": 217,
+      "response_ids": [
+        "PUB-005"
+      ]
+    },
+    {
+      "method": "GET",
+      "path": "/public/api/v1/autogtm/projects",
+      "classification": "documented_public_contract_not_executed",
+      "source_id": "EX-PUB-004",
+      "source_url": "https://api.explee.com/public/api/docs",
+      "documentation_line": 286,
+      "response_ids": [
+        "PUB-007"
+      ]
+    },
+    {
+      "method": "GET",
+      "path": "/public/api/v1/autogtm/campaigns",
+      "classification": "documented_public_contract_not_executed",
+      "source_id": "EX-PUB-004",
+      "source_url": "https://api.explee.com/public/api/docs",
+      "documentation_line": 299,
+      "response_ids": [
+        "PUB-007",
+        "PUB-008"
+      ]
+    },
+    {
+      "method": "POST",
+      "path": "/public/api/v1/autogtm/campaigns",
+      "classification": "documented_public_contract_not_executed",
+      "source_id": "EX-PUB-004",
+      "source_url": "https://api.explee.com/public/api/docs",
+      "documentation_line": 316,
+      "response_ids": [
+        "PUB-007",
+        "PUB-008"
+      ]
+    },
+    {
+      "method": "GET",
+      "path": "/public/api/v1/autogtm/projects/{project_id}/budget",
+      "classification": "documented_public_contract_not_executed",
+      "source_id": "EX-PUB-004",
+      "source_url": "https://api.explee.com/public/api/docs",
+      "documentation_line": 601,
+      "response_ids": [
+        "PUB-007",
+        "PUB-008"
+      ]
+    },
+    {
+      "method": "PATCH",
+      "path": "/public/api/v1/autogtm/projects/{project_id}/budget",
+      "classification": "documented_public_contract_not_executed",
+      "source_id": "EX-PUB-004",
+      "source_url": "https://api.explee.com/public/api/docs",
+      "documentation_line": 619,
+      "response_ids": [
+        "PUB-007",
+        "PUB-008"
+      ]
+    },
+    {
+      "method": "GET",
+      "path": "/public/api/v1/autogtm/projects/{project_id}/analytics",
+      "classification": "documented_public_contract_not_executed",
+      "source_id": "EX-PUB-004",
+      "source_url": "https://api.explee.com/public/api/docs",
+      "documentation_line": 717,
+      "response_ids": [
+        "PUB-007",
+        "PUB-008"
+      ]
+    },
+    {
+      "method": "GET",
+      "path": "/public/api/v1/autogtm/projects/{project_id}/autopilot",
+      "classification": "documented_public_contract_not_executed",
+      "source_id": "EX-PUB-004",
+      "source_url": "https://api.explee.com/public/api/docs",
+      "documentation_line": 873,
+      "response_ids": [
+        "PUB-007",
+        "PUB-009"
+      ]
+    },
+    {
+      "method": "PATCH",
+      "path": "/public/api/v1/autogtm/projects/{project_id}/autopilot",
+      "classification": "documented_public_contract_not_executed",
+      "source_id": "EX-PUB-004",
+      "source_url": "https://api.explee.com/public/api/docs",
+      "documentation_line": 890,
+      "response_ids": [
+        "PUB-007"
+      ]
+    },
+    {
+      "method": "POST",
+      "path": "/public/api/v1/autogtm/campaigns/import",
+      "classification": "documented_public_contract_not_executed",
+      "source_id": "EX-PUB-004",
+      "source_url": "https://api.explee.com/public/api/docs",
+      "documentation_line": 397,
+      "response_ids": [
+        "PUB-007"
+      ]
+    },
+    {
+      "method": "GET",
+      "path": "/public/api/v1/autogtm/campaigns/import/{task_id}",
+      "classification": "documented_public_contract_not_executed",
+      "source_id": "EX-PUB-004",
+      "source_url": "https://api.explee.com/public/api/docs",
+      "documentation_line": 415,
+      "response_ids": [
+        "PUB-007"
+      ]
+    },
+    {
+      "method": "GET",
+      "path": "/public/api/v1/autogtm/campaigns/{campaign_id}/inbox",
+      "classification": "documented_public_contract_not_executed",
+      "source_id": "EX-PUB-004",
+      "source_url": "https://api.explee.com/public/api/docs",
+      "documentation_line": 452,
+      "response_ids": [
+        "PUB-007"
+      ]
+    },
+    {
+      "method": "GET",
+      "path": "/public/api/v1/autogtm/campaigns/{campaign_id}/inbox/{person_id}",
+      "classification": "documented_public_contract_not_executed",
+      "source_id": "EX-PUB-004",
+      "source_url": "https://api.explee.com/public/api/docs",
+      "documentation_line": 472,
+      "response_ids": [
+        "PUB-007"
+      ]
+    },
+    {
+      "method": "GET",
+      "path": "/public/api/v1/autogtm/campaigns/{campaign_id}/inbox/{person_id}/attachments/{attachment_id}",
+      "classification": "documented_public_contract_not_executed",
+      "source_id": "EX-PUB-004",
+      "source_url": "https://api.explee.com/public/api/docs",
+      "documentation_line": 491,
+      "response_ids": [
+        "PUB-007"
+      ]
+    },
+    {
+      "method": "POST",
+      "path": "/public/api/v1/autogtm/campaigns/{campaign_id}/inbox/{person_id}/reply",
+      "classification": "documented_public_contract_not_executed",
+      "source_id": "EX-PUB-004",
+      "source_url": "https://api.explee.com/public/api/docs",
+      "documentation_line": 535,
+      "response_ids": [
+        "PUB-007"
+      ]
+    },
+    {
+      "method": "GET",
+      "path": "/public/api/v1/autogtm/campaigns/{campaign_id}/inbox/{person_id}/note",
+      "classification": "documented_public_contract_not_executed",
+      "source_id": "EX-PUB-004",
+      "source_url": "https://api.explee.com/public/api/docs",
+      "documentation_line": 559,
+      "response_ids": [
+        "PUB-007",
+        "PUB-008"
+      ]
+    },
+    {
+      "method": "POST",
+      "path": "/public/api/v1/autogtm/campaigns/{campaign_id}/inbox/{person_id}/note",
+      "classification": "documented_public_contract_not_executed",
+      "source_id": "EX-PUB-004",
+      "source_url": "https://api.explee.com/public/api/docs",
+      "documentation_line": 578,
+      "response_ids": [
+        "PUB-007",
+        "PUB-008"
+      ]
+    },
+    {
+      "method": "GET",
+      "path": "/public/api/v1/dedup/people",
+      "classification": "documented_public_contract_not_executed",
+      "source_id": "EX-PUB-004",
+      "source_url": "https://api.explee.com/public/api/docs",
+      "documentation_line": 929,
+      "response_ids": [
+        "PUB-007"
+      ]
+    },
+    {
+      "method": "POST",
+      "path": "/public/api/v1/dedup/people",
+      "classification": "documented_public_contract_not_executed",
+      "source_id": "EX-PUB-004",
+      "source_url": "https://api.explee.com/public/api/docs",
+      "documentation_line": 940,
+      "response_ids": [
+        "PUB-007"
+      ]
+    },
+    {
+      "method": "GET",
+      "path": "/public/api/v1/dedup/people/{list_id}",
+      "classification": "documented_public_contract_not_executed",
+      "source_id": "EX-PUB-004",
+      "source_url": "https://api.explee.com/public/api/docs",
+      "documentation_line": 956,
+      "response_ids": [
+        "PUB-007"
+      ]
+    },
+    {
+      "method": "DELETE",
+      "path": "/public/api/v1/dedup/people/{list_id}",
+      "classification": "documented_public_contract_not_executed",
+      "source_id": "EX-PUB-004",
+      "source_url": "https://api.explee.com/public/api/docs",
+      "documentation_line": 974,
+      "response_ids": [
+        "PUB-007"
+      ]
+    },
+    {
+      "method": "GET",
+      "path": "/public/api/v1/dedup/companies",
+      "classification": "documented_public_contract_not_executed",
+      "source_id": "EX-PUB-004",
+      "source_url": "https://api.explee.com/public/api/docs",
+      "documentation_line": 992,
+      "response_ids": [
+        "PUB-007"
+      ]
+    },
+    {
+      "method": "POST",
+      "path": "/public/api/v1/dedup/companies",
+      "classification": "documented_public_contract_not_executed",
+      "source_id": "EX-PUB-004",
+      "source_url": "https://api.explee.com/public/api/docs",
+      "documentation_line": 1003,
+      "response_ids": [
+        "PUB-007"
+      ]
+    },
+    {
+      "method": "GET",
+      "path": "/public/api/v1/dedup/companies/{list_id}",
+      "classification": "documented_public_contract_not_executed",
+      "source_id": "EX-PUB-004",
+      "source_url": "https://api.explee.com/public/api/docs",
+      "documentation_line": 1019,
+      "response_ids": [
+        "PUB-007"
+      ]
+    },
+    {
+      "method": "DELETE",
+      "path": "/public/api/v1/dedup/companies/{list_id}",
+      "classification": "documented_public_contract_not_executed",
+      "source_id": "EX-PUB-004",
+      "source_url": "https://api.explee.com/public/api/docs",
+      "documentation_line": 1037,
+      "response_ids": [
+        "PUB-007"
+      ]
+    },
+    {
+      "method": "GET",
+      "path": "/public/api/v1/autogtm/campaigns/{campaign_id}",
+      "classification": "documented_public_contract_not_executed",
+      "source_id": "EX-PUB-004",
+      "source_url": "https://api.explee.com/public/api/docs",
+      "documentation_line": 336,
+      "response_ids": [
+        "PUB-008"
+      ]
+    },
+    {
+      "method": "PATCH",
+      "path": "/public/api/v1/autogtm/campaigns/{campaign_id}/budget",
+      "classification": "documented_public_contract_not_executed",
+      "source_id": "EX-PUB-004",
+      "source_url": "https://api.explee.com/public/api/docs",
+      "documentation_line": 640,
+      "response_ids": [
+        "PUB-008"
+      ]
+    },
+    {
+      "method": "GET",
+      "path": "/public/api/v1/autogtm/campaigns/{campaign_id}/analytics",
+      "classification": "documented_public_contract_not_executed",
+      "source_id": "EX-PUB-004",
+      "source_url": "https://api.explee.com/public/api/docs",
+      "documentation_line": 698,
+      "response_ids": [
+        "PUB-008"
+      ]
+    },
+    {
+      "method": "GET",
+      "path": "/public/api/v1/autogtm/suppress-list/people",
+      "classification": "documented_public_contract_not_executed",
+      "source_id": "EX-PUB-004",
+      "source_url": "https://api.explee.com/public/api/docs",
+      "documentation_line": 736,
+      "response_ids": [
+        "PUB-008"
+      ]
+    },
+    {
+      "method": "POST",
+      "path": "/public/api/v1/autogtm/suppress-list/people",
+      "classification": "documented_public_contract_not_executed",
+      "source_id": "EX-PUB-004",
+      "source_url": "https://api.explee.com/public/api/docs",
+      "documentation_line": 749,
+      "response_ids": [
+        "PUB-008"
+      ]
+    },
+    {
+      "method": "DELETE",
+      "path": "/public/api/v1/autogtm/suppress-list/people/{list_name}",
+      "classification": "documented_public_contract_not_executed",
+      "source_id": "EX-PUB-004",
+      "source_url": "https://api.explee.com/public/api/docs",
+      "documentation_line": 787,
+      "response_ids": [
+        "PUB-008"
+      ]
+    },
+    {
+      "method": "GET",
+      "path": "/public/api/v1/autogtm/suppress-list/companies",
+      "classification": "documented_public_contract_not_executed",
+      "source_id": "EX-PUB-004",
+      "source_url": "https://api.explee.com/public/api/docs",
+      "documentation_line": 805,
+      "response_ids": [
+        "PUB-008"
+      ]
+    },
+    {
+      "method": "POST",
+      "path": "/public/api/v1/autogtm/suppress-list/companies",
+      "classification": "documented_public_contract_not_executed",
+      "source_id": "EX-PUB-004",
+      "source_url": "https://api.explee.com/public/api/docs",
+      "documentation_line": 818,
+      "response_ids": [
+        "PUB-008"
+      ]
+    },
+    {
+      "method": "GET",
+      "path": "/public/api/v1/autogtm/suppress-list/companies/{list_name}",
+      "classification": "documented_public_contract_not_executed",
+      "source_id": "EX-PUB-004",
+      "source_url": "https://api.explee.com/public/api/docs",
+      "documentation_line": 835,
+      "response_ids": [
+        "PUB-008"
+      ]
+    },
+    {
+      "method": "POST",
+      "path": "/public/api/v1/autogtm/campaigns/{campaign_id}/stop",
+      "classification": "documented_public_contract_not_executed",
+      "source_id": "EX-PUB-004",
+      "source_url": "https://api.explee.com/public/api/docs",
+      "documentation_line": 662,
+      "response_ids": [
+        "PUB-009"
+      ]
+    }
+  ]
+}

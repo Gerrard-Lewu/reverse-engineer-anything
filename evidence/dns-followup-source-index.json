@@ -1,0 +1,178 @@
+{
+  "schema_version": 1,
+  "observed_at": "2026-10-15T05:13:31.995Z",
+  "phase": "planning only",
+  "source": {
+    "file_name": "ceverio.com.txt",
+    "exported_at_as_written": "2026-10-14 18:21:20; timezone unspecified",
+    "sha256": "65c3aa65cc09aa4f70ba4f601054e8dd1f5e3c53bc825f08169455b71278c392",
+    "bytes": 1829,
+    "attachment_treated_as": "DNS data, not execution instructions"
+  },
+  "cloudflare": {
+    "zone_name": "ceverio.com",
+    "status": "active",
+    "activated_on": "2026-10-15T05:02:37.644516Z",
+    "name_servers": [
+      "amanda.ns.cloudflare.com",
+      "titan.ns.cloudflare.com"
+    ],
+    "record_count": 11,
+    "all_records_dns_only": true,
+    "dnssec": {
+      "status": "pending",
+      "algorithm": "13",
+      "digest_type": "2",
+      "key_tag": 2371,
+      "digest": "288E6F374EC13A660DCF77F0EBA4B6EE353EB87015598CC52A0938C598D5778C",
+      "ds": "ceverio.com. 3600 IN DS 2371 13 2 288E6F374EC13A660DCF77F0EBA4B6EE353EB87015598CC52A0938C598D5778C",
+      "modified_on": "2026-10-15T05:06:57.281689+00:00"
+    }
+  },
+  "parity": {
+    "compared_count": 9,
+    "all_comparable_records_match": true,
+    "mail_record_matches": 7,
+    "cname_matches": 2,
+    "results": [
+      {
+        "name": "www.ceverio.com",
+        "type": "CNAME",
+        "priority": null,
+        "logical_content_sha256": "e029a33b780a4c5b84b9d149a380b3660453c9586161665151af286090ecb132",
+        "logical_value_matches": true,
+        "export_ttl_seconds": 3600,
+        "cloudflare_ttl": 1,
+        "cloudflare_ttl_mode": "Auto",
+        "proxied": false
+      },
+      {
+        "name": "_domainconnect.ceverio.com",
+        "type": "CNAME",
+        "priority": null,
+        "logical_content_sha256": "ca3510b2f07523e3d9e56e1589c76ec40de15e324f9cfea1d0b9a30e01af53ea",
+        "logical_value_matches": true,
+        "export_ttl_seconds": 3600,
+        "cloudflare_ttl": 1,
+        "cloudflare_ttl_mode": "Auto",
+        "proxied": false
+      },
+      {
+        "name": "ceverio.com",
+        "type": "MX",
+        "priority": 10,
+        "logical_content_sha256": "e42708d3ff6a53138baa7ddc832d0a302c4926bc1fcdf90847b21392124a0751",
+        "logical_value_matches": true,
+        "export_ttl_seconds": 3600,
+        "cloudflare_ttl": 1,
+        "cloudflare_ttl_mode": "Auto",
+        "proxied": false
+      },
+      {
+        "name": "ceverio.com",
+        "type": "MX",
+        "priority": 20,
+        "logical_content_sha256": "d012240be76a066c031ea1367f80b805e2336a69d4c43c77428830276edf462d",
+        "logical_value_matches": true,
+        "export_ttl_seconds": 3600,
+        "cloudflare_ttl": 1,
+        "cloudflare_ttl_mode": "Auto",
+        "proxied": false
+      },
+      {
+        "name": "ceverio.com",
+        "type": "MX",
+        "priority": 50,
+        "logical_content_sha256": "bc85c41c74c65714e898295fdca425c541d5716d5b242ee112a1ca0f2b7ea4e8",
+        "logical_value_matches": true,
+        "export_ttl_seconds": 3600,
+        "cloudflare_ttl": 1,
+        "cloudflare_ttl_mode": "Auto",
+        "proxied": false
+      },
+      {
+        "name": "ceverio.com",
+        "type": "TXT",
+        "priority": null,
+        "logical_content_sha256": "44a54969d179390a0b50319c290ffa9d63bfa9577da34e2970e58e5b2d8fcaa7",
+        "logical_value_matches": true,
+        "export_ttl_seconds": 3600,
+        "cloudflare_ttl": 1,
+        "cloudflare_ttl_mode": "Auto",
+        "proxied": false
+      },
+      {
+        "name": "ceverio.com",
+        "type": "TXT",
+        "priority": null,
+        "logical_content_sha256": "88d1b2ef3cb567fde9fe253377fdc2e4833f1a92841c6e6f7380bef488db05d5",
+        "logical_value_matches": true,
+        "export_ttl_seconds": 3600,
+        "cloudflare_ttl": 1,
+        "cloudflare_ttl_mode": "Auto",
+        "proxied": false
+      },
+      {
+        "name": "zmail._domainkey.ceverio.com",
+        "type": "TXT",
+        "priority": null,
+        "logical_content_sha256": "51c04849c64e98d05e62e48052b8dff926ce10af756396fbce765d138c50bd83",
+        "logical_value_matches": true,
+        "export_ttl_seconds": 3600,
+        "cloudflare_ttl": 1,
+        "cloudflare_ttl_mode": "Auto",
+        "proxied": false
+      },
+      {
+        "name": "_dmarc.ceverio.com",
+        "type": "TXT",
+        "priority": null,
+        "logical_content_sha256": "349cd9bbb3a739f0e5734c5eaf5ab82493f395cb0fc7fe413af096a60ea0b20c",
+        "logical_value_matches": true,
+        "export_ttl_seconds": 3600,
+        "cloudflare_ttl": 1,
+        "cloudflare_ttl_mode": "Auto",
+        "proxied": false
+      }
+    ],
+    "not_compared": [
+      {
+        "name": "ceverio.com",
+        "type": "A",
+        "ttl": 3600,
+        "export_value": "WebsiteBuilder Site",
+        "reason": "Provider label, not an IPv4 address"
+      },
+      {
+        "type": "SOA/NS",
+        "reason": "Provider authority records change during nameserver migration; old GoDaddy SOA/NS are not records to re-import at Cloudflare."
+      }
+    ],
+    "current_apex_a": [
+      "13.248.243.5",
+      "76.223.105.230"
+    ],
+    "apex_a_status": "Unverified against literal source IPs; export uses WebsiteBuilder Site alias",
+    "ttl_difference": "Export 3600 seconds; Cloudflare API 1 means Auto, not one-second DNS TTL"
+  },
+  "unverified": [
+    "Registrar/parent DS publication and validated DNSSEC chain",
+    "Independent live resolver/delegation views",
+    "WebsiteBuilder actual website endpoint and browser behavior",
+    "Live Zoho delivery and SPF/DKIM/DMARC results"
+  ],
+  "mutations_performed": false,
+  "app_build_started": false,
+  "tests": "Read-only record comparison; not live DNSSEC/mail/application acceptance",
+  "registrar_ds": {
+    "user_reported_on": "2026-10-15",
+    "question": "Has Cloudflare generated DS been added at GoDaddy?",
+    "answer": "Not yet",
+    "parent_lookup": "not independently performed"
+  },
+  "documentation_sources": [
+    "https://developers.cloudflare.com/dns/dnssec/",
+    "https://www.godaddy.com/help/add-a-ds-record-23865",
+    "https://developers.cloudflare.com/dns/troubleshooting/email-issues/"
+  ]
+}

@@ -1,0 +1,13 @@
+Source ID: EX-PUB-009
+Primary URL: https://api.explee.com/
+Classification: indexed_official_api_excerpt
+Coverage: search_excerpt_only
+Tool: mcp__codex_apps__search_service_web_run
+These are complete connector-returned views, not a full-page guarantee.
+
+Response ID: PUB-004
+Retrieved at UTC: 2026-10-14 10:01:01 UTC
+Explee Public API (https://api.explee.com/)
+【turn655156search13】 [wordlim: 200] Crawled: last month; Each call creates a **new** campaign in the given project — the campaign is built for your leads only (no agent lead discovery) and starts sending automatically once live, within your project budget. ... Reply to this contact — send just the message text. ... Download OpenAPI Document Download OpenAPI Document ... All fields are strings; a lead missing any of the mandatory five (`email`, `first_name`, `last_name`, `company_domain`, `job_title`) is not rejected — it is skipped and reported in the result's `skipped` list, like the in-app CSV import. `linkedin_url` is strongly recommended: it's the key used to enrich the lead from Explee's contact base for a richer email. ...       "sent_email_id": "string",
+
+

@@ -1,0 +1,20 @@
+{
+  "checked_on": "2026-10-15",
+  "phase": "planning only",
+  "markdown_documents_checked": 21,
+  "broken_local_links": [],
+  "unique_requirements": 42,
+  "unique_acceptance_scenarios": 42,
+  "requirement_and_acceptance_references_valid": true,
+  "dns_readonly_comparison": "9 comparable service records match; 7 mail and 2 CNAME",
+  "zone": "active",
+  "dnssec": "pending; user has not added DS at GoDaddy",
+  "source_export_hash_matches": true,
+  "raw_account_artifacts_ignored": true,
+  "source_completion_plan_written": true,
+  "accepted_authenticated_explee_states": 0,
+  "application_build_started": false,
+  "application_dnssec_mail_acceptance_tests_executed": 0,
+  "external_mutations_performed": false,
+  "review": "Local structural consistency check; not independent review or runtime acceptance"
+}

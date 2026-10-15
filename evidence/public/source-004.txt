@@ -1,0 +1,1061 @@
+Source ID: EX-PUB-004
+Primary URL: https://api.explee.com/public/api/docs
+Classification: official_public_api_documentation
+Coverage: selective_line_numbered_page_views
+Tool: mcp__codex_apps__search_service_web_run
+These are complete connector-returned views, not a full-page guarantee.
+
+Response ID: PUB-004
+Retrieved at UTC: 2026-10-14 10:01:01 UTC
+Explee Public API (https://api.explee.com/public/api/docs)
+【turn655156search0】 [wordlim: 200] Crawled: today; You can still SET the briefs when you create a campaign — `POST /public/api/v1/autogtm/campaigns/import` takes `instructions`, `followup_instructions` and `language`. ... ### `GET` /public/api/v1/autogtm/campaigns/{campaign_id}/inbox/{person_id}/note
+# Explee Public API
+
+Version: 1.0.0
+
+> Tip: This documentation is designed for humans. To integrate with AI agents, provide them with the OpenAPI schema at https://api.explee.com/public/api/openapi.json instead. &nbsp; Search millions of companies worldwide using natural language queries and structured filters! Rate limit: 10000 requests per hour, 150 concurrent requests per organization. Timeout: 90s.
+
+## Authentication
+
+ApiKeyAuth: apiKey - Get your API key at [API Keys](https://explee.com/app-auto-gtm/api-keys)
+
+## Endpoints
+
+### `POST` /public/api/v1/search/companies
+
+Companies
+
+Search for companies using structured definitions. ## How It Works Provide a structured definition of your target companies in the `definition` field — our AI will find matching companies. All other filters are optional. See the request schema below for the full list of available filters. **Definition examples:** - `"YouTube video summarization tool"` - `"electronic signature platform"` - `"AI B2B SaaS"` - `"real estate company"` ## AI Enrichment Use the `criteria` parameter to score companies against custom criteria. 
+
+Response ID: PUB-005
+Retrieved at UTC: 2026-10-14 10:01:28 UTC
+Explee Public API (https://api.explee.com/public/api/docs)
+【turn456656view2】 [wordlim: 200] Crawled: today; Content type: text/html; Source: open({"ref_id":"https://api.explee.com/public/api/docs","lineno":null}); Total lines: 1055
+L0: # Explee Public API
+L1: 
+L2: Version: 1.0.0
+L3: 
+L4: > Tip: This documentation is designed for humans. To integrate with AI agents, provide them with the OpenAPI schema at https://api.explee.com/public/api/openapi.json instead. &nbsp; Search millions of companies worldwide using natural language queries and structured filters! Rate limit: 10000 requests per hour, 150 concurrent requests per organization. Timeout: 90s.
+L5: ## Authentication
+L6: 
+L7: ApiKeyAuth: apiKey - Get your API key at [API Keys](https://explee.com/app-auto-gtm/api-keys)
+L8: 
+L9: ## Endpoints
+L10: ### `POST` /public/api/v1/search/companies
+L11: 
+L12: Companies
+L13: Search for companies using structured definitions. ## How It Works Provide a structured definition of your target companies in the `definition` field — our AI will find matching companies. All other filters are optional. See the request schema below for the full list of available filters.
+L14: **Definition examples:** - `"YouTube video summarization tool"` - `"electronic signature platform"` - `"AI B2B SaaS"` - `"real estate company"` ## AI Enrichment Use the `criteria` parameter to score companies against custom criteria. Each company will be evaluated and scored (0-5) with reasoning for each criterion.
+L15: ## Pricing - **First 10 results are free** (including AI enrichment) - A **positive credit balance is required for every request**, free results included (an organization at 0 credits gets a 402) - Entirely-free requests are limited per organization by plan: **free 50/day + 10/min · starter 200/day + 15/min · growth 500/day + 20/min · pro 750/day + 25/min · agency 1500/day + 30/min · enterprise 3000/day + 30/min** (429 beyond); billable requests are not affected - **0.5 credits** per company after the first 10 - **+0.1 credits** per company per criterion after the first 10 Example: 150 companies with 2 criteria = 50 billable × (0.5 + 0.1 × 2) = 35 credits (first 10 are free) Empty results = 0 credits.
+L16: ## Deduplication Pass dedup list ids in `exclude_lists` to skip companies you already own — they are not returned and not charged. Free results zone does not apply. See the Deduplication endpoints.
+L17: #### Request Body
+L18: 
+L19: Request body required
+L20: #### Responses
+L21:   * `200`: Successful Response
+L22:   * `401`: Invalid or missing API key. Include `X-API-Key` header.
+L23:   * `402`: Insufficient credit balance. Every request needs a positive balance, including requests that fall entirely inside the free results zone. Top up your account.
+L24:   * `422`: Validation error. Check request body and parameters.
+L25:   * `429`: Rate limit exceeded (10000/hour), concurrent limit reached (150 per organization), or free preview quota exceeded (search requests entirely within the free results zone; the quota depends on your plan).
+L26:   * `500`: Internal server error. Contact support if persists.
+L27:   * `504`: Request timeout. Please try again later.
+L28: ### `POST` /public/api/v1/search/companies-by-domains
+L29: 
+L30: Companies by Domains
+L31: Find companies by their domains. **How it works:** 1. Provide a list of company domains (up to 1000) 2.
+L32: The system looks up each domain and returns **at most one** company profile per domain (the best match by quality score) **Pricing:** - **0.5 credit(s)** per company found - **0 credits** for domains not found **Limits:** - Maximum 1000 domains per request - Maximum 10000 companies per response **Deduplication:** - Pass dedup list ids in `exclude_lists` — matched companies are not returned and not charged
+L33: #### Request Body
+L34: 
+L35: Request body required
+L36: #### Responses
+L37:   * `200`: Successful Response
+L38:   * `401`: Invalid or missing API key. Include `X-API-Key` header.
+L39:   * `402`: Insufficient credit balance. Every request needs a positive balance, including requests that fall entirely inside the free results zone. Top up your account.
+L40:   * `422`: Validation error. Check request body and parameters.
+L41:   * `429`: Rate limit exceeded (10000/hour), concurrent limit reached (150 per organization), or free preview quota exceeded (search requests entirely within the free results zone; the quota depends on your plan).
+L42:   * `500`: Internal server error. Contact support if persists.
+L43:   * `504`: Request timeout. Please try again later.
+L44: ### `POST` /public/api/v1/search/people
+L45: 
+L46: People
+L47: Search for people (employees) at companies matching your criteria. ## How It Works Provide `job_titles` in `people_filters` to find people by their role. Use `company_filters.definition` to narrow down which companies to search. Use `company_linkedin_ids` to restrict results to a specific list of company LinkedIn IDs.
+L48: **Job title examples:** - `["Head of Sales", "VP Sales"]` - `["CTO", "VP Engineering"]` - `["Founder", "CEO"]` ## AI Enrichment Use the `criteria` parameter in `people_filters` to score people against custom criteria. Each person will be evaluated and scored (0-5) with reasoning for each criterion.
+L49: ## Pricing - **First 10 results are free** (including AI enrichment) - A **positive credit balance is required for every request**, free results included (an organization at 0 credits gets a 402) - Entirely-free requests are limited per organization by plan: **free 50/day + 10/min · starter 200/day + 15/min · growth 500/day + 20/min · pro 750/day + 25/min · agency 1500/day + 30/min · enterprise 3000/day + 30/min** (429 beyond); billable requests are not affected - **1.0 credit** per person after the first 10 - **+0.1 credits** per person per criterion after the first 10 Example: 150 people with 2 criteria = 50 billable × (1.0 + 0.1 × 2) = 60 credits (first 10 are free) Empty results = 0 credits.
+L50: ## Deduplication Pass dedup list ids in `exclude_lists` to skip people you already own — they are not returned and not charged. A companies list excludes everyone at its domains. Free results zone does not apply. See the Deduplication endpoints.
+L51: #### Request Body
+L52: 
+L53: Request body required
+L54: #### Responses
+L55:   * `200`: Successful Response
+L56:   * `401`: Invalid or missing API key. Include `X-API-Key` header.
+L57:   * `402`: Insufficient credit balance. Every request needs a positive balance, including requests that fall entirely inside the free results zone. Top up your account.
+L58:   * `422`: Validation error. Check request body and parameters.
+L59:   * `429`: Rate limit exceeded (10000/hour), concurrent limit reached (150 per organization), or free preview quota exceeded (search requests entirely within the free results zone; the quota depends on your plan).
+L60:   * `500`: Internal server error. Contact support if persists.
+L61:   * `504`: Request timeout. Please try again later.
+L62: ### `POST` /public/api/v1/search/people-by-domains
+L63: 
+L64: People by Domains
+L65: Find people at companies by their domains. **How it works:** 1. Provide a list of company domains (up to 1000) and job titles to search for 2. The system finds companies by domains 3. Returns up to `people_per_company` people per found company with matching job titles **Job title matching:** - Uses semantic search: "Head of Sales" will match "VP Sales", "Sales Director", etc.
+L66: - Multiple job titles are combined with OR logic **Parameters:** - `people_per_company`: Number of people to return per company (1-1000, default: 1) **Limits:** - Maximum 1000 domains per request - Maximum 20 job titles per request - Maximum 1000 people per company - Maximum 10000 people per response (total) **Billing:** - 1 credit per person returned **Deduplication:** - Pass dedup list ids in `exclude_lists` — matched people are not returned and not charged
+L67: #### Request Body
+L68: 
+L69: Request body required
+L70: #### Responses
+L71:   * `200`: Successful Response
+L72:   * `401`: Invalid or missing API key. Include `X-API-Key` header.
+L73:   * `402`: Insufficient credit balance. Every request needs a positive balance, including requests that fall entirely inside the free results zone. Top up your account.
+L74:   * `422`: Validation error. Check request body and parameters.
+L75:   * `429`: Rate limit exceeded (10000/hour), concurrent limit reached (150 per organization), or free preview quota exceeded (search requests entirely within the free results zone; the quota depends on your plan).
+L76:   * `500`: Internal server error. Contact support if persists.
+L77:   * `504`: Request timeout. Please try again later.
+L78: ### `POST` /public/api/v1/search/nl-to-filters
+L79: 
+L80: NL to Filters
+L81: Convert a free-form natural language query into structured filters for companies and people search.
+L82: ## How It Works Send any query in plain English (or another language), for example: - `"SaaS companies using Stripe"` - `"Founders of AI startups in Germany"` - `"B2B fintech companies in US and Canada"` The endpoint returns parsed filters in the same shape used by search endpoints: - `companies_filters` - `people_filters` - `focus` (`companies` or `people`) This endpoint does not perform a search and does not charge credits.
+L83: #### Request Body
+L84: 
+L85: Request body required
+L86: #### Responses
+L87:   * `200`: Successful Response
+L88:   * `401`: Invalid or missing API key. Include `X-API-Key` header.
+L89:   * `402`: Insufficient credit balance. Every request needs a positive balance, including requests that fall entirely inside the free results zone. Top up your account.
+L90:   * `422`: Validation error. Check request body and parameters.
+L91:   * `429`: Rate limit exceeded (10000/hour), concurrent limit reached (150 per organization), or free preview quota exceeded (search requests entirely within the free results zone; the quota depends on your plan).
+L92:   * `500`: Internal server error. Contact support if persists.
+L93:   * `504`: Request timeout. Please try again later.
+L94: ### `POST` /public/api/v1/enrich/email
+L95: 
+L96: Find email by name
+L97: Find email address for a single person. ## How It Works Provide the person's first name, last name, and company domain. ## Presets | Preset | Cost | Success Rate | Description | |--------|------|--------------|-------------| | **basic** | 1.5 credits | ~50% | Single provider, pattern-based lookup. Fast and cheap. | | **premium** | 5.0 credits | ~78% | 6 providers with cross-validation. Higher accuracy. | ## Pricing You are only charged when an email is found. Email not found = 0 credits.
+L98: #### Request Body
+L99: 
+L100: Request body required
+L101: #### Responses
+L102:   * `200`: Successful Response
+L103:   * `401`: Invalid or missing API key. Include `X-API-Key` header.
+L104:   * `402`: Insufficient credit balance. Every request needs a positive balance, including requests that fall entirely inside the free results zone. Top up your account.
+L105:   * `422`: Validation error. Check request body and parameters.
+L106:   * `429`: Rate limit exceeded (10000/hour), concurrent limit reached (150 per organization), or free preview quota exceeded (search requests entirely within the free results zone; the quota depends on your plan).
+L107:   * `500`: Internal server error. Contact support if persists.
+L108:   * `504`: Request timeout. Please try again later.
+L109: ### `POST` /public/api/v1/enrich/phone
+L110: 
+L111: Find phone by LinkedIn URL
+L112: Find the work phone number for a single person. ## How It Works Provide the person's LinkedIn profile URL (`linkedin_url`) and we'll find their work phone. You can also pass a known `email` if you have one. ## Presets | Preset | Cost | Success Rate | Description | |--------|------|--------------|-------------| | **basic_new** | 15.0 credits | ~45% | Faster, lower-cost lookup. | | **premium** | 30.0 credits | ~60% | Broader, multi-source lookup. Higher hit rate.
+L113: | ## Pricing You are only charged when a phone is found. Phone not found = 0 credits.
+L114: #### Request Body
+L115: 
+L116: Request body required
+L117: #### Responses
+L118:   * `200`: Successful Response
+L119:   * `401`: Invalid or missing API key. Include `X-API-Key` header.
+L120:   * `402`: Insufficient credit balance. Every request needs a positive balance, including requests that fall entirely inside the free results zone. Top up your account.
+L121:   * `422`: Validation error. Check request body and parameters.
+L122:   * `429`: Rate limit exceeded (10000/hour), concurrent limit reached (150 per organization), or free preview quota exceeded (search requests entirely within the free results zone; the quota depends on your plan).
+L123:   * `500`: Internal server error. Contact support if persists.
+L124:   * `504`: Request timeout. Please try again later.
+L125: ### `POST` /public/api/v1/enrich/email/batch
+L126: 
+L127: Find email by name (batch request)
+L128: Find email addresses for multiple contacts in one request (async). **How it works:** 1. Submit up to 100 contacts with first_name, last_name, company_domain 2. Receive a `task_id` immediately 3. Poll GET endpoint with `task_id` to check status and retrieve results **Limits:** - Maximum 100 contacts per batch **Pricing:** - **basic**: 1.5 credits per found email - **premium**: 5 credits per found email - Only charged for emails found (not found = 0 credits)
+L129: #### Request Body
+L130: 
+L131: Request body required
+L132: #### Responses
+L133:   * `200`: Successful Response
+L134:   * `401`: Invalid or missing API key. Include `X-API-Key` header.
+L135:   * `402`: Insufficient credit balance. Every request needs a positive balance, including requests that fall entirely inside the free results zone. Top up your account.
+L136:   * `422`: Validation error. Check request body and parameters.
+L137:   * `429`: Rate limit exceeded (10000/hour), concurrent limit reached (150 per organization), or free preview quota exceeded (search requests entirely within the free results zone; the quota depends on your plan).
+L138:   * `500`: Internal server error. Contact support if persists.
+L139:   * `504`: Request timeout. Please try again later.
+L140: ### `GET` /public/api/v1/enrich/email/batch/{task_id}
+L141: 
+L142: Find email by name (batch results)
+L143: Check status and retrieve results for a batch request.
+L144: **Statuses (in meta.status):** - `pending` — processing in progress, poll again in a few seconds - `completed` — results ready, `contacts` array contains enriched data - `failed` — error occurred, see `meta.error` for details **Response structure:** - `contacts` — null while pending, array when completed - `meta.status` — current processing status - `meta.error` — error description (null if no error) - `meta.credits_charged` — credits used (only charged for found emails) **Typical workflow:** 1.
+L145: POST to submit batch, get `task_id` 2. GET with `task_id`, check `meta.status` 3. If `pending`, wait 2-5 seconds and poll again 4. When `completed`, read `contacts` array
+L146: #### Parameters
+L147: 
+L148:   * `task_id` (path, required): Task ID returned from POST request
+L149: #### Responses
+L150:   * `200`: Successful Response
+L151:   * `401`: Invalid or missing API key. Include `X-API-Key` header.
+L152:   * `402`: Insufficient credit balance. Every request needs a positive balance, including requests that fall entirely inside the free results zone. Top up your account.
+L153:   * `422`: Validation error. Check request body and parameters.
+L154:   * `429`: Rate limit exceeded (10000/hour), concurrent limit reached (150 per organization), or free preview quota exceeded (search requests entirely within the free results zone; the quota depends on your plan).
+L155:   * `500`: Internal server error. Contact support if persists.
+L156:   * `504`: Request timeout. Please try again later.
+L157:   * `404`: Batch not found
+L158: ### `POST` /public/api/v1/find-and-enrich
+L159: 
+L160: Find people and enrich their emails (async)
+L161: Search for people matching your filters and enrich their emails in a single async job. **How it works:** 1. Submit search filters + `max_contacts` (how many contacts with emails you want, max 500 per call) 2. Receive a `task_id` immediately 3. Poll the GET endpoint with `task_id` for `progress` (with `eta_seconds`) and results 4. For more than `max_contacts`, call again with the previous response's `next_cursor` **Pricing:** - **Search is free** — you are never charged for people searched.
+L162: - **basic**: 1.5 credits per found email · **premium**: 5 credits per found email. - You are charged ONLY for emails actually found. Worst-case credits are held up front (402 if insufficient). **Deduplication:** pass `exclude_lists` to skip people you already own — they are not enriched and not charged. A companies list skips everyone at its domains.
+L163: #### Request Body
+L164: 
+L165: Request body required
+L166: #### Responses
+L167:   * `200`: Successful Response
+L168:   * `401`: Invalid or missing API key. Include `X-API-Key` header.
+L169:   * `402`: Insufficient credit balance. Every request needs a positive balance, including requests that fall entirely inside the free results zone. Top up your account.
+L170:   * `422`: Validation error. Check request body and parameters.
+L171:   * `429`: Rate limit exceeded (10000/hour), concurrent limit reached (150 per organization), or free preview quota exceeded (search requests entirely within the free results zone; the quota depends on your plan).
+L172:   * `500`: Internal server error. Contact support if persists.
+L173:   * `504`: Request timeout. Please try again later.
+L174: ### `GET` /public/api/v1/find-and-enrich/{task_id}
+L175: 
+L176: Find-and-enrich job status and results
+L177: Check progress and retrieve results for a find-and-enrich job. **Statuses (in meta.status):** - `pending` — running; read `meta.progress` (incl. `eta_seconds`) and poll again - `completed` — results ready; `contacts` holds the enriched contacts, `meta.next_cursor`/`meta.has_more` for paging - `failed` — error occurred (or timed out — credits released), see `meta.error` Only contacts with a found email are returned. `meta.credits_charged` reflects found emails only.
+L178: #### Parameters
+L179: 
+L180:   * `task_id` (path, required): Task ID returned from POST request
+L181: #### Responses
+L182:   * `200`: Successful Response
+L183:   * `401`: Invalid or missing API key. Include `X-API-Key` header.
+L184:   * `402`: Insufficient credit balance. Every request needs a positive balance, including requests that fall entirely inside the free results zone. Top up your account.
+L185:   * `422`: Validation error. Check request body and parameters.
+L186:   * `429`: Rate limit exceeded (10000/hour), concurrent limit reached (150 per organization), or free preview quota exceeded (search requests entirely within the free results zone; the quota depends on your plan).
+L187:   * `500`: Internal server error. Contact support if persists.
+L188:   * `504`: Request timeout. Please try again later.
+L189:   * `404`: Job not found
+L190: ### `GET` /public/api/v1/tasks
+L191: 
+L192: List async tasks
+L193: List all async tasks for your organization, including find-and-enrich jobs, batch email enrichments, and campaign lead imports. **Use cases:** - Track async jobs across every API key owned by the same organization - Find task IDs you may have lost - Monitor pending vs completed tasks **Response:** - `tasks` — array of task objects with status and result URL - `total` — total count for pagination **Filtering:** - Use `status` parameter to filter by task status (pending, completed, failed)
+L194: #### Parameters
+L195: 
+L196:   * `status` (query, optional): Filter by task status
+L197:   * `limit` (query, optional): Maximum number of tasks to return
+L198:   * `offset` (query, optional): Number of tasks to skip (for pagination)
+L199: 
+L200: #### Responses
+L201: 
+L202:   * `200`: Successful Response
+L203:   * `422`: Validation Error
+L204: ### `GET` /public/api/v1/agents
+L205: 
+L206: List Explee agents
+L207: 
+L208: Returns all pre-built Explee agents. Each agent has a fixed system prompt, input/output schema, and search strategy. Use the agent `id` with the "Run Explee agent" endpoint.
+L209: #### Responses
+L210:   * `200`: Successful Response
+L211:   * `401`: Invalid or missing API key. Include `X-API-Key` header.
+L212:   * `402`: Insufficient credit balance. Every request needs a positive balance, including requests that fall entirely inside the free results zone. Top up your account.
+L213:   * `422`: Validation error. Check request body and parameters.
+L214:   * `429`: Rate limit exceeded (10000/hour), concurrent limit reached (150 per organization), or free preview quota exceeded (search requests entirely within the free results zone; the quota depends on your plan).
+L215:   * `500`: Internal server error. Contact support if persists.
+L216:   * `504`: Request timeout. Please try again later.
+L217: ### `POST` /public/api/v1/agents/{agent_id}/runs
+L218: 
+L219: Run Explee agent
+L220: 
+L221: Run a pre-built Explee agent by its ID. Explee agents come with a tuned system prompt, search strategy, and output schema — you only provide the input data. Use `GET /public/api/v1/agents` to browse available agents and their expected input schemas. **Cost**: 1 credit per run.
+L222: 
+L223: #### Parameters
+L224: 
+L225:   * `agent_id` (path, required)
+L226: 
+L227: #### Request Body
+L228: 
+L229: Request body required
+L230: #### Responses
+L231:   * `200`: Successful Response
+L232:   * `401`: Invalid or missing API key. Include `X-API-Key` header.
+
+
+Response ID: PUB-007
+Retrieved at UTC: 2026-10-14 10:01:53 UTC
+Explee Public API (https://api.explee.com/public/api/docs)
+【turn778799view2】 [wordlim: 200] Crawled: today; Content type: text/html; Source: find({"ref_id":"turn456656view2","pattern":"autogtm/projects"}); Total lines: 1055
+L286: ### `GET` /public/api/v1/autogtm/projects
+L287: 
+L288: List outreach projects
+L289: List the outreach projects owned by your organization. Authenticated by the same `X-API-Key` as the rest of this API — the key resolves to your organization, and its active projects are returned newest first. **Response:** - `projects` — active projects with `id`, `domain` (the project's identity in the app), and `daily_budget_usd` (the project-wide daily budget anchor, `null` when not set). - `total` — number of projects returned.
+L290: Use a project `id` to filter the campaigns list (`GET /public/api/v1/autogtm/campaigns?project_id=…`).
+L291: #### Responses
+L292:   * `200`: Successful Response
+L293:   * `401`: Invalid or missing API key. Include `X-API-Key` header.
+L294:   * `402`: Insufficient credit balance. Every request needs a positive balance, including requests that fall entirely inside the free results zone. Top up your account.
+L295:   * `422`: Validation error. Check request body and parameters.
+L296:   * `429`: Rate limit exceeded (10000/hour), concurrent limit reached (150 per organization), or free preview quota exceeded (search requests entirely within the free results zone; the quota depends on your plan).
+L297:   * `500`: Internal server error. Contact support if persists.
+L298:   * `504`: Request timeout. Please try again later.
+L299: ### `GET` /public/api/v1/autogtm/campaigns
+L300: 
+L301: List outreach campaigns
+L302: List the outreach campaigns owned by your organization. Authenticated by the same `X-API-Key` as the rest of this API — the key resolves to your organization, and campaigns are returned across all of its projects. Pass `project_id` (see `GET /public/api/v1/autogtm/projects`) to get one project's campaigns only. **Response:** - `campaigns` — non-archived campaigns with `id`, `project_id`, `name`, `target_url`, `daily_limit_usd`, and lifecycle `status`. - `total` — number of campaigns returned.
+L303: Use a campaign `id` to scope follow-up management calls (inbox replies, budget, start/stop, analytics).
+L304: #### Parameters
+L305: 
+L306:   * `project_id` (query, optional): Return only this project's campaigns (see `GET /public/api/v1/autogtm/projects`).
+L307: #### Responses
+L308:   * `200`: Successful Response
+L309:   * `401`: Invalid or missing API key. Include `X-API-Key` header.
+L310:   * `402`: Insufficient credit balance. Every request needs a positive balance, including requests that fall entirely inside the free results zone. Top up your account.
+L311:   * `422`: Validation error. Check request body and parameters.
+L312:   * `429`: Rate limit exceeded (10000/hour), concurrent limit reached (150 per organization), or free preview quota exceeded (search requests entirely within the free results zone; the quota depends on your plan).
+L313:   * `500`: Internal server error. Contact support if persists.
+L314:   * `504`: Request timeout. Please try again later.
+L315:   * `404`: Unknown `project_id` (or not your project).
+L316: ### `POST` /public/api/v1/autogtm/campaigns
+L317: 
+L318: Create campaign
+L319: Create a campaign that Explee finds the leads for — the app's **New campaign** button. Only `project_id` and `name` are required. Explee drafts every targeting field you leave out (offer, customer problem, criteria, example clients) from the name and your project; a field you send replaces the draft (`[]` means "none"). Search `keywords` are always drafted from the name. Geography and company size default to the project's. Not idempotent: each call creates a new campaign.
+L601: ### `GET` /public/api/v1/autogtm/projects/{project_id}/budget
+L602: 
+L603: Get project daily budget
+L604: 
+L605: Read the project's total daily outreach budget (the anchor the dashboard slider sets). Per-campaign allocations are derived from this number automatically — see `daily_limit_usd` on each campaign in `GET /autogtm/campaigns`.
+L606: 
+L607: #### Parameters
+L608: 
+L609:   * `project_id` (path, required)
+L615:   * `429`: Rate limit exceeded (10000/hour), concurrent limit reached (150 per organization), or free preview quota exceeded (search requests entirely within the free results zone; the quota depends on your plan).
+L616:   * `500`: Internal server error. Contact support if persists.
+L617:   * `504`: Request timeout. Please try again later.
+L618:   * `404`: Project not found or not owned by your organization.
+L619: ### `PATCH` /public/api/v1/autogtm/projects/{project_id}/budget
+L620: 
+L621: Set project daily budget
+L622: 
+L623: Set the project's total daily outreach budget. The change is spread across the project's active campaigns proportionally — exactly what the dashboard slider does. **`0` pauses all sending** while keeping campaigns configured (the explicit off switch): the sending campaigns park at once, as with the app's Stop. Range `0`–`300`, the slider's range.
+L624: 
+L625: #### Parameters
+L626: 
+L627:   * `project_id` (path, required)
+L717: ### `GET` /public/api/v1/autogtm/projects/{project_id}/analytics
+L718: 
+L719: Project analytics
+L720: 
+L721: Project-level performance for a period: the aggregate totals (emails, replies, reply rate, hot leads, spend) plus the per-campaign breakdown — exactly what the Explee dashboard shows for a project. Both the totals and the per-campaign rows cover the requested `period`.
+L722: 
+L723: #### Parameters
+L724: 
+L725:   * `project_id` (path, required)
+L726:   * `period` (query, optional): Aggregation window.
+L873: ### `GET` /public/api/v1/autogtm/projects/{project_id}/autopilot
+L874: 
+L875: Get autopilot settings
+L876: 
+L877: Read the project's autopilot and auto-reply settings. - `autopilot_enabled` — the Explee autopilot agent. While ON it manages campaigns and the per-campaign budget split (per-campaign budget edits return 409); turn it OFF to control budgets yourself. - `auto_reply_enabled` / `auto_reply_delay_minutes` — AI auto-reply behaviour. - `reply_cc_emails` — project defaults added to CC on every manual or automatic reply.
+L890: ### `PATCH` /public/api/v1/autogtm/projects/{project_id}/autopilot
+L891: 
+L892: Set autopilot settings
+L893: 
+L894: Update the project's autopilot / auto-reply settings. Send only the fields you want to change — at least one is required. Turning `autopilot_enabled` **off** hands per-campaign budgets back to you (`PATCH …/campaigns/{id}/budget` stops returning 409); turning it **on** makes them agent-managed again.
+L895: 
+L896: #### Parameters
+L897: 
+L898:   * `project_id` (path, required)
+L899: 
+L900: #### Request Body
+L901: 
+L902: Request body required
+
+
+Response ID: PUB-007
+Retrieved at UTC: 2026-10-14 10:01:53 UTC
+Explee Public API (https://api.explee.com/public/api/docs)
+【turn778799view3】 [wordlim: 200] Crawled: today; Content type: text/html; Source: find({"ref_id":"turn456656view2","pattern":"campaigns/import"}); Total lines: 1055
+L360: Budget has `PATCH /public/api/v1/autogtm/campaigns/{campaign_id}/budget`, status has `start` / `stop`. You can still SET the briefs when you create a campaign — `POST /public/api/v1/autogtm/campaigns/import` takes `instructions`, `followup_instructions` and `language`.
+L388:   * `200`: Successful Response
+L389:   * `401`: Invalid or missing API key. Include `X-API-Key` header.
+L390:   * `402`: Insufficient credit balance. Every request needs a positive balance, including requests that fall entirely inside the free results zone. Top up your account.
+L391:   * `422`: Validation error. Check request body and parameters.
+L392:   * `429`: Rate limit exceeded (10000/hour), concurrent limit reached (150 per organization), or free preview quota exceeded (search requests entirely within the free results zone; the quota depends on your plan).
+L393:   * `500`: Internal server error. Contact support if persists.
+L394:   * `504`: Request timeout. Please try again later.
+L395:   * `404`: Campaign not found or not owned by your organization.
+L396:   * `409`: The campaign is not in `review`, or its project is paused.
+L397: ### `POST` /public/api/v1/autogtm/campaigns/import
+L398: 
+L399: Create a campaign from your own leads (import)
+L400: Create a new campaign from your own lead list (async). Each call creates a **new** campaign in the given project — the campaign is built for your leads only (no agent lead discovery) and starts sending automatically once live, within your project budget. **How it works:** 1. Submit `project_id`, a campaign `name`, and up to 30,000 `leads` 2. Receive a `task_id` immediately 3. Poll `GET /public/api/v1/autogtm/campaigns/import/{task_id}` until `completed` 4.
+L401: `result.campaign_id` is your new campaign — it appears in the campaigns list **Per lead** — mandatory: `email`, `first_name`, `last_name`, `company_domain`, `job_title`; recommended: `linkedin_url` (enriches the lead from Explee's contact base for a richer email). Leads missing mandatory fields are skipped (reported in the result), never a request-level error. Duplicates of leads already contacted in the project and do-not-contact entries are dropped.
+L402: **Your copy brief** — optional `instructions` (first email), `followup_instructions` (all follow-ups) and `language`: the same brief you would type in the app's email editor, set here at import time so no manual step is needed. Omit them and the campaign is briefed from your project description alone. **Pricing:** the import itself is free. Emails are verified at send time at Explee's cost; sending is billed as usual.
+L403: #### Request Body
+L404: 
+L405: Request body required
+L406: #### Responses
+L407:   * `200`: Successful Response
+L408:   * `401`: Invalid or missing API key. Include `X-API-Key` header.
+L409:   * `402`: Insufficient credit balance. Every request needs a positive balance, including requests that fall entirely inside the free results zone. Top up your account.
+L410:   * `422`: Validation error. Check request body and parameters.
+L411:   * `429`: Too many pending imports.
+L412:   * `500`: Internal server error. Contact support if persists.
+L413:   * `504`: Request timeout. Please try again later.
+L414:   * `404`: Unknown `project_id` (or not your project).
+L415: ### `GET` /public/api/v1/autogtm/campaigns/import/{task_id}
+L416: 
+L417: Campaign import status/result
+L418: 
+L419: Check status and retrieve the result of a campaign import. **Statuses:** - `pending` — import in progress; `progress` shows the current stage. Poll every few seconds. - `completed` — done; `result.campaign_id` is the new campaign (or `null` if no leads survived validation/dedup — then no campaign was created). - `failed` — see `error`.
+L420: #### Parameters
+L421: 
+L422:   * `task_id` (path, required): Task ID returned from the import POST.
+L423: #### Responses
+L424:   * `200`: Successful Response
+L425:   * `401`: Invalid or missing API key. Include `X-API-Key` header.
+L426:   * `402`: Insufficient credit balance. Every request needs a positive balance, including requests that fall entirely inside the free results zone. Top up your account.
+L427:   * `422`: Validation error. Check request body and parameters.
+
+
+Response ID: PUB-007
+Retrieved at UTC: 2026-10-14 10:01:53 UTC
+Explee Public API (https://api.explee.com/public/api/docs)
+【turn778799view4】 [wordlim: 200] Crawled: today; Content type: text/html; Source: find({"ref_id":"turn456656view2","pattern":"inbox"}); Total lines: 1055
+L303: Use a campaign `id` to scope follow-up management calls (inbox replies, budget, start/stop, analytics).
+L435: Every **hot lead** across your organization — people who replied to your outreach with real interest — newest first, as enriched contacts ready to map into CRM fields. **Polling:** pass `since` (ISO 8601) with your last poll time to get only leads that went hot after it — the Zapier/Make pattern. `became_hot_at` of the newest item is your next cursor. A lead leaves the feed when you dismiss it in the inbox («Not a hot lead») or when it later unsubscribes.
+L436: To read the full conversation or answer: `GET /autogtm/campaigns/{campaign_id}/inbox/{person_id}` and `…/reply`.
+L437: #### Parameters
+L438: 
+L439:   * `campaign_id` (query, optional): Only this campaign. Omit for the whole organization.
+L440:   * `since` (query, optional): Only leads that became hot at/after this time (ISO 8601). Use for polling.
+L441:   * `limit` (query, optional): Page size.
+L442:   * `offset` (query, optional): Pagination offset.
+L443: #### Responses
+L444:   * `200`: Successful Response
+L445:   * `401`: Invalid or missing API key. Include `X-API-Key` header.
+L446:   * `402`: Insufficient credit balance. Every request needs a positive balance, including requests that fall entirely inside the free results zone. Top up your account.
+L447:   * `422`: Validation error. Check request body and parameters.
+L448:   * `429`: Rate limit exceeded (10000/hour), concurrent limit reached (150 per organization), or free preview quota exceeded (search requests entirely within the free results zone; the quota depends on your plan).
+L449:   * `500`: Internal server error. Contact support if persists.
+L450:   * `504`: Request timeout. Please try again later.
+L451:   * `404`: `campaign_id` not found or not owned by your organization.
+L452: ### `GET` /public/api/v1/autogtm/campaigns/{campaign_id}/inbox
+L453: 
+L454: List inbox conversations
+L455: 
+L456: List the campaign's conversations (contacted people), most recent first. **Tabs:** `need_reply` — replies awaiting a human answer (start here), `replied` — everyone who replied, `sent` — everyone contacted. Omit for the full universe.
+L457: #### Parameters
+L458: 
+L459:   * `campaign_id` (path, required)
+L460:   * `tab` (query, optional): Filter: `need_reply`, `replied` or `sent`. Omit for all.
+L461:   * `limit` (query, optional): Page size.
+L462:   * `offset` (query, optional): Pagination offset.
+L463: #### Responses
+L464:   * `200`: Successful Response
+L465:   * `401`: Invalid or missing API key. Include `X-API-Key` header.
+L466:   * `402`: Insufficient credit balance. Every request needs a positive balance, including requests that fall entirely inside the free results zone. Top up your account.
+L467:   * `422`: Validation error. Check request body and parameters.
+L468:   * `429`: Rate limit exceeded (10000/hour), concurrent limit reached (150 per organization), or free preview quota exceeded (search requests entirely within the free results zone; the quota depends on your plan).
+L469:   * `500`: Internal server error. Contact support if persists.
+L470:   * `504`: Request timeout. Please try again later.
+L471:   * `404`: Campaign not found or not owned by your organization.
+L472: ### `GET` /public/api/v1/autogtm/campaigns/{campaign_id}/inbox/{person_id}
+L473: 
+L474: Read a conversation thread
+L475: 
+L476: The full conversation with one contact: our outbound emails and their replies, in order, plus the reply gate (`can_reply`). Every message carries its `cc` addresses and the metadata of its `attachments` (name, type, size). To answer, POST to `/reply` with just your message text.
+L477: 
+L478: #### Parameters
+L479: 
+L480:   * `campaign_id` (path, required)
+L481:   * `person_id` (path, required)
+L483:   * `200`: Successful Response
+L491: ### `GET` /public/api/v1/autogtm/campaigns/{campaign_id}/inbox/{person_id}/attachments/{attachment_id}
+L492: 
+L493: Download an attachment
+L494: 
+L495: Get a download link for a file attached to a message in this conversation — one the lead sent you or one you sent. Take `attachment_id` from `messages[].attachments[].id` of the thread. Returns `url`, a signed link to the file valid for 5 minutes (`expires_at`): fetch it with a plain GET, no API key. A file listed with `stored: false` was received but could not be stored — `410`.
+L514: Upload a file to attach to a reply in this campaign. Send it as `multipart/form-data` with the field `file`, then pass the returned `id` in `attachment_ids` of `…/inbox/{person_id}/reply`. **Limits:** up to 25 MB per file; PDF, PNG, JPEG, GIF, WebP, DOCX, PPTX, XLSX, TXT. Every file is checked by the same content moderation as uploads in the app — a refused file is `400` with the reason; if the check is briefly unavailable, `503` (retry).
+L524:   * `200`: Successful Response
+L525:   * `401`: Invalid or missing API key. Include `X-API-Key` header.
+L526:   * `402`: Insufficient credit balance. Every request needs a positive balance, including requests that fall entirely inside the free results zone. Top up your account.
+L527:   * `422`: Validation error. Check request body and parameters.
+L528:   * `429`: More than 200 uploads in the last hour for this API key.
+L529:   * `500`: Internal server error. Contact support if persists.
+L530:   * `504`: Request timeout. Please try again later.
+L531:   * `404`: Campaign not found or not owned by your organization.
+L532:   * `400`: File refused by content moderation, or its type is not allowed.
+L533:   * `413`: File larger than 25 MB.
+L534:   * `503`: Moderation or file storage briefly unavailable — retry.
+L535: ### `POST` /public/api/v1/autogtm/campaigns/{campaign_id}/inbox/{person_id}/reply
+L536: 
+L537: Reply in a thread
+L538: Reply to this contact — send just the message text. You reply to the **lead**, not to an email address: the server resolves the recipient, the subject (`Re: …`) and the threading from the contact's real conversation, so a reply can only ever go back to the person who wrote to you — never to an address you supply. The message goes through the same compliance gate and content moderation as replies sent from the app.
+L539: **Files:** upload each via `POST …/attachments` and pass the ids in `attachment_ids` (up to 10). Allowed only in a thread the lead has replied to. **Cc:** by default the reply keeps the people the lead had on Cc (`reply_all`, only when their latest message is a real conversation — as in the app) plus your campaign's `reply_cc_emails`. Add per-reply addresses in `cc_emails`; set `reply_all: false` to drop the lead's Cc.
+L540: Allowed only for a contact who has **replied** and isn't `unsubscribe` — otherwise `403`. You may send at most three replies per message the lead sent you (`429` if exceeded). The send is recorded under your organization's owner identity (an API key carries no user).
+L541: #### Parameters
+L542: 
+L543:   * `campaign_id` (path, required)
+L544:   * `person_id` (path, required)
+L545: 
+L546: #### Request Body
+L547: 
+L548: Request body required
+L549: #### Responses
+L550:   * `200`: Successful Response
+L551:   * `401`: Invalid or missing API key. Include `X-API-Key` header.
+L552:   * `402`: Insufficient credit balance. Every request needs a positive balance, including requests that fall entirely inside the free results zone. Top up your account.
+L553:   * `422`: Validation error. Check request body and parameters.
+L554:   * `429`: Too many replies to this contact in the last 24h.
+L555:   * `500`: Internal server error. Contact support if persists.
+L556:   * `504`: Request timeout. Please try again later.
+L557:   * `404`: Campaign not found or not owned by your organization.
+L558:   * `403`: Reply blocked: `unsubscribe` thread, or the contact never replied.
+L559: ### `GET` /public/api/v1/autogtm/campaigns/{campaign_id}/inbox/{person_id}/note
+L560: 
+L561: Read the lead note
+L562: 
+L563: The team-shared note on this lead — the same free-text field your team sees and edits in the Explee inbox (Lead info panel). `note` is `null` when no note has been set.
+L564: 
+L565: #### Parameters
+L566: 
+L567:   * `campaign_id` (path, required)
+L568:   * `person_id` (path, required)
+L569: #### Responses
+L570:   * `200`: Successful Response
+L571:   * `401`: Invalid or missing API key. Include `X-API-Key` header.
+L572:   * `402`: Insufficient credit balance. Every request needs a positive balance, including requests that fall entirely inside the free results zone. Top up your account.
+L573:   * `422`: Validation error. Check request body and parameters.
+L578: ### `POST` /public/api/v1/autogtm/campaigns/{campaign_id}/inbox/{person_id}/note
+L579: 
+L580: Set the lead note
+L581: 
+L582: Set (or clear) the lead's team-shared note. The note is one shared text per lead, last-write-wins — a write here replaces what a teammate typed in the app, and vice versa. Pass `{"note": null}` (or an empty string) to clear it.
+L583: 
+L584: #### Parameters
+L585: 
+L586:   * `campaign_id` (path, required)
+L587:   * `person_id` (path, required)
+L588: 
+L589: #### Request Body
+L590: 
+L591: Request body required
+
+
+Response ID: PUB-007
+Retrieved at UTC: 2026-10-14 10:01:53 UTC
+Explee Public API (https://api.explee.com/public/api/docs)
+【turn778799view5】 [wordlim: 200] Crawled: today; Content type: text/html; Source: find({"ref_id":"turn456656view2","pattern":"dedup"}); Total lines: 1055
+L921: #### Responses
+L922: 
+L923:   * `200`: Successful Response
+L924:   * `401`: Invalid or missing API key. Include `X-API-Key` header.
+L925:   * `422`: Validation error. Check request body and parameters.
+L926:   * `429`: Rate limit exceeded (10000/hour), concurrent limit reached (150 per organization), or free preview quota exceeded (search requests entirely within the free results zone; the quota depends on your plan).
+L927:   * `500`: Internal server error. Contact support if persists.
+L928:   * `504`: Request timeout. Please try again later.
+L929: ### `GET` /public/api/v1/dedup/people
+L930: 
+L931: People Lists
+L932: #### Responses
+L933:   * `200`: Successful Response
+L934:   * `401`: Invalid or missing API key. Include `X-API-Key` header.
+L935:   * `402`: Insufficient credit balance. Every request needs a positive balance, including requests that fall entirely inside the free results zone. Top up your account.
+L936:   * `422`: Validation error. Check request body and parameters.
+L937:   * `429`: Rate limit exceeded (10000/hour), concurrent limit reached (150 per organization), or free preview quota exceeded (search requests entirely within the free results zone; the quota depends on your plan).
+L938:   * `500`: Internal server error. Contact support if persists.
+L939:   * `504`: Request timeout. Please try again later.
+L940: ### `POST` /public/api/v1/dedup/people
+L941: 
+L942: Create People List
+L943: Create an immutable list of people you already own. Pass the person objects returned by people search or find-and-enrich in `people`; they are matched by LinkedIn URL, normalized email, or first name + last name + company domain. Existing integrations can keep using the legacy `linkedin_urls` field. Pass the returned id in `exclude_lists` on people search — matched people are not returned and not charged.
+L944: Lists can't be modified: to grow your ledger, create a new list per batch and pass all ids; consolidate periodically. URLs are normalized on write; unparseable values are skipped and reported. **Limits:** 100,000 values per list; per search request: 100 lists, 500,000 values combined.
+L945: #### Request Body
+L946: 
+L947: Request body required
+L948: #### Responses
+L949:   * `200`: Successful Response
+L950:   * `401`: Invalid or missing API key. Include `X-API-Key` header.
+L951:   * `402`: Insufficient credit balance. Every request needs a positive balance, including requests that fall entirely inside the free results zone. Top up your account.
+L952:   * `422`: Validation error. Check request body and parameters.
+L953:   * `429`: Rate limit exceeded (10000/hour), concurrent limit reached (150 per organization), or free preview quota exceeded (search requests entirely within the free results zone; the quota depends on your plan).
+L954:   * `500`: Internal server error. Contact support if persists.
+L955:   * `504`: Request timeout. Please try again later.
+L956: ### `GET` /public/api/v1/dedup/people/{list_id}
+L957: 
+L958: Get People List
+L959: 
+L960: Returns the list metadata and all stored values.
+L961: 
+L962: #### Parameters
+L963: 
+L964:   * `list_id` (path, required): Dedup list id (returned on creation).
+L965: #### Responses
+L966:   * `200`: Successful Response
+L967:   * `401`: Invalid or missing API key. Include `X-API-Key` header.
+L968:   * `402`: Insufficient credit balance. Every request needs a positive balance, including requests that fall entirely inside the free results zone. Top up your account.
+L969:   * `422`: Validation error. Check request body and parameters.
+L970:   * `429`: Rate limit exceeded (10000/hour), concurrent limit reached (150 per organization), or free preview quota exceeded (search requests entirely within the free results zone; the quota depends on your plan).
+L971:   * `500`: Internal server error. Contact support if persists.
+L972:   * `504`: Request timeout. Please try again later.
+L973:   * `404`: Dedup list not found.
+L974: ### `DELETE` /public/api/v1/dedup/people/{list_id}
+L975: 
+L976: Delete People List
+L977: 
+L978: Removes the whole list. Excluded people will appear (and be charged) in search results again.
+L979: 
+L980: #### Parameters
+L981: 
+L982:   * `list_id` (path, required): Dedup list id (returned on creation).
+L983: #### Responses
+L984:   * `200`: Successful Response
+L985:   * `401`: Invalid or missing API key. Include `X-API-Key` header.
+L986:   * `402`: Insufficient credit balance. Every request needs a positive balance, including requests that fall entirely inside the free results zone. Top up your account.
+L987:   * `422`: Validation error. Check request body and parameters.
+L988:   * `429`: Rate limit exceeded (10000/hour), concurrent limit reached (150 per organization), or free preview quota exceeded (search requests entirely within the free results zone; the quota depends on your plan).
+L989:   * `500`: Internal server error. Contact support if persists.
+L990:   * `504`: Request timeout. Please try again later.
+L991:   * `404`: Dedup list not found.
+L992: ### `GET` /public/api/v1/dedup/companies
+L993: 
+L994: Companies Lists
+L995: #### Responses
+L996:   * `200`: Successful Response
+L997:   * `401`: Invalid or missing API key. Include `X-API-Key` header.
+L998:   * `402`: Insufficient credit balance. Every request needs a positive balance, including requests that fall entirely inside the free results zone. Top up your account.
+L999:   * `422`: Validation error. Check request body and parameters.
+L1000:   * `429`: Rate limit exceeded (10000/hour), concurrent limit reached (150 per organization), or free preview quota exceeded (search requests entirely within the free results zone; the quota depends on your plan).
+L1001:   * `500`: Internal server error. Contact support if persists.
+L1002:   * `504`: Request timeout. Please try again later.
+L1003: ### `POST` /public/api/v1/dedup/companies
+L1004: 
+L1005: Create Companies List
+L1006: Create an immutable list of companies you already own (`domain` values from search results). Pass the returned id in `exclude_lists` on companies search — matched companies are not returned and not charged. The same id works on people search, people-by-domains and find-and-enrich: everyone at a listed company is skipped (exact domain match, subdomains are separate companies). People and companies lists can be mixed in one request.
+L1007: Lists can't be modified: to grow your ledger, create a new list per batch and pass all ids; consolidate periodically. Domains are normalized on write; unparseable values are skipped and reported. **Limits:** 100,000 values per list; per search request: 100 lists, 500,000 values combined.
+L1008: #### Request Body
+L1009: 
+L1010: Request body required
+L1011: #### Responses
+L1012:   * `200`: Successful Response
+L1013:   * `401`: Invalid or missing API key. Include `X-API-Key` header.
+L1014:   * `402`: Insufficient credit balance. Every request needs a positive balance, including requests that fall entirely inside the free results zone. Top up your account.
+L1015:   * `422`: Validation error. Check request body and parameters.
+L1016:   * `429`: Rate limit exceeded (10000/hour), concurrent limit reached (150 per organization), or free preview quota exceeded (search requests entirely within the free results zone; the quota depends on your plan).
+L1017:   * `500`: Internal server error. Contact support if persists.
+L1018:   * `504`: Request timeout. Please try again later.
+L1019: ### `GET` /public/api/v1/dedup/companies/{list_id}
+L1020: 
+L1021: Get Companies List
+L1022: 
+L1023: Returns the list metadata and all stored values.
+L1024: 
+L1025: #### Parameters
+L1026: 
+L1027:   * `list_id` (path, required): Dedup list id (returned on creation).
+L1028: #### Responses
+L1029:   * `200`: Successful Response
+L1030:   * `401`: Invalid or missing API key. Include `X-API-Key` header.
+L1031:   * `402`: Insufficient credit balance. Every request needs a positive balance, including requests that fall entirely inside the free results zone. Top up your account.
+L1032:   * `422`: Validation error. Check request body and parameters.
+L1033:   * `429`: Rate limit exceeded (10000/hour), concurrent limit reached (150 per organization), or free preview quota exceeded (search requests entirely within the free results zone; the quota depends on your plan).
+L1034:   * `500`: Internal server error. Contact support if persists.
+L1035:   * `504`: Request timeout. Please try again later.
+L1036:   * `404`: Dedup list not found.
+L1037: ### `DELETE` /public/api/v1/dedup/companies/{list_id}
+L1038: 
+L1039: Delete Companies List
+L1040: 
+L1041: Removes the whole list. Excluded companies will appear (and be charged) in search results again.
+L1042: 
+L1043: #### Parameters
+L1044: 
+L1045:   * `list_id` (path, required): Dedup list id (returned on creation).
+L1046: #### Responses
+L1047:   * `200`: Successful Response
+L1048:   * `401`: Invalid or missing API key. Include `X-API-Key` header.
+L1049:   * `402`: Insufficient credit balance. Every request needs a positive balance, including requests that fall entirely inside the free results zone. Top up your account.
+L1050:   * `422`: Validation error. Check request body and parameters.
+L1051:   * `429`: Rate limit exceeded (10000/hour), concurrent limit reached (150 per organization), or free preview quota exceeded (search requests entirely within the free results zone; the quota depends on your plan).
+L1052:   * `500`: Internal server error. Contact support if persists.
+L1053:   * `504`: Request timeout. Please try again later.
+L1054:   * `404`: Dedup list not found.
+
+
+Response ID: PUB-008
+Retrieved at UTC: 2026-10-14 10:02:39 UTC
+Explee Public API (https://api.explee.com/public/api/docs)
+【turn254718view0】 [wordlim: 200] Crawled: today; Content type: text/html; Source: open({"ref_id":"turn456656view2","lineno":316}); Total lines: 1055
+L296:   * `429`: Rate limit exceeded (10000/hour), concurrent limit reached (150 per organization), or free preview quota exceeded (search requests entirely within the free results zone; the quota depends on your plan).
+L297:   * `500`: Internal server error. Contact support if persists.
+L298:   * `504`: Request timeout. Please try again later.
+L299: ### `GET` /public/api/v1/autogtm/campaigns
+L300: 
+L301: List outreach campaigns
+L302: List the outreach campaigns owned by your organization. Authenticated by the same `X-API-Key` as the rest of this API — the key resolves to your organization, and campaigns are returned across all of its projects. Pass `project_id` (see `GET /public/api/v1/autogtm/projects`) to get one project's campaigns only. **Response:** - `campaigns` — non-archived campaigns with `id`, `project_id`, `name`, `target_url`, `daily_limit_usd`, and lifecycle `status`. - `total` — number of campaigns returned.
+L303: Use a campaign `id` to scope follow-up management calls (inbox replies, budget, start/stop, analytics).
+L304: #### Parameters
+L305: 
+L306:   * `project_id` (query, optional): Return only this project's campaigns (see `GET /public/api/v1/autogtm/projects`).
+L307: #### Responses
+L308:   * `200`: Successful Response
+L309:   * `401`: Invalid or missing API key. Include `X-API-Key` header.
+L310:   * `402`: Insufficient credit balance. Every request needs a positive balance, including requests that fall entirely inside the free results zone. Top up your account.
+L311:   * `422`: Validation error. Check request body and parameters.
+L312:   * `429`: Rate limit exceeded (10000/hour), concurrent limit reached (150 per organization), or free preview quota exceeded (search requests entirely within the free results zone; the quota depends on your plan).
+L313:   * `500`: Internal server error. Contact support if persists.
+L314:   * `504`: Request timeout. Please try again later.
+L315:   * `404`: Unknown `project_id` (or not your project).
+L316: ### `POST` /public/api/v1/autogtm/campaigns
+L317: 
+L318: Create campaign
+L319: Create a campaign that Explee finds the leads for — the app's **New campaign** button. Only `project_id` and `name` are required. Explee drafts every targeting field you leave out (offer, customer problem, criteria, example clients) from the name and your project; a field you send replaces the draft (`[]` means "none"). Search `keywords` are always drafted from the name. Geography and company size default to the project's. Not idempotent: each call creates a new campaign.
+L320: If a call times out, list the project's campaigns before retrying. **Lifecycle after this call** (`status` in `GET /public/api/v1/autogtm/campaigns`): 1. `discovery` — created, nothing runs yet. Review or edit it with `GET` / `PATCH /public/api/v1/autogtm/campaigns/{campaign_id}`. 2. `POST …/campaigns/{campaign_id}/start` — Explee searches for leads. Works with Auto-manage campaigns on or off. 3. `review` — the lead list is ready. Approve it with `POST …/campaigns/{campaign_id}/approve`.
+L321: With Auto-manage campaigns ON it is also approved automatically at the end of the project's review window (12 hours by default); with it OFF only `approve` sends it. 4. `outreach` — sending, within the campaign and project budgets. `POST …/stop` at any point parks the campaign (`listening`); a later `start` resumes it — from a stopped review that means sending without a further approve. Creation is free. Returns the campaign's full definition.
+L322: #### Request Body
+L323: 
+L324: Request body required
+L325: #### Responses
+L326:   * `201`: Successful Response
+L327:   * `401`: Invalid or missing API key. Include `X-API-Key` header.
+L328:   * `402`: Insufficient credit balance. Every request needs a positive balance, including requests that fall entirely inside the free results zone. Top up your account.
+L329:   * `422`: Validation error. Check request body and parameters.
+L330:   * `429`: Rate limit exceeded (10000/hour), concurrent limit reached (150 per organization), or free preview quota exceeded (search requests entirely within the free results zone; the quota depends on your plan).
+L331:   * `500`: Internal server error. Contact support if persists.
+L332:   * `504`: Request timeout. Please try again later.
+L333:   * `404`: Unknown `project_id` (or not your project).
+L334:   * `409`: The project is paused for review by Explee.
+L335:   * `503`: Drafting the campaign failed — retry.
+L336: ### `GET` /public/api/v1/autogtm/campaigns/{campaign_id}
+L337: 
+L338: Get campaign definition
+L339: Read everything that decides who a campaign contacts and what it says — the app's **Campaign** tab in one call. **Who it targets:** `offer`, `customer_problem`, `target_role`, `target_geography`, `target_company_size`, `positive_criteria`, `negative_criteria`, `example_clients`, and the derived `keywords`. **What it says:** `instructions` (first email), `followup_instructions` (shared by every follow-up), `language`, and the project-level `reply_instructions`.
+L340: **When it says it:** `schedule` (the send days) and `followups` (how many emails the sequence has and how far apart — a project-level setting, the same for every campaign of the project). `targeting_editable` is `false` for a campaign built from your own imported lead list — its audience is that list, so the targeting fields are locked. Free, and the natural first call when auditing an account: one request per campaign tells you whether it is aimed at the right people, before a single email goes out.
+
+
+Response ID: PUB-008
+Retrieved at UTC: 2026-10-14 10:02:39 UTC
+Explee Public API (https://api.explee.com/public/api/docs)
+【turn254718view1】 [wordlim: 200] Crawled: today; Content type: text/html; Source: open({"ref_id":"turn456656view2","lineno":595}); Total lines: 1055
+L559: ### `GET` /public/api/v1/autogtm/campaigns/{campaign_id}/inbox/{person_id}/note
+L560: 
+L561: Read the lead note
+L562: 
+L563: The team-shared note on this lead — the same free-text field your team sees and edits in the Explee inbox (Lead info panel). `note` is `null` when no note has been set.
+L564: 
+L565: #### Parameters
+L566: 
+L567:   * `campaign_id` (path, required)
+L568:   * `person_id` (path, required)
+L569: #### Responses
+L570:   * `200`: Successful Response
+L571:   * `401`: Invalid or missing API key. Include `X-API-Key` header.
+L572:   * `402`: Insufficient credit balance. Every request needs a positive balance, including requests that fall entirely inside the free results zone. Top up your account.
+L573:   * `422`: Validation error. Check request body and parameters.
+L574:   * `429`: Rate limit exceeded (10000/hour), concurrent limit reached (150 per organization), or free preview quota exceeded (search requests entirely within the free results zone; the quota depends on your plan).
+L575:   * `500`: Internal server error. Contact support if persists.
+L576:   * `504`: Request timeout. Please try again later.
+L577:   * `404`: Campaign or lead not found, or not owned by your organization.
+L578: ### `POST` /public/api/v1/autogtm/campaigns/{campaign_id}/inbox/{person_id}/note
+L579: 
+L580: Set the lead note
+L581: 
+L582: Set (or clear) the lead's team-shared note. The note is one shared text per lead, last-write-wins — a write here replaces what a teammate typed in the app, and vice versa. Pass `{"note": null}` (or an empty string) to clear it.
+L583: 
+L584: #### Parameters
+L585: 
+L586:   * `campaign_id` (path, required)
+L587:   * `person_id` (path, required)
+L588: 
+L589: #### Request Body
+L590: 
+L591: Request body required
+L592: #### Responses
+L593:   * `200`: Successful Response
+L594:   * `401`: Invalid or missing API key. Include `X-API-Key` header.
+L595:   * `402`: Insufficient credit balance. Every request needs a positive balance, including requests that fall entirely inside the free results zone. Top up your account.
+L596:   * `422`: Validation error. Check request body and parameters.
+L597:   * `429`: Rate limit exceeded (10000/hour), concurrent limit reached (150 per organization), or free preview quota exceeded (search requests entirely within the free results zone; the quota depends on your plan).
+L598:   * `500`: Internal server error. Contact support if persists.
+L599:   * `504`: Request timeout. Please try again later.
+L600:   * `404`: Campaign or lead not found, or not owned by your organization.
+L601: ### `GET` /public/api/v1/autogtm/projects/{project_id}/budget
+L602: 
+L603: Get project daily budget
+L604: 
+L605: Read the project's total daily outreach budget (the anchor the dashboard slider sets). Per-campaign allocations are derived from this number automatically — see `daily_limit_usd` on each campaign in `GET /autogtm/campaigns`.
+L606: 
+L607: #### Parameters
+L608: 
+L609:   * `project_id` (path, required)
+L610: #### Responses
+L611:   * `200`: Successful Response
+L612:   * `401`: Invalid or missing API key. Include `X-API-Key` header.
+L613:   * `402`: Insufficient credit balance. Every request needs a positive balance, including requests that fall entirely inside the free results zone. Top up your account.
+L614:   * `422`: Validation error. Check request body and parameters.
+L615:   * `429`: Rate limit exceeded (10000/hour), concurrent limit reached (150 per organization), or free preview quota exceeded (search requests entirely within the free results zone; the quota depends on your plan).
+L616:   * `500`: Internal server error. Contact support if persists.
+L617:   * `504`: Request timeout. Please try again later.
+L618:   * `404`: Project not found or not owned by your organization.
+L619: ### `PATCH` /public/api/v1/autogtm/projects/{project_id}/budget
+L620: 
+L621: Set project daily budget
+L622: 
+L623: Set the project's total daily outreach budget. The change is spread across the project's active campaigns proportionally — exactly what the dashboard slider does. **`0` pauses all sending** while keeping campaigns configured (the explicit off switch): the sending campaigns park at once, as with the app's Stop. Range `0`–`300`, the slider's range.
+L624: 
+L625: #### Parameters
+L626: 
+L627:   * `project_id` (path, required)
+L628: #### Request Body
+L629: 
+L630: Request body required
+L631: #### Responses
+L632:   * `200`: Successful Response
+L633:   * `401`: Invalid or missing API key. Include `X-API-Key` header.
+L634:   * `402`: Insufficient credit balance. Every request needs a positive balance, including requests that fall entirely inside the free results zone. Top up your account.
+L635:   * `422`: Validation error. Check request body and parameters.
+L636:   * `429`: Rate limit exceeded (10000/hour), concurrent limit reached (150 per organization), or free preview quota exceeded (search requests entirely within the free results zone; the quota depends on your plan).
+L637:   * `500`: Internal server error. Contact support if persists.
+L638:   * `504`: Request timeout. Please try again later.
+L639:   * `404`: Project not found or not owned by your organization.
+L640: ### `PATCH` /public/api/v1/autogtm/campaigns/{campaign_id}/budget
+L641: 
+L642: Set campaign daily budget
+L643: Set one campaign's daily budget. The campaign's `daily_limit_usd` is set directly and the project's total daily budget follows as the sum of its running campaigns — the other campaigns are not touched (grow or shrink the total spend, not redistribute a fixed one). **Editable only while Autopilot is OFF** (`GET/PATCH …/projects/{id}/autopilot`): while it's ON the agent owns the split and this returns `409`.
+
+
+Response ID: PUB-008
+Retrieved at UTC: 2026-10-14 10:02:39 UTC
+Explee Public API (https://api.explee.com/public/api/docs)
+【turn254718view2】 [wordlim: 200] Crawled: today; Content type: text/html; Source: open({"ref_id":"turn456656view2","lineno":715}); Total lines: 1055
+L693:   * `429`: Rate limit exceeded (10000/hour), concurrent limit reached (150 per organization), or free preview quota exceeded (search requests entirely within the free results zone; the quota depends on your plan).
+L694:   * `500`: Internal server error. Contact support if persists.
+L695:   * `504`: Request timeout. Please try again later.
+L696:   * `404`: Campaign not found or not owned by your organization.
+L697:   * `409`: Auto-manage campaigns is ON for the project — Explee decides when campaigns start.
+L698: ### `GET` /public/api/v1/autogtm/campaigns/{campaign_id}/analytics
+L699: 
+L700: Campaign analytics
+L701: 
+L702: Campaign performance for a period: emails sent, replies, reply rate, hot leads, spend, cost per lead, budget allocation, the leads pool and the manual lead funnel. The same numbers the Explee dashboard shows — use them to drive your own budget/start/stop decisions.
+L703: 
+L704: #### Parameters
+L705: 
+L706:   * `campaign_id` (path, required)
+L707:   * `period` (query, optional): Aggregation window.
+L708: #### Responses
+L709:   * `200`: Successful Response
+L710:   * `401`: Invalid or missing API key. Include `X-API-Key` header.
+L711:   * `402`: Insufficient credit balance. Every request needs a positive balance, including requests that fall entirely inside the free results zone. Top up your account.
+L712:   * `422`: Validation error. Check request body and parameters.
+L713:   * `429`: Rate limit exceeded (10000/hour), concurrent limit reached (150 per organization), or free preview quota exceeded (search requests entirely within the free results zone; the quota depends on your plan).
+L714:   * `500`: Internal server error. Contact support if persists.
+L715:   * `504`: Request timeout. Please try again later.
+L716:   * `404`: Campaign not found or not owned by your organization.
+L717: ### `GET` /public/api/v1/autogtm/projects/{project_id}/analytics
+L718: 
+L719: Project analytics
+L720: 
+L721: Project-level performance for a period: the aggregate totals (emails, replies, reply rate, hot leads, spend) plus the per-campaign breakdown — exactly what the Explee dashboard shows for a project. Both the totals and the per-campaign rows cover the requested `period`.
+L722: 
+L723: #### Parameters
+L724: 
+L725:   * `project_id` (path, required)
+L726:   * `period` (query, optional): Aggregation window.
+L727: #### Responses
+L728:   * `200`: Successful Response
+L729:   * `401`: Invalid or missing API key. Include `X-API-Key` header.
+L730:   * `402`: Insufficient credit balance. Every request needs a positive balance, including requests that fall entirely inside the free results zone. Top up your account.
+L731:   * `422`: Validation error. Check request body and parameters.
+L732:   * `429`: Rate limit exceeded (10000/hour), concurrent limit reached (150 per organization), or free preview quota exceeded (search requests entirely within the free results zone; the quota depends on your plan).
+L733:   * `500`: Internal server error. Contact support if persists.
+L734:   * `504`: Request timeout. Please try again later.
+L735:   * `404`: Project not found or not owned by your organization.
+L736: ### `GET` /public/api/v1/autogtm/suppress-list/people
+L737: 
+L738: People suppress lists
+L739: 
+L740: Your people lists — the ones on the app's Suppress list page, newest first.
+L741: #### Responses
+L742:   * `200`: Successful Response
+L743:   * `401`: Invalid or missing API key. Include `X-API-Key` header.
+L744:   * `402`: Insufficient credit balance. Every request needs a positive balance, including requests that fall entirely inside the free results zone. Top up your account.
+L745:   * `422`: Validation error. Check request body and parameters.
+L746:   * `429`: Rate limit exceeded (10000/hour), concurrent limit reached (150 per organization), or free preview quota exceeded (search requests entirely within the free results zone; the quota depends on your plan).
+L747:   * `500`: Internal server error. Contact support if persists.
+L748:   * `504`: Request timeout. Please try again later.
+L749: ### `POST` /public/api/v1/autogtm/suppress-list/people
+L750: 
+L751: Suppress people
+L752: Store a list of people to suppress — the same lists the **Suppress list** page in the app shows, so a list pushed from your CRM sits next to the CSVs your team uploaded and behaves identically. The suppress list is organization-wide: it applies to **every** outreach campaign, running or not. Every email is checked against it right before it goes out, so an address added here stops a sequence that is already mid-flight, not just future ones.
+L753: Matching is exact: a person by their email address (case-insensitive, but `【0†[email protected]】` and `【0†[email protected]】` are two different entries), a company by its domain (the lead's company domain or the domain of its email address — `acme.com` does not cover `eu.acme.com`, list each domain you use).
+
+
+Response ID: PUB-008
+Retrieved at UTC: 2026-10-14 10:02:39 UTC
+Explee Public API (https://api.explee.com/public/api/docs)
+【turn254718view3】 [wordlim: 200] Crawled: today; Content type: text/html; Source: open({"ref_id":"turn456656view2","lineno":735}); Total lines: 1055
+L709:   * `200`: Successful Response
+L710:   * `401`: Invalid or missing API key. Include `X-API-Key` header.
+L711:   * `402`: Insufficient credit balance. Every request needs a positive balance, including requests that fall entirely inside the free results zone. Top up your account.
+L712:   * `422`: Validation error. Check request body and parameters.
+L713:   * `429`: Rate limit exceeded (10000/hour), concurrent limit reached (150 per organization), or free preview quota exceeded (search requests entirely within the free results zone; the quota depends on your plan).
+L714:   * `500`: Internal server error. Contact support if persists.
+L715:   * `504`: Request timeout. Please try again later.
+L716:   * `404`: Campaign not found or not owned by your organization.
+L717: ### `GET` /public/api/v1/autogtm/projects/{project_id}/analytics
+L718: 
+L719: Project analytics
+L720: 
+L721: Project-level performance for a period: the aggregate totals (emails, replies, reply rate, hot leads, spend) plus the per-campaign breakdown — exactly what the Explee dashboard shows for a project. Both the totals and the per-campaign rows cover the requested `period`.
+L722: 
+L723: #### Parameters
+L724: 
+L725:   * `project_id` (path, required)
+L726:   * `period` (query, optional): Aggregation window.
+L727: #### Responses
+L728:   * `200`: Successful Response
+L729:   * `401`: Invalid or missing API key. Include `X-API-Key` header.
+L730:   * `402`: Insufficient credit balance. Every request needs a positive balance, including requests that fall entirely inside the free results zone. Top up your account.
+L731:   * `422`: Validation error. Check request body and parameters.
+L732:   * `429`: Rate limit exceeded (10000/hour), concurrent limit reached (150 per organization), or free preview quota exceeded (search requests entirely within the free results zone; the quota depends on your plan).
+L733:   * `500`: Internal server error. Contact support if persists.
+L734:   * `504`: Request timeout. Please try again later.
+L735:   * `404`: Project not found or not owned by your organization.
+L736: ### `GET` /public/api/v1/autogtm/suppress-list/people
+L737: 
+L738: People suppress lists
+L739: 
+L740: Your people lists — the ones on the app's Suppress list page, newest first.
+L741: #### Responses
+L742:   * `200`: Successful Response
+L743:   * `401`: Invalid or missing API key. Include `X-API-Key` header.
+L744:   * `402`: Insufficient credit balance. Every request needs a positive balance, including requests that fall entirely inside the free results zone. Top up your account.
+L745:   * `422`: Validation error. Check request body and parameters.
+L746:   * `429`: Rate limit exceeded (10000/hour), concurrent limit reached (150 per organization), or free preview quota exceeded (search requests entirely within the free results zone; the quota depends on your plan).
+L747:   * `500`: Internal server error. Contact support if persists.
+L748:   * `504`: Request timeout. Please try again later.
+L749: ### `POST` /public/api/v1/autogtm/suppress-list/people
+L750: 
+L751: Suppress people
+L752: Store a list of people to suppress — the same lists the **Suppress list** page in the app shows, so a list pushed from your CRM sits next to the CSVs your team uploaded and behaves identically. The suppress list is organization-wide: it applies to **every** outreach campaign, running or not. Every email is checked against it right before it goes out, so an address added here stops a sequence that is already mid-flight, not just future ones.
+L753: Matching is exact: a person by their email address (case-insensitive, but `【0†[email protected]】` and `【0†[email protected]】` are two different entries), a company by its domain (the lead's company domain or the domain of its email address — `acme.com` does not cover `eu.acme.com`, list each domain you use).
+L754: One call = one list, exactly like uploading one CSV: a `list` name that is already taken gets a `(2)` suffix rather than merging, and lists are independent — the same person on two lists is suppressed until both are gone. Delete a list you no longer want. Each person needs at least one identifier: an email, a LinkedIn URL, or a full name; a row left without a usable one (including a malformed address) comes back in `skipped` instead of failing the whole batch.
+L755: **Outreach stops on the email** — the name and LinkedIn fields are stored but not actively used today; they are kept because a suppressed person is more than their email address, and the day outreach runs somewhere other than email (LinkedIn and the like) those are the fields that will match. To suppress everyone at a company use the companies endpoint.
+L756: #### Request Body
+L757: 
+L758: Request body required
+L759: #### Responses
+L760:   * `200`: Successful Response
+L761:   * `401`: Invalid or missing API key. Include `X-API-Key` header.
+L762:   * `402`: Insufficient credit balance. Every request needs a positive balance, including requests that fall entirely inside the free results zone. Top up your account.
+L763:   * `422`: Validation error. Check request body and parameters.
+
+
+Response ID: PUB-008
+Retrieved at UTC: 2026-10-14 10:02:39 UTC
+Explee Public API (https://api.explee.com/public/api/docs)
+【turn254718view4】 [wordlim: 200] Crawled: today; Content type: text/html; Source: open({"ref_id":"turn456656view2","lineno":810}); Total lines: 1055
+L779:   * `200`: Successful Response
+L780:   * `401`: Invalid or missing API key. Include `X-API-Key` header.
+L781:   * `402`: Insufficient credit balance. Every request needs a positive balance, including requests that fall entirely inside the free results zone. Top up your account.
+L782:   * `422`: Validation error. Check request body and parameters.
+L783:   * `429`: Rate limit exceeded (10000/hour), concurrent limit reached (150 per organization), or free preview quota exceeded (search requests entirely within the free results zone; the quota depends on your plan).
+L784:   * `500`: Internal server error. Contact support if persists.
+L785:   * `504`: Request timeout. Please try again later.
+L786:   * `404`: No such list in your organization.
+L787: ### `DELETE` /public/api/v1/autogtm/suppress-list/people/{list_name}
+L788: 
+L789: Delete a people list
+L790: 
+L791: Remove a whole list, exactly like deleting it on the Suppress list page — its people stop being suppressed unless another list still holds them.
+L792: 
+L793: #### Parameters
+L794: 
+L795:   * `list_name` (path, required): List name.
+L796: #### Responses
+L797:   * `200`: Successful Response
+L798:   * `401`: Invalid or missing API key. Include `X-API-Key` header.
+L799:   * `402`: Insufficient credit balance. Every request needs a positive balance, including requests that fall entirely inside the free results zone. Top up your account.
+L800:   * `422`: Validation error. Check request body and parameters.
+L801:   * `429`: Rate limit exceeded (10000/hour), concurrent limit reached (150 per organization), or free preview quota exceeded (search requests entirely within the free results zone; the quota depends on your plan).
+L802:   * `500`: Internal server error. Contact support if persists.
+L803:   * `504`: Request timeout. Please try again later.
+L804:   * `404`: No such list in your organization.
+L805: ### `GET` /public/api/v1/autogtm/suppress-list/companies
+L806: 
+L807: Company suppress lists
+L808: 
+L809: Your blocked-company lists — the ones on the app's Suppress list page, newest first.
+L810: #### Responses
+L811:   * `200`: Successful Response
+L812:   * `401`: Invalid or missing API key. Include `X-API-Key` header.
+L813:   * `402`: Insufficient credit balance. Every request needs a positive balance, including requests that fall entirely inside the free results zone. Top up your account.
+L814:   * `422`: Validation error. Check request body and parameters.
+L815:   * `429`: Rate limit exceeded (10000/hour), concurrent limit reached (150 per organization), or free preview quota exceeded (search requests entirely within the free results zone; the quota depends on your plan).
+L816:   * `500`: Internal server error. Contact support if persists.
+L817:   * `504`: Request timeout. Please try again later.
+L818: ### `POST` /public/api/v1/autogtm/suppress-list/companies
+L819: 
+L820: Suppress companies
+L821: Store a list of company domains to suppress — nobody at these companies is contacted. The suppress list is organization-wide: it applies to **every** outreach campaign, running or not. Every email is checked against it right before it goes out, so an address added here stops a sequence that is already mid-flight, not just future ones.
+L822: Matching is exact: a person by their email address (case-insensitive, but `【0†[email protected]】` and `【0†[email protected]】` are two different entries), a company by its domain (the lead's company domain or the domain of its email address — `acme.com` does not cover `eu.acme.com`, list each domain you use). One call = one list, exactly like uploading one CSV: a `list` name that is already taken gets a `(2)` suffix rather than merging, and lists are independent. Delete a list you no longer want.
+L823: Domains are normalized (`https://www.acme.com/careers` → `acme.com`), so two spellings of one company collapse into a single entry. Values that are not a domain come back as `skipped`. Subdomains are separate entries — `acme.com` does not cover `eu.acme.com`.
+L824: #### Request Body
+L825: 
+L826: Request body required
+L827: #### Responses
+L828:   * `200`: Successful Response
+L829:   * `401`: Invalid or missing API key. Include `X-API-Key` header.
+L830:   * `402`: Insufficient credit balance. Every request needs a positive balance, including requests that fall entirely inside the free results zone. Top up your account.
+L831:   * `422`: Validation error. Check request body and parameters.
+L832:   * `429`: Rate limit exceeded (10000/hour), concurrent limit reached (150 per organization), or free preview quota exceeded (search requests entirely within the free results zone; the quota depends on your plan).
+L833:   * `500`: Internal server error. Contact support if persists.
+L834:   * `504`: Request timeout. Please try again later.
+L835: ### `GET` /public/api/v1/autogtm/suppress-list/companies/{list_name}
+L836: 
+L837: Read a company list
+L838: 
+L839: The domains stored in one list. `total` is the exact size; page through it with `limit`/`offset`.
+L840: 
+L841: #### Parameters
+L842: 
+L843:   * `list_name` (path, required): List name.
+L844:   * `limit` (query, optional): Entries per page.
+L845:   * `offset` (query, optional): Entries to skip.
+L846: #### Responses
+L847:   * `200`: Successful Response
+L848:   * `401`: Invalid or missing API key. Include `X-API-Key` header.
+L849:   * `402`: Insufficient credit balance. Every request needs a positive balance, including requests that fall entirely inside the free results zone. Top up your account.
+L850:   * `422`: Validation error. Check request body and parameters.
+
+
+Response ID: PUB-009
+Retrieved at UTC: 2026-10-14 10:04:26 UTC
+Explee Public API (https://api.explee.com/public/api/docs)
+【turn361751view0】 [wordlim: 200] Crawled: today; Content type: text/html; Source: open({"ref_id":"turn456656view2","lineno":344}); Total lines: 1055
+L344: #### Responses
+
+
+Response ID: PUB-009
+Retrieved at UTC: 2026-10-14 10:04:26 UTC
+Explee Public API (https://api.explee.com/public/api/docs)
+【turn361751view1】 [wordlim: 200] Crawled: today; Content type: text/html; Source: open({"ref_id":"turn456656view2","lineno":431}); Total lines: 1055
+L428:   * `429`: Rate limit exceeded (10000/hour), concurrent limit reached (150 per organization), or free preview quota exceeded (search requests entirely within the free results zone; the quota depends on your plan).
+L429:   * `500`: Internal server error. Contact support if persists.
+L430:   * `504`: Request timeout. Please try again later.
+L431:   * `404`: Import task not found.
+
+
+Response ID: PUB-009
+Retrieved at UTC: 2026-10-14 10:04:26 UTC
+Explee Public API (https://api.explee.com/public/api/docs)
+【turn361751view2】 [wordlim: 200] Crawled: today; Content type: text/html; Source: open({"ref_id":"turn456656view2","lineno":665}); Total lines: 1055
+L662: ### `POST` /public/api/v1/autogtm/campaigns/{campaign_id}/stop
+L663: 
+L664: Stop campaign
+L665: 
+L666: Stop a campaign **from any status**, idempotently: interrupts a running lead search, cancels queued outreach emails, and freezes a pending review's auto-approve countdown. Nothing sends until it is started again. Always available, in either mode — stopping is the user's right; only (re)starting is agent-owned while Auto-manage campaigns is ON.
+L667: 
+L668: #### Parameters
+L669: 
+L670:   * `campaign_id` (path, required)
+
+
+Response ID: PUB-009
+Retrieved at UTC: 2026-10-14 10:04:26 UTC
+Explee Public API (https://api.explee.com/public/api/docs)
+【turn361751view3】 [wordlim: 200] Crawled: today; Content type: text/html; Source: open({"ref_id":"turn456656view2","lineno":875}); Total lines: 1055
+L873: ### `GET` /public/api/v1/autogtm/projects/{project_id}/autopilot
+L874: 
+L875: Get autopilot settings
+L876: 
+L877: Read the project's autopilot and auto-reply settings. - `autopilot_enabled` — the Explee autopilot agent. While ON it manages campaigns and the per-campaign budget split (per-campaign budget edits return 409); turn it OFF to control budgets yourself. - `auto_reply_enabled` / `auto_reply_delay_minutes` — AI auto-reply behaviour. - `reply_cc_emails` — project defaults added to CC on every manual or automatic reply.
+
+

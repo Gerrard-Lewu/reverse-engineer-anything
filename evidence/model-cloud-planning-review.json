@@ -1,0 +1,13 @@
+{
+  "checked_on": "2026-10-14",
+  "requirements": 40,
+  "acceptance_scenarios": 40,
+  "trace_references": "passed",
+  "local_markdown_links": "passed",
+  "pinned_repo_source_records": 20,
+  "review": "local structural and consistency review; not independent model/cloud review",
+  "phase": "planning",
+  "application_tests_executed": 0,
+  "model_benchmarks_executed": 0,
+  "cloud_mutations": 0
+}

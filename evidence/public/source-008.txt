@@ -1,0 +1,19 @@
+Source ID: EX-PUB-008
+Primary URL: https://explee.com/tools/explorer
+Classification: retrieval_diagnostic
+Coverage: page_identity_only
+Tool: mcp__codex_apps__search_service_web_run
+These are complete connector-returned views, not a full-page guarantee.
+
+Response ID: PUB-006
+Retrieved at UTC: 2026-10-14 10:01:28 UTC
+Explorer | Explee (https://explee.com/tools/explorer)
+【turn198070view2】 [wordlim: 200] Crawled: today; Content type: text/html; Source: click({"ref_id":"turn655156view0","id":29}); Total lines: 47
+
+
+Response ID: PUB-007
+Retrieved at UTC: 2026-10-14 10:01:53 UTC
+Explorer | Explee (https://explee.com/tools/explorer)
+【turn778799view1】 [wordlim: 200] Crawled: today; Content type: text/html; Source: open({"ref_id":"https://explee.com/tools/explorer","lineno":null}); Total lines: 47
+
+

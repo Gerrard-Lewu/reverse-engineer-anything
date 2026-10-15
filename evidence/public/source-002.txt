@@ -1,0 +1,221 @@
+Source ID: EX-PUB-002
+Primary URL: https://explee.com/pricing
+Classification: official_marketing
+Coverage: retrieved_page_view_and_older_indexed_excerpt
+Tool: mcp__codex_apps__search_service_web_run
+These are complete connector-returned views, not a full-page guarantee.
+
+Response ID: PUB-004
+Retrieved at UTC: 2026-10-14 10:01:01 UTC
+Explee | Pricing (https://explee.com/pricing)
+【turn655156search2】 [wordlim: 200] Crawled: last month; # Pricing ... Meetings ... Cost per lead ... Semantic search over 105M companies and 536M people profiles, with AI enrichment on any criteria you describe.
+
+# Pricing
+
+[Button: AutoGTM][Button: AI Search][Button: Database]
+
+## AutoGTM
+
+AI agents that research your market, find high-intent prospects, write personalized emails, and book demos. Pay as you go with no subscription
+
+Try for free here
+
+$30
+
+1,000
+
+Emails
+
+~2–8
+
+Warm leads
+
+~1–2
+
+Meetings
+
+$1–$15
+
+Cost per lead
+
+Get $30 to try it
+
+## AI Search
+
+Semantic search over 105M companies and 536M people profiles, with AI enrichment on any criteria you describe. Monthly plans
+
+Try for free here
+
+Free
+
+$0
+
+[Button: Sign up]
+
+  * Top up—
+  * Companies—
+  * People—
+  * Emails—
+  * Phones—
+  * Export limit 2,000
+  * AI criteria 3
+  * AI rows 2,000
+  * Support
+
+Starter
+
+$49/month
+
+5,000 credits · Valid for 2 months
+
+[Button: Upgrade]
+
+  * Top up 100 credits for $1
+  * Companies / mo 10,000
+  * People / mo 5,000
+  * Emails / mo up to 3,333
+  * Phones / mo up to 500
+  * Export limit 5,000
+  * AI criteria 3
+  * AI rows 5,000
+  * Support
+
+Growth
+
+Best Value
+
+$329/month
+
+40,000 credits · Valid for 2 months
+
+
+Response ID: PUB-005
+Retrieved at UTC: 2026-10-14 10:01:28 UTC
+Pricing | Explee (https://explee.com/pricing)
+【turn456656view0】 [wordlim: 200] Crawled: today; Content type: text/html; Source: open({"ref_id":"https://explee.com/pricing","lineno":null}); Total lines: 124
+L0: 【0†iframe†www.googletagmanager.com】
+L1: 
+L2: 【1†Pricing】Sign in
+L3: 
+L4: # Pricing
+L5: 
+L6: [Button: Outreach Agent][Button: Database]
+L7: 
+L8: ## Outreach Agent
+L9: 
+L10: AI agents that research your market, find high-intent prospects, write personalized emails, and book demos. Pay as you go with no subscription
+L11: 
+L12: 【2†Try for free here】
+L13: 
+L14: $30[Input]
+L15: 
+L16: 750
+L17: 
+L18: Emails
+L19: 
+L20: ~2–6
+L21: 
+L22: Warm leads
+L23: 
+L24: ~1
+L25: 
+L26: Meetings
+L27: 
+L28: $1–$20
+L29: 
+L30: Cost per lead
+L31: 
+L32: Get $30 to try it
+L33: ## Database
+L34: 
+L35: Bulk B2B data by country or worldwide, delivered as a file and enriched with your own AI criteria
+L36: 
+L37: 【3†Try for free here】
+L38: 
+L39: 🌎 Enrich your full TAM
+L40: 
+L41: Find your next client among 105M companies using AI-powered criteria
+L42: 
+L43: 【3†Learn more】
+L44: 
+L45:   * Companies up to 105M
+L46:   * Decision makers up to 536M
+L47:   * Semantic search Free
+L48:   * Custom AI enrichment Free
+L49:   * Deep research from $5 per 1k
+L50:   * Emails from $10 per 1k
+L51:   * Enterprise Support
+L52: 
+L53: 🇺🇸 All US companies
+L54: Merged from company websites, professional networks, and maps
+L55: 
+L56: 【4†Learn more】
+L57: 
+L58:   * Companies 22M+
+L59:   * Decision makers 100M+
+L60:   * Semantic search Free
+L61:   * Custom AI enrichment Free
+L62:   * Deep research from $5 per 1k
+L63:   * Emails from $10 per 1k
+L64:   * Enterprise Support
+L65: 
+L66: 🇪🇺 All EU companies
+L67: 
+L68: Merged from company websites, professional networks, and maps
+L69: 
+L70: 【5†Learn more】
+L71:   * Companies 31M+
+L72:   * Decision makers 70M+
+L73:   * Semantic search Free
+L74:   * Custom AI enrichment Free
+L75:   * Deep research from $5 per 1k
+L76:   * Emails from $10 per 1k
+L77:   * Enterprise Support
+L78: 
+L79: 📍 Global Maps Dataset
+L80: 
+L81: All company locations and places, fully enriched
+L82: 
+L83: 【6†Talk to us】
+L84: 
+L85:   * Places 210M+
+L86:   * Fields 51
+L87:   * Semantic search Free
+L88:   * Custom AI enrichment Free
+L89:   * Deep research from $5 per 1k
+L90:   * Enterprise Support
+L91: #### Products and GTM Tools
+L92: 
+L93:   * 【2†Outreach Agent】
+L94:   * 【3†Global B2B Company Database 105M+】
+L95:   * 【6†Google Maps Dataset 218M+】
+L96:   * 【7†Segments Explorer】
+L97: 
+L98: #### B2B Databases
+L99: 
+L100:   * 【8†Companies in North America】
+L101:   * 【5†Companies in Europe】
+L102:   * 【9†Companies in Asia Pacific】
+L103:   * 【10†Companies in Southeast Asia】
+L104:   * 【11†Companies in Latin America】
+L105: 
+L106: #### B2B Databases
+L107: 
+L108:   * 【12†Companies in Middle East】
+L109:   * 【13†Companies in CIS Countries】
+L110:   * 【14†Companies in Oceania】
+L111:   * 【15†Companies in Africa】
+L112: #### Resources
+L113: 
+L114:   * 【1†Pricing】
+L115:   * 【16†Affiliate program】
+L116:   * 【17†API documentation†api.explee.com】
+L117:   * 【18†Compliance FAQ】
+L118: 
+L119: © 2026 Explee LTD — made with 🦎 in London
+L120: 
+L121: 【19†Terms of use】|【20†Privacy Policy】
+L122: 
+L123: Company No. 15759064 | VAT GB478208465 | International House, 50 Essex Street, London, WC2R 3JF
+
+

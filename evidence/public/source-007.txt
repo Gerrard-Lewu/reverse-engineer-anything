@@ -1,0 +1,228 @@
+Source ID: EX-PUB-007
+Primary URL: https://explee.com/gm-dataset
+Classification: official_marketing
+Coverage: partial_retrieved_page_view
+Tool: mcp__codex_apps__search_service_web_run
+These are complete connector-returned views, not a full-page guarantee.
+
+Response ID: PUB-006
+Retrieved at UTC: 2026-10-14 10:01:28 UTC
+The Most Comprehensive Google Maps Dataset – 218M+ Local Businesses | Explee (https://explee.com/gm-dataset)
+【turn198070view1】 [wordlim: 200] Crawled: today; Content type: text/html; Source: click({"ref_id":"turn655156view0","id":28}); Total lines: 415
+L0: 【0†Demo†explee.link】
+L1: 
+L2: Fresh as October 2026
+L3: # The Most Comprehensive
+L4: Google Maps Dataset
+L5: 
+L6: Access 218M+ local business profiles with contact info, ratings, reviews, and photos across 244+ countries
+L7: 
+L8: 【1†Image: Google Maps†www.gstatic.com】
+L9: 
+L10: 218M+
+L11: 
+L12: Local Business Locations
+L13: 
+L14: Verified locations from Google Maps with enriched business data
+L15: 
+L16: 55 Fields
+L17: 
+L18: Most on the Market
+L19: 
+L20: Ratings, reviews, hours, photos, amenities, and contact info
+L21: 
+L22: 4 Weeks
+L23: 
+L24: Full Refresh Cycle
+L25: 
+L26: Always fresh data with continuous updates
+L27: Trusted by 100+ GTM, Location Intelligence, and AI leaders
+L28: 
+L29: 【2†Image: Maildoso】【3†Image: AMPLIXITY】【4†Image: apitdf】【5†Image: SLSBMB】【6†Image: vivid】【7†Image: INXY】
+L30: 
+L31: 【8†Image: ARIVAL】【9†Image: BrandsDistribution】【10†Image: StayF】【11†Image: Seonity】【12†Image: Client】
+L32: ## Explore 218M+ locations across all geographic regions
+L33: 
+L34: 【13†North America 6 countries25M+ NA locations】【14†Europe 49 countries34M+ EU locations】【15†Asia Pacific 17 countries88M+ APAC locations】【16†Southeast Asia 11 countries26M+ SEA locations】【17†Latin America 50 countries22M+ LATAM locations】【18†Middle East 15 countries9M+ MENA locations】【19†CIS Countries 11 countries2M+ CIS locations】【20†Oceania 29 countries2M+ OCE locations】【21†Africa 56 countries11M+ AFR locations】
+L35: ## Browse the Most Comprehensive Google Maps dataset across 244 countries
+L36: 【22†🇨🇳China 37M+ locations】【23†🇮🇳India 28M+ locations】【24†🇺🇸United States 17M+ locations】【25†🇮🇩Indonesia 14M+ locations】【26†🇧🇷Brazil 11M+ locations】【27†🇯🇵Japan 9M+ locations】【28†🇰🇷Korea, Republic of 6M+ locations】【29†🇩🇪Germany 6M+ locations】【30†🇲🇽Mexico 6M+ locations】【31†🇫🇷France 5M+ locations】【32†🇹🇷Türkiye 4M+ locations】【33†🇮🇹Italy 4M+ locations】【34†🇻🇳Viet Nam 4M+ locations】【35†🇬🇧United Kingdom 3M+ locations】【36†🇪🇸Spain 3M+ locations】【37†🇹🇭Thailand 3M+ locations】【38†🇵🇭Philippines 3M+ locations】【39†🇧🇩Bangladesh 3M+ locations】【40†🇦🇷Argentina 2M+ locations】【41†🇵🇱Poland 2M+ locations】【42†🇵🇰Pakistan 2M+ locations】
+L37: View all 244 countries
+L38: ## What's Inside Our Database
+L39: 
+L40: ### Data Categories
+L41: 
+L42:   * General Information 12
+L43:   * Location Data 5
+L44:   * Contact Information 3
+L45:   * Reviews & Ratings 7
+L46:   * Visitor Information 5
+L47:   * Media Content 2
+L48:   * Hospitality Features 2
+L49:   * Place Labels & Attributes 18
+L50:   * 【0†Add custom field†explee.link】
+L51:   * 【0†Request a demo†explee.link】
+L52: ## General Information
+L53: 
+L54: 12 fields
+L55: 
+L56: 100%Fill rate — percentage of records in the dataset with this field filled
+L57: 
+L58: Name — Name of the business or place
+L59: 
+L60: 29.7%Fill rate — percentage of records in the dataset with this field filled
+L61: 
+L62: Description — Short description of the business or place
+L63: 
+L64: 100%Fill rate — percentage of records in the dataset with this field filled
+L65: 
+L66: Business Status — Current operational status of the business or place
+L67: 
+L68: 97.1%Fill rate — percentage of records in the dataset with this field filled
+L69: Categories — Categories or types that describe the business or place
+L70: 
+L71: 50%Fill rate — percentage of records in the dataset with this field filled
+L72: 
+L73: CID — Unique Google Maps identifier for the place
+L74: 
+L75: 100%Fill rate — percentage of records in the dataset with this field filled
+L76: 
+L77: Feature ID — Internal feature identifier for the place
+L78: 
+L79: 100%Fill rate — percentage of records in the dataset with this field filled
+L80: 
+L81: Place ID — Google Maps place identifier
+L82: 100%Fill rate — percentage of records in the dataset with this field filled
+L83: 
+L84: Google Maps URL — Link to the place in Google Maps
+L85: 
+L86: 100%Fill rate — percentage of records in the dataset with this field filled
+L87: 
+L88: Google Maps URL (Alt) — Alternative link to the place in Google Maps
+L89: 
+L90: 62.9%Fill rate — percentage of records in the dataset with this field filled
+L91: 
+L92: Website URL — Primary website URL for the place
+L93: 
+L94: 62.9%Fill rate — percentage of records in the dataset with this field filled
+L95: URL Type — Type of URL (website, social profile, etc.)
+L96: 
+L97: 61%Fill rate — percentage of records in the dataset with this field filled
+L98: 
+L99: Domain — Domain name of the business
+L100: 
+L101: // ...
+L102: 
+L103: 12"name": "The Foundry Kitchen & Coffee",
+L104: 
+L105: 13"description": "A modern workspace cafe designed for the tech community, featuring specialty coffee...",
+L106: 
+L107: 14"business_status": "OPERATIONAL",
+L108: 
+L109: 15"categories": ["Cafe", "Coffee shop", "Breakfast restaurant"],
+L110: 
+L111: 16"cid": 8847291056734182459,
+L112: 
+L113: 17"place_id": "ChIJMZ1efCq7j4ARu9OQ8eLE-Ho",
+L114: 18"url": "https://www.thefoundrykitchen.com/",
+L115: 
+L116: 19"domain": "thefoundrykitchen.com",
+L117: 
+L118: // ...
+L119: ## Location Data
+L120: 
+L121: 5 fields
+L122: 
+L123: 100%Fill rate — percentage of records in the dataset with this field filled
+L124: 
+L125: Country — Country where the place is located
+L126: 
+L127: 99.6%Fill rate — percentage of records in the dataset with this field filled
+L128: 
+L129: City — City where the place is located
+L130: 
+L131: 48.8%Fill rate — percentage of records in the dataset with this field filled
+L132: 
+L133: District — District or neighborhood within the city
+L134: 
+L135: 100%Fill rate — percentage of records in the dataset with this field filled
+L136: Latitude — Latitude coordinate for mapping the location
+L137: 
+L138: 100%Fill rate — percentage of records in the dataset with this field filled
+L139: 
+L140: Longitude — Longitude coordinate for mapping the location
+L141: 
+L142: // ...
+L143: 
+L144: 12"geo_country": "US",
+L145: 
+L146: 13"city": "Palo Alto",
+L147: 
+L148: 14"district": "Downtown Palo Alto",
+L149: 
+L150: 15"lat": 37.4457032,
+L151: 
+L152: 16"lon": -122.1614285,
+L153: 
+L154: // ...
+L155: ## Contact Information
+L156: 
+L157: 3 fields
+L158: 
+L159: 100%Fill rate — percentage of records in the dataset with this field filled
+L160: 
+L161: Address — Full street address for navigation or mailing purposes
+L162: 
+L163: 100%Fill rate — percentage of records in the dataset with this field filled
+L164: 
+L165: Full Address — Complete address including the business name
+L166: 
+L167: 76.6%Fill rate — percentage of records in the dataset with this field filled
+L168: 
+L169: Phone — Phone number for contacting the business
+L170: 
+L171: // ...
+L172: 
+L173: 12"address": "428 University Ave, Palo Alto, CA 94301",
+L174: 13"full_address": "The Foundry Kitchen & Coffee, 428 University Ave, Palo Alto, CA 94301",
+L175: 
+L176: 14"phone": "(650) 328-7400",
+L177: 
+L178: // ...
+L179: ## Reviews & Ratings
+L180: 
+L181: 7 fields
+L182: 
+L183: 66.7%Fill rate — percentage of records in the dataset with this field filled
+L184: 
+L185: Rating — Average user rating
+L186: 
+L187: 100%Fill rate — percentage of records in the dataset with this field filled
+L188: 
+L189: Review Count — Number of reviews
+L190: 
+L191: 28.5%Fill rate — percentage of records in the dataset with this field filled
+L192: 
+L193: Review Snippets — Short snippets of user reviews
+L194: 
+L195: 63.6%Fill rate — percentage of records in the dataset with this field filled
+L196: Newest Reviews — Most recent reviews in structured format
+L197: 
+L198: 98.6%Fill rate — percentage of records in the dataset with this field filled
+L199: 
+L200: Newest Reviews Size — Size of newest reviews dataset
+L201: 
+L202: 63.7%Fill rate — percentage of records in the dataset with this field filled
+L203: 
+L204: Relevant Reviews — Most relevant reviews in structured format
+L205: 
+L206: 98.6%Fill rate — percentage of records in the dataset with this field filled
+L207: 
+L208: Relevant Reviews Size — Size of relevant reviews dataset
+L209: 
+L210: // ...
+L211: 
+L212: 12"rating": 4.7,
+L213: 13"review_count": 892,
+L214: 
+
+

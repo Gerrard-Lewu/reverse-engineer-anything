@@ -1,0 +1,135 @@
+{
+  "schema_version": 1,
+  "observed_on": "2026-10-14",
+  "phase": "planning",
+  "cloudflare": {
+    "source": "Cloudflare MCP whoami and GET-only API reads using current OpenAPI schemas",
+    "zone": {
+      "name": "ceverio.com",
+      "zone_id": "15411315e1cf7c12ee070583b67e45a3",
+      "account_id": "96cd418b32bd2e7f95b59c2bab8d7512",
+      "status": "pending",
+      "type": "full",
+      "website_plan": "Free Website",
+      "website_price": 0,
+      "assigned_name_servers": [
+        "amanda.ns.cloudflare.com",
+        "titan.ns.cloudflare.com"
+      ],
+      "original_name_servers": [
+        "ns43.domaincontrol.com",
+        "ns44.domaincontrol.com"
+      ],
+      "reported_original_registrar": "godaddy.com, llc (id: 146)",
+      "dns_record_count": 11
+    },
+    "mx": [
+      {
+        "host": "ceverio.com",
+        "target": "mx.zoho.com",
+        "priority": 10,
+        "proxied": false
+      },
+      {
+        "host": "ceverio.com",
+        "target": "mx2.zoho.com",
+        "priority": 20,
+        "proxied": false
+      },
+      {
+        "host": "ceverio.com",
+        "target": "mx3.zoho.com",
+        "priority": 50,
+        "proxied": false
+      }
+    ],
+    "mail_record_checks": [
+      {
+        "name": "ceverio.com",
+        "kind": "spf",
+        "proxied": false,
+        "ttl": 1,
+        "quoted_representation": true,
+        "value": "v=spf1 include:zohomail.com ~all",
+        "nonempty_content": true
+      },
+      {
+        "name": "ceverio.com",
+        "kind": "zoho_verification",
+        "proxied": false,
+        "ttl": 1,
+        "quoted_representation": true,
+        "nonempty_content": true
+      },
+      {
+        "name": "_dmarc.ceverio.com",
+        "kind": "dmarc",
+        "proxied": false,
+        "ttl": 1,
+        "quoted_representation": true,
+        "value": "v=DMARC1; p=none; rua=mailto:privacy@ceverio.com; sp=none; adkim=r; aspf=r; pct=100",
+        "nonempty_content": true
+      },
+      {
+        "name": "zmail._domainkey.ceverio.com",
+        "kind": "dkim",
+        "proxied": false,
+        "ttl": 1,
+        "quoted_representation": true,
+        "nonempty_content": true,
+        "public_key_present": true
+      }
+    ],
+    "observed_proxied_names": [
+      "ceverio.com (two A records)",
+      "www.ceverio.com",
+      "_domainconnect.ceverio.com"
+    ],
+    "cloudflare_dnssec": "disabled",
+    "registrar_parent_ds": "unverified; public resolver URLs not retrievable with web tool",
+    "access": "API reports access.api.error.not_enabled",
+    "named_tunnel": {
+      "searched_name": "ceverio-gtm",
+      "matches": 0,
+      "scope": "Does not establish that the account has no other tunnels"
+    },
+    "billing": "Account subscription GET returned Authentication error (10000); Workers plan/AI entitlement unverified",
+    "not_verified": [
+      "Complete authoritative GoDaddy zone",
+      "Current live NS/DS/MX/TXT parity",
+      "Live email authentication/delivery",
+      "Public website behavior",
+      "Zero Trust Free onboarding/current entitlement",
+      "Workers AI plan/quota"
+    ]
+  },
+  "oracle": {
+    "account_created": "User-reported",
+    "account_type": "Free Tier (user-reported)",
+    "home_region": "US East (Ashburn), user-reported",
+    "vm_and_capacity": "Not inspected",
+    "credentials": "No credentials requested or retrieved",
+    "billing_and_entitlements": "Not independently verified"
+  },
+  "private_snapshot": "evidence/account/20261014-ceverio-dns-planning-snapshot.json (ignored; contains complete public DNS record values and private account email)",
+  "dns_and_access_sources": [
+    "https://developers.cloudflare.com/dns/zone-setups/full-setup/setup/",
+    "https://developers.cloudflare.com/learning-paths/dns-best-practices/concepts/phase-1/",
+    "https://developers.cloudflare.com/dns/dnssec/",
+    "https://developers.cloudflare.com/dns/troubleshooting/email-issues/",
+    "https://developers.cloudflare.com/learning-paths/dns-best-practices/concepts/phase-4/",
+    "https://www.godaddy.com/help/change-my-domain-nameservers-664",
+    "https://www.zoho.com/mail/help/adminconsole/configure-email-delivery.html",
+    "https://developers.cloudflare.com/cloudflare-one/access-controls/applications/choose-application-type/",
+    "https://developers.cloudflare.com/cloudflare-one/networks/connectors/cloudflare-tunnel/routing-to-tunnel/",
+    "https://developers.cloudflare.com/cloudflare-one/networks/connectors/cloudflare-tunnel/troubleshoot-tunnels/connectivity-prechecks/",
+    "https://developers.cloudflare.com/workers-ai/platform/pricing/",
+    "https://docs.oracle.com/en-us/iaas/Content/FreeTier/freetier_topic-Always_Free_Resources.htm"
+  ],
+  "mutations_performed": false,
+  "application_build_started": false,
+  "application_or_dns_cutover_tests_executed": 0,
+  "historical_snapshot": true,
+  "dns_superseded_by": "evidence/dns-followup-source-index.json",
+  "followup_note": "15 October: active zone; comparable service parity; DNSSEC pending and Cloudflare DS not yet added at GoDaddy. Other service/entitlement findings retain their original observation date."
+}

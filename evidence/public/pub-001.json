@@ -1,0 +1,28 @@
+{
+  "id": "PUB-001",
+  "name": "mcp__codex_apps__firecrawl_firecrawl_map",
+  "args": {
+    "url": "https://explee.com",
+    "limit": 100,
+    "includeSubdomains": true,
+    "ignoreQueryParameters": true
+  },
+  "retrieved_at_utc": "2026-10-14 10:00:12 UTC",
+  "result": {
+    "content": [
+      {
+        "type": "text",
+        "text": "Insufficient credits to perform this request. For more credits, you can upgrade your plan at https://firecrawl.dev/pricing or try changing the request limit to a lower value.\n\nFirecrawl API agent_hints (response guidance, separate from page content):\n[\n  \"The connected Firecrawl account is out of credits, so this request was not run. Do not retry with different parameters; give the user this link to add credits or upgrade: https://www.firecrawl.dev/billing/a77z2rbhrhy02f0v57gpxjpdvnabm0sg\"\n]"
+      }
+    ],
+    "structuredContent": {
+      "error": "Insufficient credits to perform this request. For more credits, you can upgrade your plan at https://firecrawl.dev/pricing or try changing the request limit to a lower value.",
+      "agent_hints": [
+        "The connected Firecrawl account is out of credits, so this request was not run. Do not retry with different parameters; give the user this link to add credits or upgrade: https://www.firecrawl.dev/billing/a77z2rbhrhy02f0v57gpxjpdvnabm0sg"
+      ],
+      "error_code": "INVALID_ARGUMENT"
+    },
+    "isError": true
+  }
+}
+

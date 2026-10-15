@@ -1,0 +1,130 @@
+Source ID: EX-PUB-003
+Primary URL: https://explee.com/integrations/hubspot
+Classification: official_integration_documentation
+Coverage: retrieved_page_view
+Tool: mcp__codex_apps__search_service_web_run
+These are complete connector-returned views, not a full-page guarantee.
+
+Response ID: PUB-004
+Retrieved at UTC: 2026-10-14 10:01:01 UTC
+Connect HubSpot to Explee (https://explee.com/integrations/hubspot)
+【turn655156search14】 [wordlim: 200] Crawled: today; The integration uses HubSpot OAuth with the minimum set of permissions: ... Contacts  | Read and write  | Create the hot lead as a contact; match by email to avoid duplicates ... Which leads does Explee send to HubSpot? ... You can also uninstall the app from HubSpot under Settings → Integrations → Connected apps.
+
+
+Response ID: PUB-005
+Retrieved at UTC: 2026-10-14 10:01:28 UTC
+Connect HubSpot to Explee (https://explee.com/integrations/hubspot)
+【turn456656view1】 [wordlim: 200] Crawled: today; Content type: text/html; Source: open({"ref_id":"https://explee.com/integrations/hubspot","lineno":null}); Total lines: 111
+L0: 【0†Pricing】Sign in
+L1: 
+L2: # Connect HubSpot to Explee
+L3: 
+L4: Explee sends every hot lead to HubSpot the moment it appears. Each hot lead becomes a contact and a deal in the pipeline you choose, with the full outreach conversation logged on the timeline. Your team works leads in HubSpot as usual — no copy-paste, no CSV imports.
+L5: 
+L6: ## Before you start
+L7: 
+L8:   * A HubSpot account where you can install apps (super admin, or a user with App Marketplace access).
+L9:   * An Explee project with outreach running.
+L10: ## Setup
+L11: 
+L12:   1. 1
+L13: 
+L14: Open Integrations in your project
+L15: 
+L16: In Explee, open your project and go to Settings → Integrations.
+L17: 
+L18:   2. 2
+L19: 
+L20: Click Connect HubSpot
+L21: 
+L22: You will be redirected to HubSpot. Sign in and pick the account you want to connect.
+L23: 
+L24:   3. 3
+L25: 
+L26: Review permissions and approve
+L27: 
+L28: HubSpot shows the access Explee requests: contacts, companies, and deals. Click Connect app.
+L29: 
+L30:   4. 4
+L31: 
+L32: Choose a pipeline and stage
+L33: 
+L34: Back in Explee, pick where new deals should land. New hot leads use this pipeline from then on.
+L35: 
+L36:   5. 5
+L37: Sync your existing hot leads (optional)
+L38: 
+L39: Click Sync to push hot leads you already have. Leads that are already in HubSpot are skipped.
+L40: ## Data Explee accesses
+L41: 
+L42: The integration uses HubSpot OAuth with the minimum set of permissions:
+L43: 
+L44: HubSpot data  | Access  | Used for
+L45: --- | --- | ---
+L46: Contacts  | Read and write  | Create the hot lead as a contact; match by email to avoid duplicates
+L47: Companies  | Read and write  | Attach the lead's company; match by domain to avoid duplicates
+L48: Deals  | Read and write  | Create the deal and list your pipelines for the stage picker
+L49: ## FAQ
+L50: 
+L51: Which leads does Explee send to HubSpot?
+L52: 
+L53: Hot leads only — people who replied to your outreach with interest. Explee does not copy your whole lead list into HubSpot.
+L54: 
+L55: What does Explee create in HubSpot?
+L56: 
+L57: A contact (name, title, company, LinkedIn), a company, and a deal in the pipeline you chose. The deal timeline gets a note with the reason the lead is hot and the full email conversation.
+L58: 
+L59: Will I get duplicates?
+L60: No. Contacts are matched by email and companies by domain. A lead that replies twice still produces one contact and one deal.
+L61: 
+L62: Does Explee read my CRM data?
+L63: 
+L64: Explee only searches contacts and companies to prevent duplicates, and reads your deal pipelines so you can pick a stage. It never reads deal contents, emails, or other records.
+L65: 
+L66: How do I disconnect?
+L67: Go to Settings → Integrations and click Disconnect. Explee revokes its own access on the HubSpot side. You can also uninstall the app from HubSpot under Settings → Integrations → Connected apps.
+L68: 
+L69: What does it cost?
+L70: 
+L71: The HubSpot integration is included at no extra cost on every Explee plan except Starter.
+L72: ### Need help?
+L73: 
+L74: Write to 【1†[email protected]】 — we answer fast.
+L75: 
+L76: #### Products and GTM Tools
+L77: 
+L78:   * 【2†Outreach Agent】
+L79:   * 【3†Global B2B Company Database 105M+】
+L80:   * 【4†Google Maps Dataset 218M+】
+L81:   * 【5†Segments Explorer】
+L82: 
+L83: #### B2B Databases
+L84: 
+L85:   * 【6†Companies in North America】
+L86:   * 【7†Companies in Europe】
+L87:   * 【8†Companies in Asia Pacific】
+L88:   * 【9†Companies in Southeast Asia】
+L89:   * 【10†Companies in Latin America】
+L90: #### B2B Databases
+L91: 
+L92:   * 【11†Companies in Middle East】
+L93:   * 【12†Companies in CIS Countries】
+L94:   * 【13†Companies in Oceania】
+L95:   * 【14†Companies in Africa】
+L96: 
+L97: #### Resources
+L98: 
+L99:   * 【0†Pricing】
+L100:   * 【15†Affiliate program】
+L101:   * 【16†API documentation†api.explee.com】
+L102:   * 【17†Compliance FAQ】
+L103: 
+L104: © 2026 Explee LTD — made with 🦎 in London
+L105: 
+L106: 【18†Terms of use】|【19†Privacy Policy】
+L107: 
+L108: Company No. 15759064 | VAT GB478208465 | International House, 50 Essex Street, London, WC2R 3JF
+L109: 
+L110: 【20†iframe†www.googletagmanager.com】
+
+

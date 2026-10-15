@@ -1,0 +1,315 @@
+{
+  "schema_version": 1,
+  "retrieved_on": "2026-10-14",
+  "purpose": "Planning-only repository and free-cloud comparison; no inference, browser-agent runs, hosted changes or application build",
+  "repositories": [
+    {
+      "key": "jev",
+      "repository": "browser-use/jev-ultrafast",
+      "commit": "1231850a0bf1a0c0341fe408ef1668dbbfdfac46",
+      "code_license": "MIT",
+      "files": [
+        {
+          "path": "README.md",
+          "git_blob_sha": "fa7d079f9192f8ad47d4016c0d534cfe72207f33",
+          "url": "https://github.com/browser-use/jev-ultrafast/blob/1231850a0bf1a0c0341fe408ef1668dbbfdfac46/README.md",
+          "read_scope": "retrieved; selected sections reviewed"
+        },
+        {
+          "path": "AGENTS.md",
+          "git_blob_sha": "6e72c81e08a2261567fd7192b49186dbb1212f71",
+          "url": "https://github.com/browser-use/jev-ultrafast/blob/1231850a0bf1a0c0341fe408ef1668dbbfdfac46/AGENTS.md",
+          "read_scope": "reviewed"
+        },
+        {
+          "path": "LICENSE",
+          "git_blob_sha": "271d8e2807d0d79aee85a231f5c9dbb007902783",
+          "url": "https://github.com/browser-use/jev-ultrafast/blob/1231850a0bf1a0c0341fe408ef1668dbbfdfac46/LICENSE",
+          "read_scope": "reviewed"
+        },
+        {
+          "path": "pyproject.toml",
+          "git_blob_sha": "8cf2cbfa2d8ceabcc9cdfd7847d313e226394742",
+          "url": "https://github.com/browser-use/jev-ultrafast/blob/1231850a0bf1a0c0341fe408ef1668dbbfdfac46/pyproject.toml",
+          "read_scope": "reviewed"
+        },
+        {
+          "path": ".env.example",
+          "git_blob_sha": "ea68998bd6162f3561b6eb3cb742ec303318a732",
+          "url": "https://github.com/browser-use/jev-ultrafast/blob/1231850a0bf1a0c0341fe408ef1668dbbfdfac46/.env.example",
+          "read_scope": "reviewed"
+        },
+        {
+          "path": "jev_ultrafast/model.py",
+          "git_blob_sha": "d31174749e1451dbbd2a05f255f6f87fe296b122",
+          "url": "https://github.com/browser-use/jev-ultrafast/blob/1231850a0bf1a0c0341fe408ef1668dbbfdfac46/jev_ultrafast/model.py",
+          "read_scope": "reviewed"
+        },
+        {
+          "path": "jev_ultrafast/agent.py",
+          "git_blob_sha": "726d880bd95ca946106220a44c05a488a4f1da82",
+          "url": "https://github.com/browser-use/jev-ultrafast/blob/1231850a0bf1a0c0341fe408ef1668dbbfdfac46/jev_ultrafast/agent.py",
+          "read_scope": "reviewed"
+        },
+        {
+          "path": "docs/performance.md",
+          "git_blob_sha": "43f31cc5832054d59b0573e79b1be5a3023fdc31",
+          "url": "https://github.com/browser-use/jev-ultrafast/blob/1231850a0bf1a0c0341fe408ef1668dbbfdfac46/docs/performance.md",
+          "read_scope": "reviewed"
+        }
+      ]
+    },
+    {
+      "key": "laya",
+      "repository": "NandhaKishorM/laya",
+      "commit": "432312b36714d8889eba405507b37eda25257d9c",
+      "code_license": "Apache-2.0",
+      "files": [
+        {
+          "path": "README.md",
+          "git_blob_sha": "b1e4b90f4ba260ff7dc6bb5482cb39bdca37bb0a",
+          "url": "https://github.com/NandhaKishorM/laya/blob/432312b36714d8889eba405507b37eda25257d9c/README.md",
+          "read_scope": "retrieved; selected sections reviewed"
+        },
+        {
+          "path": "AGENTS.md",
+          "git_blob_sha": "4ebc2a1081ea3b914879592948006ae3f6bb87a5",
+          "url": "https://github.com/NandhaKishorM/laya/blob/432312b36714d8889eba405507b37eda25257d9c/AGENTS.md",
+          "read_scope": "reviewed"
+        },
+        {
+          "path": "LICENSE",
+          "git_blob_sha": "d9a10c0d8e868ebf8da0b3dc95bb0be634c34bfe",
+          "url": "https://github.com/NandhaKishorM/laya/blob/432312b36714d8889eba405507b37eda25257d9c/LICENSE",
+          "read_scope": "reviewed"
+        },
+        {
+          "path": "pyproject.toml",
+          "git_blob_sha": "9cbbe85df7fa20119c268ddbc658bef91b547017",
+          "url": "https://github.com/NandhaKishorM/laya/blob/432312b36714d8889eba405507b37eda25257d9c/pyproject.toml",
+          "read_scope": "reviewed"
+        },
+        {
+          "path": "verify/checkpoints.json",
+          "git_blob_sha": "5eb2a3cbfe04a69f26a7fbc3ed62510f93f215da",
+          "url": "https://github.com/NandhaKishorM/laya/blob/432312b36714d8889eba405507b37eda25257d9c/verify/checkpoints.json",
+          "read_scope": "reviewed"
+        },
+        {
+          "path": "BENCHMARKS.md",
+          "git_blob_sha": "5a484f6ddb76863734c91c71feb9cc125763cc24",
+          "url": "https://github.com/NandhaKishorM/laya/blob/432312b36714d8889eba405507b37eda25257d9c/BENCHMARKS.md",
+          "read_scope": "retrieved; selected sections reviewed"
+        },
+        {
+          "path": "laya/agent.py",
+          "git_blob_sha": "67ea7760682e1c56266bd8f1ec3038e24e059a50",
+          "url": "https://github.com/NandhaKishorM/laya/blob/432312b36714d8889eba405507b37eda25257d9c/laya/agent.py",
+          "read_scope": "retrieved; selected sections reviewed"
+        },
+        {
+          "path": "laya/serve.py",
+          "git_blob_sha": "c5eb2860d985118f90c1ff19ff78807505a5dd6c",
+          "url": "https://github.com/NandhaKishorM/laya/blob/432312b36714d8889eba405507b37eda25257d9c/laya/serve.py",
+          "read_scope": "retrieved; selected sections reviewed"
+        },
+        {
+          "path": "sdk/typescript/README.md",
+          "git_blob_sha": "efab44c691a6c071fe477937609eb54e889f9b90",
+          "url": "https://github.com/NandhaKishorM/laya/blob/432312b36714d8889eba405507b37eda25257d9c/sdk/typescript/README.md",
+          "read_scope": "reviewed"
+        },
+        {
+          "path": "docs/finetune_browser_agent.md",
+          "git_blob_sha": "c7409748520cc828932008252a63fbeeeaf1f6c6",
+          "url": "https://github.com/NandhaKishorM/laya/blob/432312b36714d8889eba405507b37eda25257d9c/docs/finetune_browser_agent.md",
+          "read_scope": "reviewed"
+        },
+        {
+          "path": "docs/staged-adoption.md",
+          "git_blob_sha": "7ea2b3037188a1e5ffe2f606d8e8f7e89bbb4b6e",
+          "url": "https://github.com/NandhaKishorM/laya/blob/432312b36714d8889eba405507b37eda25257d9c/docs/staged-adoption.md",
+          "read_scope": "reviewed"
+        },
+        {
+          "path": "docs/guardrail-limitations.md",
+          "git_blob_sha": "631b7e81c98a0f7f453131836d517353181556fd",
+          "url": "https://github.com/NandhaKishorM/laya/blob/432312b36714d8889eba405507b37eda25257d9c/docs/guardrail-limitations.md",
+          "read_scope": "reviewed"
+        }
+      ]
+    }
+  ],
+  "hardware": {
+    "source": "User-provided Windows screenshots",
+    "cpu": "Intel Core i7-8650U",
+    "ram_gb": 8,
+    "gpu": "Intel UHD Graphics 620 (integrated)",
+    "reported_dedicated_graphics_mb": 128,
+    "observed_memory_use_percent": 82,
+    "free_disk_gb_approx": 39,
+    "limits": "Momentary usage; shared GPU memory and performance not measured. Device/product identifiers omitted."
+  },
+  "supabase": {
+    "selected_name": "Explee REA Project",
+    "organization_name": "REA Org",
+    "organization_id": "cudjxdgetmhygqfnxcsu",
+    "project_ref": "ojfcxjdeijbxlxrzesig",
+    "dashboard_url": "https://supabase.com/dashboard/project/ojfcxjdeijbxlxrzesig",
+    "selection": "Confirmed by user",
+    "access": "Verified through the newly connected Rea Org Supabase account",
+    "region": "eu-west-1",
+    "status": "ACTIVE_HEALTHY",
+    "postgres_version": "17.11.0.003",
+    "postgres_engine": "17",
+    "organization_plan": "free",
+    "table_inventory": {
+      "scope": "supabase_list_tables with all schemas, compact metadata",
+      "returned_tables": 39,
+      "returned_schemas": [
+        "auth",
+        "vault",
+        "storage",
+        "realtime"
+      ],
+      "application_tables_observed": 0,
+      "note": "Returned inventory contains platform-managed tables; no application tables appeared. Views/functions/grants/data API exposure and runtime connection have not been audited."
+    },
+    "initial_access_diagnostic": "Initial request using the prior general connection was denied; target absent from the three then-callable inventories. Superseded by successful REA Org metadata/inventory reads.",
+    "not_verified": [
+      "Actual usage/add-ons/egress",
+      "Application schema/backend role and grants",
+      "Views/functions/Data API configuration",
+      "Direct/pooler connectivity from future host"
+    ],
+    "mutations_performed": false,
+    "keys_or_contact_rows_retrieved": false,
+    "documentation": "https://supabase.com/docs/guides/database/connecting-to-postgres"
+  },
+  "model_cards": [
+    {
+      "url": "https://huggingface.co/convaiinnovations/laya",
+      "retrieved_on": "2026-10-14",
+      "revision_pinned": false,
+      "weight_bytes_downloaded": false
+    },
+    {
+      "url": "https://huggingface.co/convaiinnovations/laya-multilingual",
+      "retrieved_on": "2026-10-14",
+      "revision_pinned": false,
+      "weight_bytes_downloaded": false
+    },
+    {
+      "url": "https://huggingface.co/cklxx/laya-browser",
+      "retrieved_on": "2026-10-14",
+      "revision_pinned": false,
+      "weight_bytes_downloaded": false
+    },
+    {
+      "url": "https://huggingface.co/Qwen/Qwen3-30B-A3B",
+      "retrieved_on": "2026-10-14",
+      "revision_pinned": false,
+      "weight_bytes_downloaded": false
+    },
+    {
+      "url": "https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507",
+      "retrieved_on": "2026-10-14",
+      "revision_pinned": false,
+      "weight_bytes_downloaded": false
+    }
+  ],
+  "cloud_sources": [
+    {
+      "url": "https://developers.cloudflare.com/workers-ai/platform/pricing/",
+      "retrieved_on": "2026-10-14",
+      "evidence_type": "primary published documentation; not a connected-account entitlement or test"
+    },
+    {
+      "url": "https://developers.cloudflare.com/changelog/post/2026-07-28-models-require-workers-paid/",
+      "retrieved_on": "2026-10-14",
+      "evidence_type": "primary published documentation; not a connected-account entitlement or test"
+    },
+    {
+      "url": "https://developers.cloudflare.com/workers-ai/models/qwen3-30b-a3b-fp8/",
+      "retrieved_on": "2026-10-14",
+      "evidence_type": "primary published documentation; not a connected-account entitlement or test"
+    },
+    {
+      "url": "https://developers.cloudflare.com/workers-ai/platform/data-usage/",
+      "retrieved_on": "2026-10-14",
+      "evidence_type": "primary published documentation; not a connected-account entitlement or test"
+    },
+    {
+      "url": "https://huggingface.co/docs/hub/spaces-overview",
+      "retrieved_on": "2026-10-14",
+      "evidence_type": "primary published documentation; not a connected-account entitlement or test"
+    },
+    {
+      "url": "https://huggingface.co/docs/huggingface_hub/en/guides/manage-spaces",
+      "retrieved_on": "2026-10-14",
+      "evidence_type": "primary published documentation; not a connected-account entitlement or test"
+    },
+    {
+      "url": "https://huggingface.co/docs/hub/spaces-zerogpu",
+      "retrieved_on": "2026-10-14",
+      "evidence_type": "primary published documentation; not a connected-account entitlement or test"
+    },
+    {
+      "url": "https://huggingface.co/docs/inference-providers/pricing",
+      "retrieved_on": "2026-10-14",
+      "evidence_type": "primary published documentation; not a connected-account entitlement or test"
+    },
+    {
+      "url": "https://docs.oracle.com/en-us/iaas/Content/FreeTier/freetier_topic-Always_Free_Resources.htm",
+      "retrieved_on": "2026-10-14",
+      "evidence_type": "primary published documentation; not a connected-account entitlement or test"
+    },
+    {
+      "url": "https://www.oracle.com/cloud/free/faq/",
+      "retrieved_on": "2026-10-14",
+      "evidence_type": "primary published documentation; not a connected-account entitlement or test"
+    },
+    {
+      "url": "https://research.google.com/colaboratory/faq.html",
+      "retrieved_on": "2026-10-14",
+      "evidence_type": "primary published documentation; not a connected-account entitlement or test"
+    },
+    {
+      "url": "https://www.cloudflare.com/plans/zero-trust-services/",
+      "retrieved_on": "2026-10-14",
+      "evidence_type": "primary published documentation; not a connected-account entitlement or test"
+    },
+    {
+      "url": "https://developers.cloudflare.com/learning-paths/clientless-access/initial-setup/create-zero-trust-org/",
+      "retrieved_on": "2026-10-14",
+      "evidence_type": "primary published documentation; not a connected-account entitlement or test"
+    },
+    {
+      "url": "https://developers.cloudflare.com/cloudflare-one/setup/secure-private-apps/private-web-app/",
+      "retrieved_on": "2026-10-14",
+      "evidence_type": "primary published documentation; not a connected-account entitlement or test"
+    }
+  ],
+  "documentation_cross_checks": [
+    {
+      "repository": "huggingface/hub-docs",
+      "path": "docs/hub/spaces-overview.md",
+      "git_blob_sha": "575132fb0bcf4b4ae4d615620c599fe1ee8e7972"
+    },
+    {
+      "repository": "huggingface/huggingface_hub",
+      "path": "docs/source/en/guides/manage-spaces.md",
+      "git_blob_sha": "c3726569ee9107389823c367899da33319392077"
+    }
+  ],
+  "not_executed": [
+    "Install repository dependencies",
+    "Download weights",
+    "Inference benchmark",
+    "Jev browser task",
+    "Oracle account or VM creation",
+    "Cloudflare/Supabase configuration",
+    "App build or deployment",
+    "Lead email or booking"
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "id": "PUB-003",
+  "name": "mcp__codex_apps__firecrawl_firecrawl_search",
+  "args": {
+    "query": "site:explee.com (\"email\" OR \"outreach\" OR \"meeting\" OR \"GTM\" OR \"pricing\")",
+    "sources": [
+      "web"
+    ],
+    "limit": 10,
+    "domainTools": false,
+    "includeDomains": [
+      "explee.com"
+    ]
+  },
+  "retrieved_at_utc": "2026-10-14 10:00:12 UTC",
+  "result": {
+    "content": [
+      {
+        "type": "text",
+        "text": "Request failed with status code 402\n\nFirecrawl API agent_hints (response guidance, separate from page content):\n[\n  \"The connected Firecrawl account is out of credits, so this request was not run. Do not retry with different parameters; give the user this link to add credits or upgrade: https://www.firecrawl.dev/billing/315cy6393sehhqa5wthm0prwhfcpkf09\"\n]"
+      }
+    ],
+    "structuredContent": {
+      "error": "Request failed with status code 402",
+      "agent_hints": [
+        "The connected Firecrawl account is out of credits, so this request was not run. Do not retry with different parameters; give the user this link to add credits or upgrade: https://www.firecrawl.dev/billing/315cy6393sehhqa5wthm0prwhfcpkf09"
+      ],
+      "error_code": "INVALID_ARGUMENT"
+    },
+    "isError": true
+  }
+}
+

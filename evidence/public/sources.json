@@ -1,0 +1,378 @@
+{
+  "collected_date": "2026-10-14",
+  "scope": "Official Explee public sources. No signed-in application observation.",
+  "response_completeness": "JSON files preserve complete tool responses. Source views may be selective/cached and do not guarantee full webpage or schema content.",
+  "sources": [
+    {
+      "source_id": "EX-PUB-001",
+      "url": "https://explee.com/",
+      "classification": "official_marketing",
+      "coverage": "retrieved_page_views_and_indexed_excerpts",
+      "tool": "mcp__codex_apps__search_service_web_run",
+      "views": [
+        {
+          "response_id": "PUB-004",
+          "retrieved_at_utc": "2026-10-14 10:01:01 UTC",
+          "returned_url": "https://explee.com/",
+          "connector_reference": "turn655156search1"
+        },
+        {
+          "response_id": "PUB-004",
+          "retrieved_at_utc": "2026-10-14 10:01:01 UTC",
+          "returned_url": "https://explee.com/?from_app_gate=1",
+          "connector_reference": "turn655156search3"
+        },
+        {
+          "response_id": "PUB-004",
+          "retrieved_at_utc": "2026-10-14 10:01:01 UTC",
+          "returned_url": "https://explee.com/?force_companies=true",
+          "connector_reference": "turn655156search4"
+        },
+        {
+          "response_id": "PUB-004",
+          "retrieved_at_utc": "2026-10-14 10:01:01 UTC",
+          "returned_url": "https://explee.com/?q=lovable.dev",
+          "connector_reference": "turn655156search6"
+        },
+        {
+          "response_id": "PUB-004",
+          "retrieved_at_utc": "2026-10-14 10:01:01 UTC",
+          "returned_url": "https://explee.com/?login=false",
+          "connector_reference": "turn655156search16"
+        },
+        {
+          "response_id": "PUB-004",
+          "retrieved_at_utc": "2026-10-14 10:01:01 UTC",
+          "returned_url": "https://explee.com/",
+          "connector_reference": "turn655156view0"
+        }
+      ],
+      "excerpt_path": "evidence/public/source-001.txt",
+      "excerpt_sha256": "2a1c5adc5f52b17282e1e4b42e10378e52abfaaecd73461cbcedd010c8e6e41f"
+    },
+    {
+      "source_id": "EX-PUB-002",
+      "url": "https://explee.com/pricing",
+      "classification": "official_marketing",
+      "coverage": "retrieved_page_view_and_older_indexed_excerpt",
+      "tool": "mcp__codex_apps__search_service_web_run",
+      "views": [
+        {
+          "response_id": "PUB-004",
+          "retrieved_at_utc": "2026-10-14 10:01:01 UTC",
+          "returned_url": "https://explee.com/pricing",
+          "connector_reference": "turn655156search2"
+        },
+        {
+          "response_id": "PUB-005",
+          "retrieved_at_utc": "2026-10-14 10:01:28 UTC",
+          "returned_url": "https://explee.com/pricing",
+          "connector_reference": "turn456656view0"
+        }
+      ],
+      "excerpt_path": "evidence/public/source-002.txt",
+      "excerpt_sha256": "8fa58e9959bd20dfc7aa511a0905e401fa421eaf109829c626d7869de4ca90a2"
+    },
+    {
+      "source_id": "EX-PUB-003",
+      "url": "https://explee.com/integrations/hubspot",
+      "classification": "official_integration_documentation",
+      "coverage": "retrieved_page_view",
+      "tool": "mcp__codex_apps__search_service_web_run",
+      "views": [
+        {
+          "response_id": "PUB-004",
+          "retrieved_at_utc": "2026-10-14 10:01:01 UTC",
+          "returned_url": "https://explee.com/integrations/hubspot",
+          "connector_reference": "turn655156search14"
+        },
+        {
+          "response_id": "PUB-005",
+          "retrieved_at_utc": "2026-10-14 10:01:28 UTC",
+          "returned_url": "https://explee.com/integrations/hubspot",
+          "connector_reference": "turn456656view1"
+        }
+      ],
+      "excerpt_path": "evidence/public/source-003.txt",
+      "excerpt_sha256": "a9d3449f2485aea083137396977822a37c0251c68c16d42d5fb88520e88932bf"
+    },
+    {
+      "source_id": "EX-PUB-004",
+      "url": "https://api.explee.com/public/api/docs",
+      "classification": "official_public_api_documentation",
+      "coverage": "selective_line_numbered_page_views",
+      "tool": "mcp__codex_apps__search_service_web_run",
+      "views": [
+        {
+          "response_id": "PUB-004",
+          "retrieved_at_utc": "2026-10-14 10:01:01 UTC",
+          "returned_url": "https://api.explee.com/public/api/docs",
+          "connector_reference": "turn655156search0"
+        },
+        {
+          "response_id": "PUB-005",
+          "retrieved_at_utc": "2026-10-14 10:01:28 UTC",
+          "returned_url": "https://api.explee.com/public/api/docs",
+          "connector_reference": "turn456656view2"
+        },
+        {
+          "response_id": "PUB-007",
+          "retrieved_at_utc": "2026-10-14 10:01:53 UTC",
+          "returned_url": "https://api.explee.com/public/api/docs",
+          "connector_reference": "turn778799view2"
+        },
+        {
+          "response_id": "PUB-007",
+          "retrieved_at_utc": "2026-10-14 10:01:53 UTC",
+          "returned_url": "https://api.explee.com/public/api/docs",
+          "connector_reference": "turn778799view3"
+        },
+        {
+          "response_id": "PUB-007",
+          "retrieved_at_utc": "2026-10-14 10:01:53 UTC",
+          "returned_url": "https://api.explee.com/public/api/docs",
+          "connector_reference": "turn778799view4"
+        },
+        {
+          "response_id": "PUB-007",
+          "retrieved_at_utc": "2026-10-14 10:01:53 UTC",
+          "returned_url": "https://api.explee.com/public/api/docs",
+          "connector_reference": "turn778799view5"
+        },
+        {
+          "response_id": "PUB-008",
+          "retrieved_at_utc": "2026-10-14 10:02:39 UTC",
+          "returned_url": "https://api.explee.com/public/api/docs",
+          "connector_reference": "turn254718view0"
+        },
+        {
+          "response_id": "PUB-008",
+          "retrieved_at_utc": "2026-10-14 10:02:39 UTC",
+          "returned_url": "https://api.explee.com/public/api/docs",
+          "connector_reference": "turn254718view1"
+        },
+        {
+          "response_id": "PUB-008",
+          "retrieved_at_utc": "2026-10-14 10:02:39 UTC",
+          "returned_url": "https://api.explee.com/public/api/docs",
+          "connector_reference": "turn254718view2"
+        },
+        {
+          "response_id": "PUB-008",
+          "retrieved_at_utc": "2026-10-14 10:02:39 UTC",
+          "returned_url": "https://api.explee.com/public/api/docs",
+          "connector_reference": "turn254718view3"
+        },
+        {
+          "response_id": "PUB-008",
+          "retrieved_at_utc": "2026-10-14 10:02:39 UTC",
+          "returned_url": "https://api.explee.com/public/api/docs",
+          "connector_reference": "turn254718view4"
+        },
+        {
+          "response_id": "PUB-009",
+          "retrieved_at_utc": "2026-10-14 10:04:26 UTC",
+          "returned_url": "https://api.explee.com/public/api/docs",
+          "connector_reference": "turn361751view0"
+        },
+        {
+          "response_id": "PUB-009",
+          "retrieved_at_utc": "2026-10-14 10:04:26 UTC",
+          "returned_url": "https://api.explee.com/public/api/docs",
+          "connector_reference": "turn361751view1"
+        },
+        {
+          "response_id": "PUB-009",
+          "retrieved_at_utc": "2026-10-14 10:04:26 UTC",
+          "returned_url": "https://api.explee.com/public/api/docs",
+          "connector_reference": "turn361751view2"
+        },
+        {
+          "response_id": "PUB-009",
+          "retrieved_at_utc": "2026-10-14 10:04:26 UTC",
+          "returned_url": "https://api.explee.com/public/api/docs",
+          "connector_reference": "turn361751view3"
+        }
+      ],
+      "excerpt_path": "evidence/public/source-004.txt",
+      "excerpt_sha256": "516a847e47599054584ce6bfef170bc2a93a2ef1685673da1cd2651a7b0d3df8"
+    },
+    {
+      "source_id": "EX-PUB-005",
+      "url": "https://api.explee.com/public/api/openapi.json",
+      "classification": "official_public_api_schema",
+      "coverage": "header_and_partial_schema_fragments_not_complete_json",
+      "tool": "mcp__codex_apps__search_service_web_run",
+      "views": [
+        {
+          "response_id": "PUB-007",
+          "retrieved_at_utc": "2026-10-14 10:01:53 UTC",
+          "returned_url": "https://api.explee.com/public/api/openapi.json",
+          "connector_reference": "turn778799view0"
+        },
+        {
+          "response_id": "PUB-008",
+          "retrieved_at_utc": "2026-10-14 10:02:39 UTC",
+          "returned_url": "https://api.explee.com/public/api/openapi.json",
+          "connector_reference": "turn254718view5"
+        },
+        {
+          "response_id": "PUB-009",
+          "retrieved_at_utc": "2026-10-14 10:04:26 UTC",
+          "returned_url": "https://api.explee.com/public/api/openapi.json",
+          "connector_reference": "turn361751view4"
+        }
+      ],
+      "excerpt_path": "evidence/public/source-005.txt",
+      "excerpt_sha256": "f7573dbbba168785285985a612f0938e90a2e034f5ddd7c1309ab8ba59be949b"
+    },
+    {
+      "source_id": "EX-PUB-006",
+      "url": "https://explee.com/b2b-database",
+      "classification": "official_marketing",
+      "coverage": "retrieved_page_view",
+      "tool": "mcp__codex_apps__search_service_web_run",
+      "views": [
+        {
+          "response_id": "PUB-006",
+          "retrieved_at_utc": "2026-10-14 10:01:28 UTC",
+          "returned_url": "https://explee.com/b2b-database",
+          "connector_reference": "turn198070view0"
+        }
+      ],
+      "excerpt_path": "evidence/public/source-006.txt",
+      "excerpt_sha256": "a78ff3f84a618d4a8bc09182fc4bc7616c62642e0f774d88ce98edea61dcc4e7"
+    },
+    {
+      "source_id": "EX-PUB-007",
+      "url": "https://explee.com/gm-dataset",
+      "classification": "official_marketing",
+      "coverage": "partial_retrieved_page_view",
+      "tool": "mcp__codex_apps__search_service_web_run",
+      "views": [
+        {
+          "response_id": "PUB-006",
+          "retrieved_at_utc": "2026-10-14 10:01:28 UTC",
+          "returned_url": "https://explee.com/gm-dataset",
+          "connector_reference": "turn198070view1"
+        }
+      ],
+      "excerpt_path": "evidence/public/source-007.txt",
+      "excerpt_sha256": "00d020668f2a3a61416d913075a41399d11b8d212dceeb8da77137170eb59c92"
+    },
+    {
+      "source_id": "EX-PUB-008",
+      "url": "https://explee.com/tools/explorer",
+      "classification": "retrieval_diagnostic",
+      "coverage": "page_identity_only",
+      "tool": "mcp__codex_apps__search_service_web_run",
+      "views": [
+        {
+          "response_id": "PUB-006",
+          "retrieved_at_utc": "2026-10-14 10:01:28 UTC",
+          "returned_url": "https://explee.com/tools/explorer",
+          "connector_reference": "turn198070view2"
+        },
+        {
+          "response_id": "PUB-007",
+          "retrieved_at_utc": "2026-10-14 10:01:53 UTC",
+          "returned_url": "https://explee.com/tools/explorer",
+          "connector_reference": "turn778799view1"
+        }
+      ],
+      "excerpt_path": "evidence/public/source-008.txt",
+      "excerpt_sha256": "8c3355d34afee092520fe1113ce3e90f6e443bc4534448c5f97363d7637757c1"
+    },
+    {
+      "source_id": "EX-PUB-009",
+      "url": "https://api.explee.com/",
+      "classification": "indexed_official_api_excerpt",
+      "coverage": "search_excerpt_only",
+      "tool": "mcp__codex_apps__search_service_web_run",
+      "views": [
+        {
+          "response_id": "PUB-004",
+          "retrieved_at_utc": "2026-10-14 10:01:01 UTC",
+          "returned_url": "https://api.explee.com/",
+          "connector_reference": "turn655156search13"
+        }
+      ],
+      "excerpt_path": "evidence/public/source-009.txt",
+      "excerpt_sha256": "92d1d0483de91d655184844f192353cdbd4b818dc5073ffd7e4d822e8605e772"
+    }
+  ],
+  "raw_responses": [
+    {
+      "response_id": "PUB-001",
+      "path": "evidence/public/pub-001.json",
+      "sha256": "c85b896f84dfcda342ae50ad4c369be8f646c4c30f213ea53465723f8c16af6c",
+      "tool": "mcp__codex_apps__firecrawl_firecrawl_map",
+      "retrieved_at_utc": "2026-10-14 10:00:12 UTC",
+      "is_error": true
+    },
+    {
+      "response_id": "PUB-002",
+      "path": "evidence/public/pub-002.json",
+      "sha256": "658108949148c28abfe5256b4451f5468f6216ca0d353c64ba6e1589159dccc9",
+      "tool": "mcp__codex_apps__firecrawl_firecrawl_scrape",
+      "retrieved_at_utc": "2026-10-14 10:00:12 UTC",
+      "is_error": true
+    },
+    {
+      "response_id": "PUB-003",
+      "path": "evidence/public/pub-003.json",
+      "sha256": "4ed6c60f04c2efaea4f0bcc964a15c602e035e9a125394f291b4a89e42271893",
+      "tool": "mcp__codex_apps__firecrawl_firecrawl_search",
+      "retrieved_at_utc": "2026-10-14 10:00:12 UTC",
+      "is_error": true
+    },
+    {
+      "response_id": "PUB-004",
+      "path": "evidence/public/pub-004.json",
+      "sha256": "d244759d964c85805e2ae323269c0027b7fbf4d3f37b3e2b4efd0ff0a15d64f2",
+      "tool": "mcp__codex_apps__search_service_web_run",
+      "retrieved_at_utc": "2026-10-14 10:01:01 UTC",
+      "is_error": false
+    },
+    {
+      "response_id": "PUB-005",
+      "path": "evidence/public/pub-005.json",
+      "sha256": "8246d9689aed863a5c17fc0d825e127fd0bac0b1c5b8bdc262ccf688c7b4e010",
+      "tool": "mcp__codex_apps__search_service_web_run",
+      "retrieved_at_utc": "2026-10-14 10:01:28 UTC",
+      "is_error": false
+    },
+    {
+      "response_id": "PUB-006",
+      "path": "evidence/public/pub-006.json",
+      "sha256": "67404b7af9dab61f6cdc1d9846bd04e72e349287930361bf131d20381269618d",
+      "tool": "mcp__codex_apps__search_service_web_run",
+      "retrieved_at_utc": "2026-10-14 10:01:28 UTC",
+      "is_error": false
+    },
+    {
+      "response_id": "PUB-007",
+      "path": "evidence/public/pub-007.json",
+      "sha256": "dbf956a75adaa759b45ab1389e8232135308e4e800c39e07a6bd2c8b73e8b39b",
+      "tool": "mcp__codex_apps__search_service_web_run",
+      "retrieved_at_utc": "2026-10-14 10:01:53 UTC",
+      "is_error": false
+    },
+    {
+      "response_id": "PUB-008",
+      "path": "evidence/public/pub-008.json",
+      "sha256": "595d83f0884df07b08cd8b83f9ed50811e9095abb83b7d098e0105023051946b",
+      "tool": "mcp__codex_apps__search_service_web_run",
+      "retrieved_at_utc": "2026-10-14 10:02:39 UTC",
+      "is_error": false
+    },
+    {
+      "response_id": "PUB-009",
+      "path": "evidence/public/pub-009.json",
+      "sha256": "bf2eca6ad12cd33dec98d5f00f877e37dfcc2cba52f7d143a351e35f674a149e",
+      "tool": "mcp__codex_apps__search_service_web_run",
+      "retrieved_at_utc": "2026-10-14 10:04:26 UTC",
+      "is_error": false
+    }
+  ]
+}
