@@ -1,0 +1,72 @@
+{
+  "recorded_at": "2026-10-15T09:43:46.741Z",
+  "phase": "planning/source investigation",
+  "state_id": "EX-TG-D-001",
+  "status": "accepted",
+  "scope": "Initial authenticated targeting desktop viewport only",
+  "source_url": "https://explee.com/app-auto-gtm/p/40610/targeting",
+  "viewport": {
+    "width": 1366,
+    "height": 577
+  },
+  "rea_version": "6.4.0",
+  "mcp_version": "1.29.0",
+  "artifact_commit": "5f0056e7d557d8b6785a786f8f614d7b0898ca4e",
+  "acceptance_commit": "5a8f924ae6e3bfb817b2b30438a823fab215ab2b",
+  "artifact_directory": "captures/2026-10-15/EX-TG-D-001",
+  "archive_sha256": "c5d452aeb8d241218fb9c92d321c8f41064072389f57e1a0044d7deb6ca3c2d9",
+  "screenshot_sha256": "5fd45d3bfd758c2ad8bd2eb95ccb2553dd5e05a3334dffd47c75e2d20146edfb",
+  "accepted_at": "2026-10-15T09:28:30.631Z",
+  "remote_verification": "All three archive parts and six standalone records/diagnostic matched complete retrieved bytes. All 11 archive member hashes checked; acceptance read back separately.",
+  "limitations": [
+    "Initial viewport only. Lower form sections, validation/save behavior and mobile remain pending.",
+    "Computed styles and external assets remain unresolved.",
+    "No requests in idle ten-second attach window; private API shapes remain unresolved.",
+    "Expected REA policy/pre-attach limits and manual cross-call alignment remain.",
+    "Existing account configuration is reference evidence; approved Ceverio rules remain authoritative."
+  ],
+  "observed_components": [
+    "Project-default inheritance selector",
+    "Geography criteria block and suggestion controls",
+    "Company-size criteria block and suggestion controls"
+  ],
+  "requirements": [
+    "REQ-REF-001",
+    "REQ-REF-002",
+    "REQ-REF-003",
+    "REQ-DATA-001"
+  ],
+  "acceptance_scenarios": [
+    "ACC-023",
+    "ACC-025",
+    "ACC-031"
+  ],
+  "assets": {
+    "private_commit": "4c4484f921facc25dc8987604f7db77f111f0827",
+    "manifest": "assets/2026-10-15/targeting-shared/source-assets.json",
+    "retained": 4,
+    "types": [
+      "Stylesheet",
+      "Font/WOFF2"
+    ],
+    "declared_font_families": [
+      "GeistSans",
+      "GeistMono"
+    ],
+    "verification": "All four assets and provenance manifest read back and compared in full.",
+    "limits": [
+      "Computed font assignment, typography metrics and CSS rule applicability are unverified.",
+      "Loaded resource URLs match; identity between fetched bytes and bytes originally loaded in Chrome is not independently proven.",
+      "These four files are a bounded asset subset, not the complete icon/image/font catalog.",
+      "Reuse/license permission is not established by collection; assets remain private."
+    ]
+  },
+  "control_recovery": "Original native tab attachment remained detached; a fresh tab in the same signed-in Chrome profile restored control. Exact target selector added for duplicate source tabs and tested.",
+  "application_build": "not started",
+  "r4_status": "open",
+  "next_actions": [
+    "Complete targeting vertical/mobile/style coverage.",
+    "Capture remaining small groups and observed read transitions/API shapes.",
+    "Reconcile all source-derived component/workflow/data contracts and review R4."
+  ]
+}

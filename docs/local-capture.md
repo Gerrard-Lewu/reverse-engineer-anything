@@ -57,7 +57,7 @@ node scripts/bridge_chrome_discovery.mjs `
   --ready-file ".capture-staging/chrome-ready.json"
 ```
 
-Use a new ready-file path each run. The owner approves Chrome if prompted. Once the adapter prints `ready`, use the emitted endpoint in a second terminal:
+Use a new ready-file path each run. For duplicate matching tabs, add `--target-id` with an actual observed CDP target ID; ambiguity is rejected instead of choosing arbitrarily. The owner approves Chrome if prompted. Once the adapter prints `ready`, use the emitted endpoint in a second terminal:
 
 ```powershell
 $taskChromeReady = Get-Content -Raw .capture-staging/chrome-ready.json | ConvertFrom-Json
@@ -67,7 +67,7 @@ $taskChromeReady = Get-Content -Raw .capture-staging/chrome-ready.json | Convert
   --label project-overview-desktop
 ```
 
-If npm startup is slow and this exact package is already cached, a process-scoped `NPM_CONFIG_OFFLINE=true` was used successfully. The first initialization attempt exceeded 45 seconds; a later warm/offline launch succeeded. These observations do not prove a network-only cause. Leave Chrome stable during each capture. Stop the adapter with Ctrl+C after collection; it releases its own sessions/socket and leaves Chrome open. Preserve only its safe ready/provenance metadata, never `DevToolsActivePort` or the upstream WebSocket capability URL.
+If npm startup is slow and this exact package is already cached, a process-scoped `NPM_CONFIG_OFFLINE=true` was used successfully. The first initialization attempt exceeded 45 seconds; a later warm/offline launch succeeded. These observations do not prove a network-only cause. Leave Chrome stable during each capture. Stop the adapter with Ctrl+C after collection; it releases its own sessions/socket and leaves Chrome open. If an older native tab attachment remains detached, a fresh tab in the same signed-in profile restored native control in this investigation. Use its actual target identity for subsequent REA captures. Preserve only its safe ready/provenance metadata, never `DevToolsActivePort` or the upstream WebSocket capability URL.
 
 Verify the adapter with `REA_PACKAGE_ROOT` pointing to the installed REA directory:
 

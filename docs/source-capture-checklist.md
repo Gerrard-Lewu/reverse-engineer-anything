@@ -1,13 +1,13 @@
 # Authenticated source capture checklist
 
-Status: first initial desktop overview `EX-OV-D-001` accepted; other screen and interaction captures pending. Entries below are investigation targets from the user request and public documentation, not a claim that these exact routes/layouts were observed.
+Status: initial desktop overview `EX-OV-D-001` and targeting `EX-TG-D-001` accepted; broader screen/interaction coverage pending. Entries below are investigation targets from the user request and public documentation, not a claim that these exact routes/layouts were observed.
 
 The [15 October completion plan](../specs/reverse-engineering-completion.md) gives the R0–R4 sequence and planning exit criteria. Cloudflare activation does not establish source access; the first initial desktop overview has passed private remote verification; full vertical/mobile coverage remains pending.
 
 | Capture group | Required state/behavior | Current evidence |
 | --- | --- | --- |
 | Project start | `/app-auto-gtm/p/40610`, navigation, overview, existing records, full vertical extent | `EX-OV-D-001`: initial desktop viewport accepted; full vertical extent pending |
-| Targeting | Offer/ICP, filters or criteria editor, preview, validation, save behavior | Uncaptured |
+| Targeting | Offer/ICP, filters or criteria editor, preview, validation, save behavior | `EX-TG-D-001`: initial criteria viewport accepted; variants/mobile/validation/save behavior pending |
 | Leads | Search/results, score/research details, selection, enrichment progress, empty/error results | Documented public contracts only |
 | Import | Existing import controls, field mapping, validation/progress/row errors | Documented public contracts only |
 | Campaign | Existing targeting/copy/schedule fields, lead/draft review, lifecycle indicators | Documented public contracts only |
@@ -16,7 +16,7 @@ The [15 October completion plan](../specs/reverse-engineering-completion.md) giv
 | Meetings | Existing booking-link setting and meeting/outcome indicators | Advertised booking-link routing only |
 | Integrations | Existing mailbox/HubSpot/booking connection surfaces and current status | Public HubSpot setup documentation only |
 | Responsive | 390 × 844 layout and meaningful control states for the primary journey | Uncaptured |
-| Visual source | Fonts, icons/assets, colors, spacing, computed styles, component states | Uncaptured |
+| Visual source | Fonts, icons/assets, colors, spacing, computed styles, component states | Four loaded CSS/font assets privately retained; computed/component/mobile coverage pending |
 
 For each accepted state record: exact URL, viewport, timestamp, starting state, user action if any, resulting state, screenshot, available DOM/style evidence, relevant request shapes, Evidence IDs, and limitations. Check the saved screenshot before accepting it. Do not treat a login/loading/error page as the intended app screen; record it as a blocker.
 

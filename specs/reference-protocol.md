@@ -4,7 +4,7 @@
 
 ## Current state
 
-The [reverse-engineering completion plan](reverse-engineering-completion.md) separates remaining R0–R4 evidence/contract work from future cloud integration and implementation. As of 2026-10-15 09:16:18 UTC, one initial desktop overview is accepted; broader visual/workflow coverage remains pending.
+The [reverse-engineering completion plan](reverse-engineering-completion.md) separates remaining R0–R4 evidence/contract work from future cloud integration and implementation. As of 2026-10-15 09:16:18 UTC, two initial desktop viewports (overview and targeting) are accepted; broader visual/workflow coverage remains pending.
 
 The user selected `https://explee.com/app-auto-gtm/p/40610` in their signed-in browser on Windows. The in-app browser snapshot identifies the requested reference; it is not a capture. The earlier cloud execution environment had no callable desktop-browser control tool or desktop CDP endpoint; local access is now established as recorded above.
 

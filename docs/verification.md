@@ -1,5 +1,9 @@
 # Verification and evidence limits
 
+## Targeting/asset checkpoint — 2026-10-15 09:43:46 UTC
+
+The second initial desktop viewport `EX-TG-D-001` passed real REA, saved-pixel/accessibility, credential and private remote-part/member checks. Four separately fetched loaded CSS/font assets and provenance matched remote bytes. Adapter tests passed again after exact-target selection was added: duplicate URL ambiguity is rejected and explicit selection remains scoped to one target. Native control recovered in a fresh same-profile tab. Full vertical/mobile/style/workflow/API acceptance remains pending. [Record and limitations](../evidence/source-state-targeting-20261015.json).
+
 ## Accepted local REA overview — 2026-10-15 09:16:18 UTC
 
 - Existing helper: seven Windows unit tests passed; actual REA 6.4.0 capture with isolated MCP 1.29.0 succeeded.

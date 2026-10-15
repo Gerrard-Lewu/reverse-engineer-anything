@@ -21,7 +21,8 @@ test('real protocol replies, isolated clients and target scoping over 404-only d
   const wss = new WebSocketServer({ server });
   const version = { product: 'Chrome/155.test', protocolVersion: '1.3', userAgent: 'source-agent', jsVersion: 'real-js', revision: 'real-revision' };
   const targets = [{ targetId: 'selected', type: 'page', title: 'Source', url: sourceUrl, attached: false },
-    { targetId: 'unrelated', type: 'page', title: 'Private unrelated', url: 'https://example.org/private', attached: false }];
+    { targetId: 'unrelated', type: 'page', title: 'Private unrelated', url: 'https://example.org/private', attached: false },
+    { targetId: 'duplicate', type: 'page', title: 'Second source tab', url: sourceUrl, attached: false }];
   let sessionNumber = 0;
   wss.on('connection', socket => socket.on('message', bytes => {
     const message = JSON.parse(bytes.toString()); calls.push(message);
@@ -37,7 +38,8 @@ test('real protocol replies, isolated clients and target scoping over 404-only d
   await new Promise(done => server.listen(0, '127.0.0.1', done));
   const port = server.address().port;
   assert.equal((await fetch(`http://127.0.0.1:${port}/json/version`)).status, 404);
-  const bridge = await startBridge({ WebSocket, WebSocketServer, advertisement: `${port}\n/devtools/browser/real-owner-socket`, sourceUrl });
+  await assert.rejects(startBridge({ WebSocket, WebSocketServer, advertisement: `${port}\n/devtools/browser/real-owner-socket`, sourceUrl }), /exactly one/);
+  const bridge = await startBridge({ WebSocket, WebSocketServer, advertisement: `${port}\n/devtools/browser/real-owner-socket`, sourceUrl, targetId: 'selected' });
   t.after(async () => { await bridge.close(); for (const socket of wss.clients) socket.terminate(); wss.close(); await new Promise(done => server.close(done)); });
   const discovered = await (await fetch(bridge.endpoint + '/json/version')).json();
   assert.equal(discovered.Browser, version.product);

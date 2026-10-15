@@ -20,7 +20,7 @@ export function parseAdvertisement(text) {
   return `ws://127.0.0.1:${port}${path}`;
 }
 
-export async function startBridge({ WebSocket, WebSocketServer, advertisement, sourceUrl }) {
+export async function startBridge({ WebSocket, WebSocketServer, advertisement, sourceUrl, targetId }) {
   const source = new URL(sourceUrl);
   if (source.origin !== 'https://explee.com' || source.username || source.password) {
     throw new Error('Select an HTTPS Explee source URL without credentials');
@@ -78,7 +78,8 @@ export async function startBridge({ WebSocket, WebSocketServer, advertisement, s
   try {
     version = await rpc('Browser.getVersion');
     const result = await rpc('Target.getTargets');
-    const matches = result.targetInfos.filter(item => item.type === 'page' && item.url === source.href);
+    const matches = result.targetInfos.filter(item => item.type === 'page' && item.url === source.href &&
+      (targetId === undefined || item.targetId === targetId));
     if (matches.length !== 1) throw new Error('Expected exactly one selected Explee tab');
     target = matches[0];
   } catch (error) { upstream.close(); throw error; }
@@ -176,7 +177,7 @@ async function main() {
   const options = {};
   for (let index = 2; index < process.argv.length; index += 2) {
     const name = process.argv[index];
-    if (!['--rea-package-root', '--active-port-file', '--ready-file', '--source-url'].includes(name) || !process.argv[index + 1]) throw new Error('Use --rea-package-root, --active-port-file, --ready-file and optional --source-url');
+    if (!['--rea-package-root', '--active-port-file', '--ready-file', '--source-url', '--target-id'].includes(name) || !process.argv[index + 1]) throw new Error('Use --rea-package-root, --active-port-file, --ready-file and optional --source-url / --target-id');
     options[name] = process.argv[index + 1];
   }
   if (!options['--rea-package-root'] || !options['--active-port-file'] || !options['--ready-file']) throw new Error('Missing required argument');
@@ -187,7 +188,8 @@ async function main() {
   const { WebSocketServer } = WebSocket;
   const bridge = await startBridge({ WebSocket, WebSocketServer,
     advertisement: await readFile(options['--active-port-file'], 'utf8'),
-    sourceUrl: options['--source-url'] ?? 'https://explee.com/app-auto-gtm/p/40610' });
+    sourceUrl: options['--source-url'] ?? 'https://explee.com/app-auto-gtm/p/40610',
+    targetId: options['--target-id'] });
   try {
     await writeFile(options['--ready-file'], JSON.stringify({ ...bridge.provenance, endpoint: bridge.endpoint,
       started_at: new Date().toISOString() }, null, 2) + '\n', { flag: 'wx' });

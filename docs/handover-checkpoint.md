@@ -1,5 +1,13 @@
 # Handover checkpoint
 
+## Targeting and assets — 2026-10-15 09:43:46 UTC
+
+**Accepted REA states: two initial desktop viewports**, `EX-OV-D-001` and `EX-TG-D-001`. Targeting artifact `5f0056e7d557d8b6785a786f8f614d7b0898ca4e` and acceptance `5a8f924ae6e3bfb817b2b30438a823fab215ab2b` are privately retained and verified. All three archive parts matched in full, all 11 member hashes checked, and standalone records/acceptance read back. [Sanitized targeting record](../evidence/source-state-targeting-20261015.json).
+
+Four REA-inventoried stylesheet/font files plus provenance are verified privately at `4c4484f921facc25dc8987604f7db77f111f0827`. These are separately fetched static bytes, not computed-style or complete-asset acceptance. Existing account values stay private and do not override approved Ceverio rules.
+
+The old native tab attachment stayed detached; a fresh Explee tab in the same signed-in Chrome profile restored control. The adapter now accepts an exact observed target ID when source URLs have duplicates; both adapter checks pass, including ambiguity rejection. Continue desktop/mobile/vertical captures and style/workflow/API inspection. R1–R4 remain open; no application build or source mutations.
+
 ## Accepted REA overview — 2026-10-15 09:16:18 UTC
 
 **R0 first overview accepted: `EX-OV-D-001`, initial desktop viewport 1366 × 577.** REA 6.4.0 and the unchanged helper ran successfully on Windows with isolated MCP 1.29.0 against the owner-enabled, already signed-in Chrome. A scoped loopback discovery adapter derives real metadata and relays selected-target CDP; it does not replace REA or manufacture evidence.
@@ -69,3 +77,5 @@ Do not mark a future capture, private repository, model result, integration or a
 - 2026-10-15 06:28:01 UTC — Executed local preflight against planning baseline `0a86430`. Created and verified private evidence storage; passed seven Windows unit checks; ran real REA MCP and retained failed target-discovery diagnostics; privately archived provisional overview evidence with exact readback at `19866c4199eecf148bb17028d5ef938c7ac11685`; reconciled the blueprint with cloud/Supabase architecture. No accepted REA state, mobile capture, application implementation or live source mutation. Remaining action: owner-opened browser endpoint, then R0–R4. The containing published commit is the public session record.
 
 - 2026-10-15 09:16:18 UTC — Accepted first real authenticated REA overview after pixel/structure and remote-byte checks; private acceptance `5e131f269b5c367b84ddf236286a6e75750d2c60`. Added tested existing-Chrome discovery compatibility tooling; retained startup/profile/discovery/archive-retrieval failures in the sanitized state record. Initial desktop viewport only; R1–R4 open. No application build or source mutations. The containing public commit is this checkpoint publication receipt.
+
+- 2026-10-15 09:43:46 UTC — Accepted targeting initial viewport after private byte/member verification, acceptance `5a8f924ae6e3bfb817b2b30438a823fab215ab2b`; retained four loaded CSS/font assets with explicit fetched-byte/computed-style limits at `4c4484f921facc25dc8987604f7db77f111f0827`. Recovered native control through a fresh same-profile tab and tested exact target selection for duplicates. Full vertical/mobile coverage and R1–R4 remain pending; containing public commit is this checkpoint receipt.
