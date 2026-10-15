@@ -1,5 +1,11 @@
 # Verification and evidence limits
 
+## Responsive targeting checkpoint
+
+Four REA states are accepted in total. The [responsive record](../evidence/source-state-targeting-responsive-20261015.json) gives private immutable references, screenshot/archive hashes and exact limits. All 17 remote files matched full local bytes; all 62 evidence member hashes passed. Seven `test_capture_explee.py` checks and two `test_chrome_discovery_bridge.mjs` checks passed on Windows. `observe_explee_transition.py` passed `py_compile`; its revised final-URL guard has not yet had a live execution. No application tests or build occurred.
+
+Failed REA screenshot/initialization attempts and the unsuccessful navigation are retained, without converting native evidence into accepted REA states. Startup allowance/diagnostics are a tooling change whose revised live execution is still pending.
+
 ## Targeting/asset checkpoint — 2026-10-15 09:43:46 UTC
 
 The second initial desktop viewport `EX-TG-D-001` passed real REA, saved-pixel/accessibility, credential and private remote-part/member checks. Four separately fetched loaded CSS/font assets and provenance matched remote bytes. Adapter tests passed again after exact-target selection was added: duplicate URL ambiguity is rejected and explicit selection remains scoped to one target. Native control recovered in a fresh same-profile tab. Full vertical/mobile/style/workflow/API acceptance remains pending. [Record and limitations](../evidence/source-state-targeting-20261015.json).

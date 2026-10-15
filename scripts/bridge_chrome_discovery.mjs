@@ -25,7 +25,8 @@ export async function startBridge({ WebSocket, WebSocketServer, advertisement, s
   if (source.origin !== 'https://explee.com' || source.username || source.password) {
     throw new Error('Select an HTTPS Explee source URL without credentials');
   }
-  const upstream = new WebSocket(parseAdvertisement(advertisement), { handshakeTimeout: 60000, maxPayload: 32 * 1024 * 1024 });
+  // Chrome can hold the handshake while its owner reviews the native prompt.
+  const upstream = new WebSocket(parseAdvertisement(advertisement), { handshakeTimeout: 180000, maxPayload: 32 * 1024 * 1024 });
   await new Promise((resolveOpen, reject) => {
     upstream.once('open', resolveOpen);
     upstream.once('error', reject);

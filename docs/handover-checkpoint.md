@@ -1,5 +1,15 @@
 # Handover checkpoint
 
+## Targeting responsive evidence — 2026-10-15 14:39:56 UTC
+
+**Four accepted REA states:** overview `EX-OV-D-001`, targeting `EX-TG-D-001`, lower desktop `EX-TG-D-002`, and mobile `EX-TG-M-001` (390 × 844). The new pair is retained at private artifact `14c39fdc6e2bd807b9e4e220accc316509a6f5f5` and acceptance `61b909336b2917c976c62267e59407f0d932aadd`. All 17 uploaded files matched complete retrieved bytes; 14 ordered parts reconstruct the original ZIP, with all 62 evidence member hashes checked. [Sanitized responsive record](../evidence/source-state-targeting-responsive-20261015.json).
+
+Matching native style/layout measurements and inline SVG inventory supplement targeting. A REA observation retained 23 requests with value-free shapes, but the attempted Project docs navigation left the URL unchanged. Prefetch requests do not prove visited screens; the page POST has undetermined effects. No deliberate source business-control write was performed. Native drawer/Project docs remain provisional under DEC-28.
+
+Limitations: intermittent REA screenshot timeouts; latest Project docs attempt failed before source artifacts (startup/discovery timeout). The helper now allows 120-second initialization and reports its stage; seven unit checks pass. The adapter gives the owner up to 180 seconds to approve its handshake; two adapter checks pass. An operator-driven observer preserves request shapes and now checks the final URL; syntax passes, revised live validation pending. Historical failures are retained privately. No application build.
+
+Next: stabilize real REA captures, capture Project docs/campaigns/leads/inbox/integrations/operations and overview mobile/lower views, then reconcile contracts and review R4. No further login or owner input is currently required.
+
 ## Targeting and assets — 2026-10-15 09:43:46 UTC
 
 **Accepted REA states: two initial desktop viewports**, `EX-OV-D-001` and `EX-TG-D-001`. Targeting artifact `5f0056e7d557d8b6785a786f8f614d7b0898ca4e` and acceptance `5a8f924ae6e3bfb817b2b30438a823fab215ab2b` are privately retained and verified. All three archive parts matched in full, all 11 member hashes checked, and standalone records/acceptance read back. [Sanitized targeting record](../evidence/source-state-targeting-20261015.json).
@@ -79,3 +89,5 @@ Do not mark a future capture, private repository, model result, integration or a
 - 2026-10-15 09:16:18 UTC — Accepted first real authenticated REA overview after pixel/structure and remote-byte checks; private acceptance `5e131f269b5c367b84ddf236286a6e75750d2c60`. Added tested existing-Chrome discovery compatibility tooling; retained startup/profile/discovery/archive-retrieval failures in the sanitized state record. Initial desktop viewport only; R1–R4 open. No application build or source mutations. The containing public commit is this checkpoint publication receipt.
 
 - 2026-10-15 09:43:46 UTC — Accepted targeting initial viewport after private byte/member verification, acceptance `5a8f924ae6e3bfb817b2b30438a823fab215ab2b`; retained four loaded CSS/font assets with explicit fetched-byte/computed-style limits at `4c4484f921facc25dc8987604f7db77f111f0827`. Recovered native control through a fresh same-profile tab and tested exact target selection for duplicates. Full vertical/mobile coverage and R1–R4 remain pending; containing public commit is this checkpoint receipt.
+
+- 2026-10-15 14:39:56 UTC — Accepted targeting lower desktop/mobile after private remote byte verification (61b909336b2917c976c62267e59407f0d932aadd); retained style/request observations and failed diagnostics with bounded claims. Capture/helper/adapter checks pass; screenshot reliability and remaining source groups remain open. This containing public commit is the checkpoint receipt. No application build.

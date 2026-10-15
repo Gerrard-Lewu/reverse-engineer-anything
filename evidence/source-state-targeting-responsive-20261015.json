@@ -1,0 +1,100 @@
+{
+  "recorded_at": "2026-10-15 14:39:56 UTC",
+  "status": "accepted",
+  "states": [
+    {
+      "state_id": "EX-TG-D-002",
+      "viewport": {
+        "width": 1366,
+        "height": 577
+      },
+      "source_url": "https://explee.com/app-auto-gtm/p/40610/targeting",
+      "evidence_ids": [
+        {
+          "operation": "list_browser_targets.json",
+          "evidence_id": "ev_f84c0ed9a068cdb44f71493bc2243c0ac8cfbf0a48eb3f4a4717732cf5032e6d"
+        },
+        {
+          "operation": "inspect_web_page.json",
+          "evidence_id": "ev_666a53ffd7784c919c5de5d6c46326559d66cbf9a193751169f5f8c9f559c1f3"
+        },
+        {
+          "operation": "capture_web_screenshot.json",
+          "evidence_id": "ev_d4a9f948ca72d366c5d05ac6d64940c4af888b177d5d98e7a40967e2858f6d60"
+        }
+      ],
+      "screenshot": {
+        "path": "screenshot.png",
+        "bytes": 87904,
+        "sha256": "18bfd1ca63ca7cabba6687c62856699b3be74a64943d1216084178d30bdef685"
+      }
+    },
+    {
+      "state_id": "EX-TG-M-001",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "source_url": "https://explee.com/app-auto-gtm/p/40610/targeting",
+      "evidence_ids": [
+        {
+          "operation": "list_browser_targets.json",
+          "evidence_id": "ev_f84c0ed9a068cdb44f71493bc2243c0ac8cfbf0a48eb3f4a4717732cf5032e6d"
+        },
+        {
+          "operation": "inspect_web_page.json",
+          "evidence_id": "ev_6985b0d39d02048fb0a50eb46e6251bde691c965e0db93d41d5c8649a6f8151f"
+        },
+        {
+          "operation": "capture_web_screenshot.json",
+          "evidence_id": "ev_c6dad1fae6321e99ed0fbd8e2c83fba2ac76123853af8fd6501427ec4d5c214c"
+        }
+      ],
+      "screenshot": {
+        "path": "screenshot.png",
+        "bytes": 56290,
+        "sha256": "6e9b8c68a65b1506e743e31bde09f69807805e8541f18b1463a3249d5c4d3dac"
+      }
+    }
+  ],
+  "artifact_commit": "14c39fdc6e2bd807b9e4e220accc316509a6f5f5",
+  "acceptance_commit": "61b909336b2917c976c62267e59407f0d932aadd",
+  "artifact_directory": "checkpoints/2026-10-15/targeting-responsive",
+  "archive_sha256": "dcf784c1d6f337078bc45a972a716f22bb6e093eb64d4a8ac31940aa13bfd233",
+  "remote_verification": "All 17 files read back with complete byte equality; 14 ordered archive parts reconstruct the original ZIP; all 62 evidence-member hashes checked.",
+  "observed_scope": "Lower desktop targeting and full 390x844 mobile targeting. Existing top desktop plus lower capture cover main form; independently scrollable navigation not fully covered.",
+  "supplemental_styles": "Native computed styles/rects retained at matching targeting viewports; 16 visible inline SVGs inventoried. GeistSans observed on body; complete asset/variant catalog unresolved.",
+  "request_observation": {
+    "count": 23,
+    "evidence_id": "ev_b9d909ce969fab451330bdb7aed5a319ab01ee837e572d794bb32920a683a9c7",
+    "scope": "Mobile navigation opening/Project docs attempt; final URL remained targeting. Prefetched routes do not establish visited screens; opaque page POST effects undetermined.",
+    "typed_responses": [
+      {
+        "method": "GET",
+        "path": "/api/app-auto-gtm/unread-counts",
+        "properties": {
+          "by_project": "object",
+          "by_segment": "object"
+        }
+      },
+      {
+        "method": "GET",
+        "path": "/api/app-auto-gtm/linkedin/access",
+        "properties": {
+          "arm": "null observed",
+          "live": "boolean"
+        }
+      }
+    ]
+  },
+  "limitations": [
+    "REA screenshots intermittently time out. Native drawer and Project docs remain provisional, not accepted under DEC-28.",
+    "Latest Project docs attempt failed before source artifacts; no successful Project docs REA capture.",
+    "No source field/save/send/start change used to manufacture evidence.",
+    "New observer final-route guard and helper startup diagnostics pass syntax/unit checks; revised live execution is pending.",
+    "Source account values remain private and do not override approved Ceverio rules."
+  ],
+  "accepted_total": 4,
+  "r4_status": "open",
+  "application_build": "not started"
+}

@@ -1,5 +1,7 @@
 # REA and source acceptance protocol
 
+> Current evidence: four accepted REA states; [responsive checkpoint](../evidence/source-state-targeting-responsive-20261015.json) supplements the earlier overview/targeting initial views. Native-only drawer/Project docs remain provisional under DEC-28.
+
 > **Current local status:** `EX-OV-D-001` is accepted for the initial desktop overview through real REA 6.4.0, complete private export and remote-byte verification. Existing signed-in Chrome is connected through the documented discovery adapter. [Current checkpoint](../docs/handover-checkpoint.md) and [sanitized state record](../evidence/source-state-overview-20261015.json). Earlier cloud-access observations below are historical.
 
 ## Current state

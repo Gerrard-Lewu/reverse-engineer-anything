@@ -184,8 +184,14 @@ async def capture(args, artifacts: list) -> dict:
     )
     async with stdio_client(parameters) as (reader, writer):
         async with ClientSession(reader, writer) as session:
-            initialized = await asyncio.wait_for(session.initialize(), timeout=45)
-            catalog = await asyncio.wait_for(session.list_tools(), timeout=45)
+            try:
+                initialized = await asyncio.wait_for(session.initialize(), timeout=120)
+            except TimeoutError as error:
+                raise RuntimeError("REA initialization exceeded 120 seconds; no source capture was attempted.") from error
+            try:
+                catalog = await asyncio.wait_for(session.list_tools(), timeout=45)
+            except TimeoutError as error:
+                raise RuntimeError("REA tool discovery exceeded 45 seconds; no source capture was attempted.") from error
             tools = {tool.name: tool for tool in catalog.tools}
             needed = {
                 "binary_session", "list_browser_targets", "inspect_web_page",

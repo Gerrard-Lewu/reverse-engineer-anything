@@ -2,7 +2,7 @@
 
 **Current phase: planning and source inspection only. No application build.**
 
-This repository is the durable project record. Start with [the handover](docs/local-handover.md) and [current checkpoint](docs/handover-checkpoint.md). The project has 43 requirements and 43 acceptance scenarios, a public research baseline and a tested REA capture kit. **Two initial authenticated REA desktop viewports are accepted: overview `EX-OV-D-001` and targeting `EX-TG-D-001`; R1–R4 remain open.**
+This repository is the durable project record. Start with [the handover](docs/local-handover.md) and [current checkpoint](docs/handover-checkpoint.md). The project has 43 requirements and 43 acceptance scenarios, a public research baseline and a tested REA capture kit. **Four authenticated REA states are accepted: overview initial desktop, targeting top/lower desktop and targeting mobile 390 × 844. R1–R4 remain open.**
 
 ## On your Windows computer
 

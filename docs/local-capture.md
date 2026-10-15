@@ -109,3 +109,9 @@ Source maps are not fetched by this helper. The optional bundle pass derives sta
 ## Return the source evidence
 
 Keep complete capture groups, including receipt.json, screenshot and bundle, until reviewed private GitHub publication and remote hash verification succeed. Integrate sanitized references/coverage into the public evidence index, blueprint and checkpoint, then push those updates too. Never upload credentials/browser profiles or place authenticated data on public branches. Start with the project overview and existing lead/review/inbox states in [the checklist](source-capture-checklist.md). Existing records and previews are sufficient; live outreach and meeting creation belong to the later integration phase.
+
+## Passive transition observation (experimental)
+
+`scripts/observe_explee_transition.py` arms a real REA inspection while the operator navigates through the existing Browser controls. Supply `--cdp-endpoint`, `--target-id`, `--initial-url`, `--final-url`, `--label`, a new `--output`, and optionally `--observation-seconds` (1–60). Act immediately at the `OBSERVING` cue. It captures request shapes and a complete export, checks the selected target final URL, and takes no screenshots or source actions. Pair it with `capture_explee.py` for visual acceptance; `transition_not_confirmed` is not a successful workflow. The revised guard is syntax-checked, with live validation pending.
+
+The capture helper permits up to 120 seconds for MCP initialization and separately reports the 45-second tool-discovery deadline. This changes startup tolerance/diagnostics, not source acceptance. The existing-Chrome adapter waits up to 180 seconds for the owner permission handshake. REA screenshot timeouts are a separate unresolved limitation; never substitute native pixels as accepted REA evidence under DEC-28.

@@ -13,7 +13,7 @@ Finish an evidence-backed product, interaction and technical blueprint for the s
 | Requirements/Ceverio context | Reviewed; 43 requirement IDs and 43 acceptance scenarios in the current planning baseline. |
 | Public Explee research | Nine retained source views; 48 documented public method/path pairs. Selective documentation, not authenticated traffic. |
 | REA MCP | Actual 6.4.0 session/schemas retained; synthetic capture checks passed. |
-| Accepted signed-in Explee states | **Two initial desktop viewports (`EX-OV-D-001`, `EX-TG-D-001`).** Remaining desktop/mobile states, style/assets and account workflows await evidence. |
+| Accepted signed-in Explee states | **Four accepted states:** overview initial desktop, targeting top/lower desktop and 390 × 844 mobile. Remaining groups, variants and contracts await evidence. |
 | Model/database/cloud design | Pinned model comparison, verified Supabase metadata and named provider dependencies. No app/model deployment or inference benchmark. |
 | Ceverio DNS | Cloudflare active; seven mail records and two CNAMEs match the export. DNSSEC pending; user has not added the registrar DS. Separate infrastructure milestone. |
 

@@ -2,7 +2,7 @@
 
 The current [spec-driven build package](../specs/README.md) incorporates the user's Ceverio profile, three-country HVAC audience, autonomous workflow, Windows runtime, Supabase preference, and near-zero budget. It takes precedence over earlier implementation recommendations in this investigation blueprint.
 
-Prepared 14 October 2026 for a personal internal tool. Status: **documented product/API baseline complete for the retrieved scope; authenticated source capture pending**.
+Prepared 14 October 2026 for a personal internal tool. Status: **documented product/API baseline complete for the retrieved scope; authenticated source capture in progress; four bounded REA states accepted**.
 
 The required outcome is a tool that finds relevant leads, researches and scores them, prepares and sends outreach, handles replies, and helps arrange meetings. It should cover the relevant Explee workflows without signup, billing, resale, or multi-user account management. External data, email, and scheduling providers remain real dependencies.
 
@@ -12,7 +12,7 @@ The required outcome is a tool that finds relevant leads, researches and scores 
 | --- | --- |
 | Official product copy | Retrieved homepage, pricing, integration, and dataset descriptions. These establish advertised scope, not tested operation. |
 | Published public contracts | Indexed 48 documented method/path pairs across selected API page views. No endpoint was executed; complete OpenAPI JSON is still unavailable. |
-| REA runtime evidence for Explee | Initial authenticated desktop overview `EX-OV-D-001` accepted through real REA 6.4.0 on Windows and privately verified. Full vertical/mobile/style/API coverage remains pending; native preflight material stays provisional. |
+| REA runtime evidence for Explee | Four authenticated REA 6.4.0 states privately verified: overview initial desktop and targeting top/lower desktop/mobile. Targeting has supplemental native style measurements and bounded request observations. Other source groups and full interaction coverage remain pending. |
 | REA tool verification | Real MCP connection, passive capture, network body shapes, screenshot pixels, bundle analysis, and Evidence export verified against a synthetic local page. |
 | Internal-tool architecture | Explicit design proposal, separated from claims about Explee's backend. |
 
@@ -20,25 +20,28 @@ The source register is in [source-inventory.md](source-inventory.md). Machine-re
 
 ## Accepted source states and component catalog
 
-This ledger is bounded to saved initial desktop viewports. Full interaction/fidelity acceptance is still pending. Private references and hashes are in the [overview record](../evidence/source-state-overview-20261015.json) and [targeting record](../evidence/source-state-targeting-20261015.json).
+This ledger covers saved overview initial desktop and targeting top/lower desktop plus mobile viewports. Full interaction/fidelity acceptance is still pending. Private references and hashes are in the [overview record](../evidence/source-state-overview-20261015.json) and [targeting record](../evidence/source-state-targeting-20261015.json), with the [responsive checkpoint](../evidence/source-state-targeting-responsive-20261015.json).
 
 | State | Observed presentation | Remaining evidence | Requirement / acceptance links |
 | --- | --- | --- | --- |
 | `EX-OV-D-001` | Authenticated dashboard/navigation, setup/usage notices, performance cards and filter controls. Values remain private. | Lower page, filter/notice interactions, mobile, computed styles and metric semantics. | REQ-REF-001/002/003; ACC-023/031 |
-| `EX-TG-D-001` | Targeting inheritance selector, Geography and Company size criteria blocks with suggestion controls. | Lower/variant states, validation/save semantics, mobile, computed styles and request contracts. | REQ-REF-001/002/003, REQ-DATA-001; ACC-023/025/031 |
+| `EX-TG-D-001` | Targeting inheritance selector, Geography and Company size criteria blocks with suggestion controls. | Variant states and validation/save semantics; see lower/mobile additions below. | REQ-REF-001/002/003, REQ-DATA-001; ACC-023/025/031 |
+
+| `EX-TG-D-002` | Lower targeting form and disabled Save & re-search; main scroll extent aligned with top view. | Drawer/variants and persistence semantics. | REQ-REF-001/002/003; ACC-023/031 |
+| `EX-TG-M-001` | Whole criteria form at 390 × 844, hidden sidebar and Open navigation control. | Drawer REA screenshot, criteria editing and validation. | REQ-REF-001/002/003; ACC-023/031 |
 
 | Component family | Observed evidence | Contract/style status |
 | --- | --- | --- |
-| Project navigation shell | Both accepted states show the project selector, grouped navigation and campaign section. | Destination inventory continues; responsive collapse behavior remains unverified. |
+| Project navigation shell | Both accepted states show the project selector, grouped navigation and campaign section. | Mobile targeting hides the sidebar and exposes Open navigation. Drawer native measurements are provisional; destination inventory continues. |
 | Dashboard notices and metric cards | `EX-OV-D-001` screenshot/accessibility. | Presentation observed; control effects and metric definitions unverified. |
 | Inheritance selector and criteria blocks | `EX-TG-D-001` screenshot/accessibility. | Visible labels/presentation observed; selector transitions, parsing, suggestion effects and persistence unverified. |
-| Typography/assets | Two loaded stylesheet URLs and two font URLs were inventoried by REA; four separately fetched files are privately hash-verified. CSS declares GeistSans and GeistMono. | Computed assignment/metrics and complete icon/image catalog pending. Loaded-byte identity and reuse permissions are not inferred from URL matches. |
+| Typography/assets | Two loaded stylesheet URLs and two font URLs were inventoried by REA; four separately fetched files are privately hash-verified. CSS declares GeistSans and GeistMono. | Native targeting computed styles/rects at matching desktop/mobile viewports observe GeistSans body, 16px/24px, weight 400 and visible text sizes 12/14/16/18px; 16 visible inline SVGs retained. Complete icon/image/variant catalog pending. Loaded-byte identity and reuse permissions are not inferred from URL matches. |
 
-Both idle attach windows recorded zero requests. No private API method, payload, validation or save contract is recovered from those windows. Existing proposed [workflow/data/API contracts](../specs/contracts.md) remain independent designs until relevant read transitions are observed.
+Initial idle windows recorded zero requests. A subsequent real REA window retained 23 requests, including typed responses for unread counts (`by_project`, `by_segment`: object) and LinkedIn access (`arm`: null observed, `live`: boolean). It did not complete the attempted Docs navigation. Prefetched routes do not establish visited screens, and an opaque page POST has undetermined effects. No validation or save contract is recovered. Existing proposed [workflow/data/API contracts](../specs/contracts.md) remain independent designs until relevant read transitions are observed.
 
 ## Product coverage
 
-The following requirements combine the user's stated goals with documented reference capabilities. The two initial viewports provide the bounded observations above; every workflow still needs sufficient interaction/mobile/style evidence before faithful reproduction can be claimed.
+The following requirements combine the user's stated goals with documented reference capabilities. The four accepted viewports provide the bounded observations above; every workflow still needs sufficient interaction/mobile/style evidence before faithful reproduction can be claimed.
 
 | Capability to investigate or reproduce | Current basis | Personal-tool direction |
 | --- | --- | --- |
