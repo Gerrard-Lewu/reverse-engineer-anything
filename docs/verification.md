@@ -1,6 +1,14 @@
 # Verification and evidence limits
 
-## Responsive targeting checkpoint
+## Leads/Project docs checkpoint — 16 October 2026
+
+Six new real REA states passed saved-pixel/structure review, receipt/hash/credential checks and private retrieval/acceptance verification, bringing the accepted total to ten. The [group record](../evidence/source-state-leads-docs-20261016.json) identifies exact state IDs, screenshot hashes, Evidence IDs and limits. The clean mobile lower Docs recapture is selected; the occluded attempt is excluded. Companies field measurements are scoped to its current DIV grid, excluding historical chat tables. Source cohorts changed on reload; composites do not claim one atomic client version.
+
+All 55 remote artifact files matched full local bytes at `755aafd6a3ac77020401f3a6f6c4d98ae6a28813`; 46 ordered parts equal the original archive and all 179 evidence member hashes passed. Acceptance `b5ad4bc2179635074fe578bec93b48a5f7edeba4` was read back.
+
+21 Windows unit checks pass, plus independent review and separately retained real source series/recovery evidence. The original over-budget inspection response is retained; exact complete Evidence was recovered via real MCP export. Shared-session exports are cumulative. Runtime snapshots predate two minor failure-reporting-only fixes, so successful captures do not prove those later branches. Fake TTY quit checks establish tooling behavior only. No application acceptance tests/build or source business-control writes occurred. Remaining native-only screens stay provisional under DEC-28.
+
+## Responsive targeting checkpoint — 15 October 2026 (historical)
 
 Four REA states are accepted in total. The [responsive record](../evidence/source-state-targeting-responsive-20261015.json) gives private immutable references, screenshot/archive hashes and exact limits. All 17 remote files matched full local bytes; all 62 evidence member hashes passed. Seven `test_capture_explee.py` checks and two `test_chrome_discovery_bridge.mjs` checks passed on Windows. `observe_explee_transition.py` passed `py_compile`; its revised final-URL guard has not yet had a live execution. No application tests or build occurred.
 
@@ -28,7 +36,7 @@ The second initial desktop viewport `EX-TG-D-001` passed real REA, saved-pixel/a
 
 [Current checkpoint](handover-checkpoint.md) and [sanitized machine-readable record](../evidence/local-source-preflight-20261015.json). Original Linux verification below remains historical evidence.
 
-Updated 15 October 2026. The capture kit and document package are implemented. The internal lead-to-meeting app is a proposed future build. Authenticated Explee workflows are unverified. DNS follow-up below is read-only; original capture-kit test results remain dated to their prior execution.
+Updated 15 October 2026. The capture kit and document package are implemented. The internal lead-to-meeting app is a proposed future build. Selected authenticated Explee states are accepted; complete workflows remain unverified. DNS follow-up below is read-only; original capture-kit test results remain dated to their prior execution.
 
 Current phase: **planning**. The application build has not started. The [specification](../specs/README.md) now contains 43 unique requirements and 43 Given/When/Then scenarios. Their references and local links were checked. An independent read-only review covered the earlier 36-scenario baseline; model/cloud/DNS/GitHub additions received a local consistency review. These are specification checks, not executed app or DNS-cutover acceptance tests.
 
@@ -55,9 +63,9 @@ The real-browser fixture is `tests/fixtures/index.html`; it explicitly identifie
 | Export retained evidence before failure teardown | Confirmed in isolated boundary probes | Export occurs in the session guard; export errors are recorded without replacing the original failure. |
 | Report materially incomplete source capture | Confirmed in unit/boundary probes | Truncated/unavailable/dropped coverage yields `partial`; expected policy/attach limits remain disclosed. |
 | Source-backed product/API baseline | Confirmed for retrieved public scope | Nine source entries and 48 indexed documented public method/path pairs. |
-| Capture signed-in Explee screens and interactions | Partial | Initial desktop overview `EX-OV-D-001` accepted through real REA on Windows; other states remain pending. |
+| Capture signed-in Explee screens and interactions | Partial | Ten bounded overview/targeting/leads/Docs states accepted through real REA on Windows; other native views remain provisional. |
 | Recover complete public OpenAPI schema | Partial | Only selectively retrieved schema fragments were available. |
-| Verify faithful visual/UI recreation | Unverified | No Explee screenshots/style evidence or recreated app exists yet. |
+| Verify faithful visual/UI recreation | Unverified | Accepted Explee screenshots and supplemental style evidence exist for a bounded subset; no recreated application exists. |
 | Validate live lead, email, and calendar integration | Unverified | Intended sender/booking configuration and app integrations remain unconfigured. Supabase access/metadata/Free plan are now verified; application grants and host connection are not. No application-level live test was performed. |
 | Inspect Jev Ultrafast and Laya | Confirmed for source scope | Pinned code/manifests and published model/benchmark material reviewed; returned Git IDs in model-cloud-source-index.json. No model executed and no equal-condition benchmark performed. |
 | Inspect the selected Explee REA Supabase project | Metadata and table inventory verified | New REA Org connector confirms active eu-west-1 project, PostgreSQL 17.11 and Free plan. Platform tables only in returned inventory; no application tables observed. No contact rows/keys retrieved or schema changes. |
@@ -67,10 +75,10 @@ The real-browser fixture is `tests/fixtures/index.html`; it explicitly identifie
 
 ## Remaining practical limits
 
-The capture CLI was executed on Linux with Python 3.12 and Node 24.19. It requires Python 3.11+. Windows launch handling is included but Windows/macOS execution was not exercised. The synthetic integration harness uses POSIX process-group cleanup and is explicitly POSIX-only.
+The capture CLI was executed on Linux with Python 3.12 and Node 24.19. It requires Python 3.11+. Windows execution is now verified for the selected real source states and current unit checks; macOS execution remains unverified. The synthetic integration harness uses POSIX process-group cleanup and is explicitly POSIX-only.
 
 Source capture is sequential across REA calls. Matching target URL/identity does not prove that same-URL UI content remained unchanged between inspection and screenshot; the receipt states that limitation. Each saved screenshot must be inspected and matched to the intended state before becoming accepted source evidence.
 
-The real-browser success path was exercised. Transport-budget and export-failure handling were exercised at the MCP boundary with isolated substitutes, not induced against the real REA process. No result from those substitutes is treated as Explee Evidence.
+The real-browser success path was exercised. Historical transport-budget/export-failure checks used isolated MCP substitutes. On 16 October a real REA inspection exceeded the response budget and its exact complete retained Evidence was recovered through MCP export; this does not establish every failure branch. No result from those substitutes is treated as Explee Evidence.
 
 Public connector responses may be cached/selective; their saved bytes are complete as returned, not a claim that the full page/API schema was recovered. Firecrawl credit failures are access diagnostics. Exact backend internals, dataset possession, and managed inbox infrastructure remain outside what these sources can establish.

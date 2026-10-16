@@ -1,18 +1,18 @@
 # REA and source acceptance protocol
 
-> Current evidence: four accepted REA states; [responsive checkpoint](../evidence/source-state-targeting-responsive-20261015.json) supplements the earlier overview/targeting initial views. Native-only drawer/Project docs remain provisional under DEC-28.
+> Current evidence: ten bounded accepted REA states; [leads/Docs record](../evidence/source-state-leads-docs-20261016.json) supplements overview/targeting. Remaining native-only screens/drawer remain provisional under DEC-28.
 
 > **Current local status:** `EX-OV-D-001` is accepted for the initial desktop overview through real REA 6.4.0, complete private export and remote-byte verification. Existing signed-in Chrome is connected through the documented discovery adapter. [Current checkpoint](../docs/handover-checkpoint.md) and [sanitized state record](../evidence/source-state-overview-20261015.json). Earlier cloud-access observations below are historical.
 
 ## Current state
 
-The [reverse-engineering completion plan](reverse-engineering-completion.md) separates remaining R0–R4 evidence/contract work from future cloud integration and implementation. As of 2026-10-15 09:16:18 UTC, two initial desktop viewports (overview and targeting) are accepted; broader visual/workflow coverage remains pending.
+The [reverse-engineering completion plan](reverse-engineering-completion.md) separates remaining R0–R4 evidence/contract work from future cloud integration and implementation. As of 2026-10-16 17:48:05 UTC, ten bounded overview/targeting/leads/Docs states are accepted; broader visual/workflow coverage remains pending.
 
 The user selected `https://explee.com/app-auto-gtm/p/40610` in their signed-in browser on Windows. The in-app browser snapshot identifies the requested reference; it is not a capture. The earlier cloud execution environment had no callable desktop-browser control tool or desktop CDP endpoint; local access is now established as recorded above.
 
 REA 6.4.0 was actually initialized over MCP using the official Python MCP client and `npx rea-agents@6.4.0 mcp`. The target-free session and actual selected schemas are retained in `evidence/rea/`. The installed release skill reports version 37/170 tools; repository-main instructions can be newer. Use the connected schemas, not guessed fields or tool names.
 
-The existing [capture helper](../scripts/capture_explee.py) and [Windows instructions](../docs/local-capture.md) are the starting point. They have synthetic Linux verification, not completed Windows/authenticated source acceptance.
+The existing [capture helper](../scripts/capture_explee.py) and [Windows instructions](../docs/local-capture.md) are the starting point. They have historical synthetic Linux verification and selected real Windows/authenticated captures; neither establishes complete source coverage or every tooling failure branch.
 
 The user's GitHub-first requirement adds DEP-11: verify private evidence storage/write/retrieval before collecting authenticated captures. Follow [the local handover](../docs/local-handover.md). Captures are temporarily staged, reviewed, published privately and remotely verified; sanitized findings/checkpoints are pushed to the public planning repo. Never upload credentials or browser profiles.
 

@@ -1,0 +1,276 @@
+{
+  "recorded_at": "2026-10-16T17:37:39.381Z",
+  "status": "accepted",
+  "states": [
+    {
+      "state_id": "EX-LD-D-001",
+      "source_url": "https://explee.com/app-auto-gtm/p/40610/segments/192185?tab=leads",
+      "viewport": {
+        "width": 980,
+        "height": 569
+      },
+      "started_at": "2026-10-16T16:55:26.531459+00:00",
+      "finished_at": "2026-10-16T16:57:05.709541+00:00",
+      "status": "accepted",
+      "evidence_ids": [
+        {
+          "operation": "list_browser_targets.json",
+          "evidence_id": "ev_ac20d35a91810955a96ed5f8f5903fc7ae0b83f21ec2b16b1b239cc7b2676386"
+        },
+        {
+          "operation": "inspect_web_page-retained.json",
+          "evidence_id": "ev_ba90f3b5c42d1cf355ad335d798ca7a0ab531ab23805f5559d0d4743b95a77b0"
+        },
+        {
+          "operation": "capture_web_screenshot.json",
+          "evidence_id": "ev_7e224412540654c82119f70433c49c35b00b5b2ff84e1a1a97065d8cebfd0b91"
+        }
+      ],
+      "screenshot": {
+        "path": "screenshot.png",
+        "bytes": 139266,
+        "sha256": "498f1325e38194febace7723883743a4babb36d392a4fabf1f2fc0cc9f8beb68"
+      },
+      "session_evidence_scope": "single_standalone_capture",
+      "response_budget_recovery": "ev_ba90f3b5c42d1cf355ad335d798ca7a0ab531ab23805f5559d0d4743b95a77b0"
+    },
+    {
+      "state_id": "EX-LD-D-002",
+      "source_url": "https://explee.com/app-auto-gtm/p/40610/segments/192185?tab=leads",
+      "viewport": {
+        "width": 1366,
+        "height": 577
+      },
+      "started_at": "2026-10-16T17:23:27.481547+00:00",
+      "finished_at": "2026-10-16T17:23:54.474022+00:00",
+      "status": "accepted",
+      "evidence_ids": [
+        {
+          "operation": "list_browser_targets.json",
+          "evidence_id": "ev_bb1242ee49af0e7f92bb6724f27192e45a5ded09b04bf7935bec42e1be624e2e"
+        },
+        {
+          "operation": "inspect_web_page-retained.json",
+          "evidence_id": "ev_5a3659fbc53c8ac3357c11825575331db54116807e19f897f2b40c63112e4409"
+        },
+        {
+          "operation": "capture_web_screenshot.json",
+          "evidence_id": "ev_2ee11e72ab733999aef05a816735a1c56d7d0da36d8b0a96a6cb7b5c18c5a8d6"
+        }
+      ],
+      "screenshot": {
+        "path": "screenshot.png",
+        "bytes": 150920,
+        "sha256": "390f2c8947e2af2d806b0c12023f6b81fca3c80637945be0b99b5b84ccf02de0"
+      },
+      "session_evidence_scope": "cumulative_shared_session",
+      "response_budget_recovery": "ev_5a3659fbc53c8ac3357c11825575331db54116807e19f897f2b40c63112e4409"
+    },
+    {
+      "state_id": "EX-PD-D-001",
+      "source_url": "https://explee.com/app-auto-gtm/p/40610/docs",
+      "viewport": {
+        "width": 1366,
+        "height": 577
+      },
+      "started_at": "2026-10-16T17:07:36.147009+00:00",
+      "finished_at": "2026-10-16T17:07:44.414863+00:00",
+      "status": "accepted",
+      "evidence_ids": [
+        {
+          "operation": "list_browser_targets.json",
+          "evidence_id": "ev_31777d641ea7458a520d9ebb9113711f9a1b988de59492437c51f0f13a406db3"
+        },
+        {
+          "operation": "inspect_web_page.json",
+          "evidence_id": "ev_e8eeeeba08bcd75f73a47cd8ed23c130c6a801421a006d6a05710aa3c69a2e33"
+        },
+        {
+          "operation": "capture_web_screenshot.json",
+          "evidence_id": "ev_328bafcbafb83e602a157749d384dec70c492b0fb768e312239d57a5ac0c5806"
+        }
+      ],
+      "screenshot": {
+        "path": "screenshot.png",
+        "bytes": 103189,
+        "sha256": "76a4cd81be0363d76baf408ed2349e11d9306bd14cfb43518f9f61250682c149"
+      },
+      "session_evidence_scope": "cumulative_shared_session",
+      "response_budget_recovery": null
+    },
+    {
+      "state_id": "EX-PD-D-002",
+      "source_url": "https://explee.com/app-auto-gtm/p/40610/docs",
+      "viewport": {
+        "width": 1366,
+        "height": 577
+      },
+      "started_at": "2026-10-16T17:08:49.709632+00:00",
+      "finished_at": "2026-10-16T17:08:55.970393+00:00",
+      "status": "accepted",
+      "evidence_ids": [
+        {
+          "operation": "list_browser_targets.json",
+          "evidence_id": "ev_31777d641ea7458a520d9ebb9113711f9a1b988de59492437c51f0f13a406db3"
+        },
+        {
+          "operation": "inspect_web_page.json",
+          "evidence_id": "ev_0c11a70384b975a695b9981cf22113b420dc5a4cf61fd43a72084e5aff691468"
+        },
+        {
+          "operation": "capture_web_screenshot.json",
+          "evidence_id": "ev_907f56fca5798e44e0914805754b77584ae7aa2b295e6aa793280168e16f67bd"
+        }
+      ],
+      "screenshot": {
+        "path": "screenshot.png",
+        "bytes": 86365,
+        "sha256": "e0970396234511a251385a7d0dd0b29442c468c8b0fee9236f8b1706d7afd9c2"
+      },
+      "session_evidence_scope": "cumulative_shared_session",
+      "response_budget_recovery": null
+    },
+    {
+      "state_id": "EX-PD-M-001",
+      "source_url": "https://explee.com/app-auto-gtm/p/40610/docs",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "started_at": "2026-10-16T17:10:45.934553+00:00",
+      "finished_at": "2026-10-16T17:10:50.790201+00:00",
+      "status": "accepted",
+      "evidence_ids": [
+        {
+          "operation": "list_browser_targets.json",
+          "evidence_id": "ev_31777d641ea7458a520d9ebb9113711f9a1b988de59492437c51f0f13a406db3"
+        },
+        {
+          "operation": "inspect_web_page.json",
+          "evidence_id": "ev_a0a3cfffd7ad3217e267a40478510feb300518431fd94803ef22d9b4902f6171"
+        },
+        {
+          "operation": "capture_web_screenshot.json",
+          "evidence_id": "ev_aa93f93d3ad276298b380dd1447fe9f5c451eb530888b5fe9248364a35b5ace1"
+        }
+      ],
+      "screenshot": {
+        "path": "screenshot.png",
+        "bytes": 68439,
+        "sha256": "bcc6075a8f5ed62a7e712d5cc0d2ec3c8aa3a6c5ef68c4418bb6c72fea25f3e2"
+      },
+      "session_evidence_scope": "cumulative_shared_session",
+      "response_budget_recovery": null
+    },
+    {
+      "state_id": "EX-PD-M-002",
+      "source_url": "https://explee.com/app-auto-gtm/p/40610/docs",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "started_at": "2026-10-16T17:16:47.074785+00:00",
+      "finished_at": "2026-10-16T17:16:53.495799+00:00",
+      "status": "accepted",
+      "evidence_ids": [
+        {
+          "operation": "list_browser_targets.json",
+          "evidence_id": "ev_31777d641ea7458a520d9ebb9113711f9a1b988de59492437c51f0f13a406db3"
+        },
+        {
+          "operation": "inspect_web_page.json",
+          "evidence_id": "ev_480dda712eb99a39339665309949f3abd6f0b22313fc517e0dcef4efba9d4297"
+        },
+        {
+          "operation": "capture_web_screenshot.json",
+          "evidence_id": "ev_e5f63e869c5c0c3716d90ed79203b63effe3fc7f79e54a83c322271367cb6683"
+        }
+      ],
+      "screenshot": {
+        "path": "screenshot.png",
+        "bytes": 53633,
+        "sha256": "b7b0c5a4db5349b31cc3f6d43178bd5f9d86c29a807896eec7c499394b56dc8a"
+      },
+      "session_evidence_scope": "cumulative_shared_session",
+      "response_budget_recovery": null
+    }
+  ],
+  "visual_review": {
+    "EX-LD-D-001": "Saved 980x569 screenshot inspected: correct authenticated paused campaign, expanded agent/history pane and initial Companies list. Bounded split view; full horizontal/vertical grid not accepted.",
+    "EX-LD-D-002": "Saved 1366x577 screenshot inspected: same campaign and Companies list, wider split view. Current grid distinguished from historical chat tables through scoped role=grid measurement; horizontal/bottom/detail states pending.",
+    "EX-PD-D-001": "Saved top desktop1366x577 PNG inspected: Company profile, competitors and Reply facts start, actual failed source branding image.",
+    "EX-PD-D-002": "Saved lower desktop1366x577 PNG inspected: Reply facts prompts/documents and Files dropzone. Composite main extent0..1095 covered by0 and518 atheight577.",
+    "EX-PD-M-001": "Saved top390x844 PNG inspected: Company profile/competitor chips and Reply facts start.",
+    "EX-PD-M-002": "Saved clean lower390x844 PNG inspected: Reply facts and Files including format/25MB label. Composite main extent0..1401 covered by0 and606 atclientHeight795."
+  },
+  "rejected_attempts": [
+    {
+      "folder": "rea-project-docs-mobile-lower-20261016",
+      "reason": "Source new-version notice occluded part of file-format label; excluded from selected base view. Original successful provider receipt retained; clean recapture selected."
+    }
+  ],
+  "cohort_limit": "CSS and script URLs changed after an observed source update notice. Earlier desktop/mobile top and clean lower are distinct recorded client cohorts; no byte-equivalence or atomic cross-version snapshot claim.",
+  "native_evidence": "All Codex native captures remain provisional under DEC-28. Includes company/people/campaign/progress, email sections, inbox empty/list/thread/status/lead-info, schedule, integrations and suppression. Loading/action-timeout artifacts are diagnostics, not accepted views. Existing reply previews are not proof of delivery or bookings.",
+  "tooling": {
+    "rea": "6.4.0",
+    "mcp": "1.29.0 isolated",
+    "source_cache_modified": false,
+    "real_response_recovery": "Complete exact retained Evidence recovered through real MCP export; original10MB delivery error preserved.",
+    "shared_session": "Real series six states succeeded; each exported bundle cumulative. Runtime snapshots under native/series-runtime predate two failure-reporting-only review fixes.",
+    "review": "Independent code review found no Critical/Important issues; two minor failure-reporting fixes applied and separately checked.21Windows unit checks pass; fake TTY quit smoke does not establish real capture; real series separately succeeded."
+  },
+  "secret_review": {
+    "files": 179,
+    "credential_field_hits": 0,
+    "credential_pattern_files": [],
+    "receipt_hash_mismatches": []
+  },
+  "source_boundaries": "Read-only navigation/disclosures/scrolling only. No source Save/Resume/Send/enrichment/reconnect/upload/delete/booking action invoked. Automatic read/telemetry metadata effects are not asserted absent.",
+  "limitations": [
+    "REA attach/policy filtering and manual cross-call alignment remain.",
+    "Source company/branding imagery failed to load; no source repair or replacement made.",
+    "Historical agent logs/DOM field names do not establish current API contracts or verified workflow outcomes.",
+    "Static suppression CSV samples were separately fetched by unauthenticated GET; source validation/import was not executed. Lead import remains separately unresolved.",
+    "Current account source settings do not override approved Ceverio audience/automation/zero-spending rules."
+  ],
+  "private_artifact": {
+    "repository": "Gerrard-Lewu/explee-private-evidence",
+    "commit": "755aafd6a3ac77020401f3a6f6c4d98ae6a28813",
+    "prefix": "checkpoints/2026-10-16/source-progress",
+    "archive_bytes": 33963075,
+    "archive_sha256": "32c845355b34954a4572d4a4e62b969f54ce6d6ebfb3137b04f43c44a84b7b7e",
+    "archive_members": 181,
+    "evidence_members": 179
+  },
+  "private_acceptance": {
+    "commit": "b5ad4bc2179635074fe578bec93b48a5f7edeba4",
+    "path": "checkpoints/2026-10-16/source-progress/acceptance.json"
+  },
+  "requirements": [
+    "REQ-REF-001",
+    "REQ-REF-002",
+    "REQ-REF-003",
+    "REQ-DATA-001",
+    "REQ-DATA-002",
+    "REQ-DATA-006",
+    "REQ-UI-001",
+    "REQ-REPO-001"
+  ],
+  "acceptance_scenarios": [
+    "ACC-023",
+    "ACC-024",
+    "ACC-025",
+    "ACC-031",
+    "ACC-032",
+    "ACC-043"
+  ],
+  "r4_status": "open",
+  "application_build": "not started",
+  "accepted_at": "2026-10-16T17:48:05.612Z",
+  "remote_verification": {
+    "files": 55,
+    "archive_parts": 46,
+    "method": "all complete base64 file bytes fetched at exact artifact commit equal original local bytes; ordered concatenation therefore equals verified local archive",
+    "local_tar_member_hashes": "179 evidence members verified; all181 entries regular files"
+  }
+}

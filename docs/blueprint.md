@@ -1,8 +1,8 @@
 # Explee product and technical blueprint
 
-The current [spec-driven build package](../specs/README.md) incorporates the user's Ceverio profile, three-country HVAC audience, autonomous workflow, Windows runtime, Supabase preference, and near-zero budget. It takes precedence over earlier implementation recommendations in this investigation blueprint.
+The current [spec-driven build package](../specs/README.md) incorporates the user's Ceverio profile, three-country HVAC audience, autonomous workflow, Windows browser client, approved cloud/Supabase direction, and zero-spending constraint. It takes precedence over earlier implementation recommendations in this investigation blueprint.
 
-Prepared 14 October 2026 for a personal internal tool. Status: **documented product/API baseline complete for the retrieved scope; authenticated source capture in progress; four bounded REA states accepted**.
+Prepared 14 October 2026 for a personal internal tool. Status: **documented product/API baseline complete for the retrieved scope; authenticated source capture in progress; ten bounded REA states accepted**.
 
 The required outcome is a tool that finds relevant leads, researches and scores them, prepares and sends outreach, handles replies, and helps arrange meetings. It should cover the relevant Explee workflows without signup, billing, resale, or multi-user account management. External data, email, and scheduling providers remain real dependencies.
 
@@ -12,7 +12,7 @@ The required outcome is a tool that finds relevant leads, researches and scores 
 | --- | --- |
 | Official product copy | Retrieved homepage, pricing, integration, and dataset descriptions. These establish advertised scope, not tested operation. |
 | Published public contracts | Indexed 48 documented method/path pairs across selected API page views. No endpoint was executed; complete OpenAPI JSON is still unavailable. |
-| REA runtime evidence for Explee | Four authenticated REA 6.4.0 states privately verified: overview initial desktop and targeting top/lower desktop/mobile. Targeting has supplemental native style measurements and bounded request observations. Other source groups and full interaction coverage remain pending. |
+| REA runtime evidence for Explee | Ten authenticated REA 6.4.0 states privately verified: overview initial desktop, targeting top/lower desktop/mobile, Companies two desktop views, and Project docs top/lower desktop/mobile. Targeting has supplemental native style measurements and bounded request observations. Other source groups and full interaction coverage remain pending. |
 | REA tool verification | Real MCP connection, passive capture, network body shapes, screenshot pixels, bundle analysis, and Evidence export verified against a synthetic local page. |
 | Internal-tool architecture | Explicit design proposal, separated from claims about Explee's backend. |
 
@@ -20,28 +20,35 @@ The source register is in [source-inventory.md](source-inventory.md). Machine-re
 
 ## Accepted source states and component catalog
 
-This ledger covers saved overview initial desktop and targeting top/lower desktop plus mobile viewports. Full interaction/fidelity acceptance is still pending. Private references and hashes are in the [overview record](../evidence/source-state-overview-20261015.json) and [targeting record](../evidence/source-state-targeting-20261015.json), with the [responsive checkpoint](../evidence/source-state-targeting-responsive-20261015.json).
+This ledger covers saved overview initial desktop, targeting top/lower desktop/mobile, Companies desktop and Project docs desktop/mobile viewports. Full interaction/fidelity acceptance is still pending. Private references and hashes are in the [overview record](../evidence/source-state-overview-20261015.json) and [targeting record](../evidence/source-state-targeting-20261015.json), with the [responsive checkpoint](../evidence/source-state-targeting-responsive-20261015.json).
 
 | State | Observed presentation | Remaining evidence | Requirement / acceptance links |
 | --- | --- | --- | --- |
 | `EX-OV-D-001` | Authenticated dashboard/navigation, setup/usage notices, performance cards and filter controls. Values remain private. | Lower page, filter/notice interactions, mobile, computed styles and metric semantics. | REQ-REF-001/002/003; ACC-023/031 |
 | `EX-TG-D-001` | Targeting inheritance selector, Geography and Company size criteria blocks with suggestion controls. | Variant states and validation/save semantics; see lower/mobile additions below. | REQ-REF-001/002/003, REQ-DATA-001; ACC-023/025/031 |
-
 | `EX-TG-D-002` | Lower targeting form and disabled Save & re-search; main scroll extent aligned with top view. | Drawer/variants and persistence semantics. | REQ-REF-001/002/003; ACC-023/031 |
 | `EX-TG-M-001` | Whole criteria form at 390 × 844, hidden sidebar and Open navigation control. | Drawer REA screenshot, criteria editing and validation. | REQ-REF-001/002/003; ACC-023/031 |
 
+| `EX-LD-D-001/002` | Existing campaign Companies list and agent/history split pane at 980 × 569 and 1366 × 577. | Horizontal/bottom/detail/mobile states, scoring/selection/import and API semantics. | REQ-REF-001/002/003, REQ-DATA-002/006; ACC-023/025/031/032 |
+| `EX-PD-D-001/002` | Project docs top/lower desktop: Company profile, competitors, Reply facts and Files. | Editing/validation/persistence, competitor disclosure and file behavior; failed source imagery retained. | REQ-REF-001/002/003, REQ-DATA-001; ACC-023/025/031 |
+| `EX-PD-M-001/002` | Project docs paired 390 × 844 top/clean lower views. | Interaction variants; source cohorts changed on reload, so no atomic cross-version composite claim. | REQ-REF-001/002/003, REQ-UI-001; ACC-023/024/031 |
+
 | Component family | Observed evidence | Contract/style status |
 | --- | --- | --- |
-| Project navigation shell | Both accepted states show the project selector, grouped navigation and campaign section. | Mobile targeting hides the sidebar and exposes Open navigation. Drawer native measurements are provisional; destination inventory continues. |
+| Project navigation shell | The accepted desktop views show the project selector, grouped navigation and campaign section. | Mobile targeting hides the sidebar and exposes Open navigation. Drawer native measurements are provisional; destination inventory continues. |
 | Dashboard notices and metric cards | `EX-OV-D-001` screenshot/accessibility. | Presentation observed; control effects and metric definitions unverified. |
 | Inheritance selector and criteria blocks | `EX-TG-D-001` screenshot/accessibility. | Visible labels/presentation observed; selector transitions, parsing, suggestion effects and persistence unverified. |
+| Companies grid | Ten columnheader DIVs and grid cells in a scoped `role=grid` surface. | Initial split-pane presentation accepted; historical chat tables excluded. UI field attributes do not prove API fields. |
+| Project docs sections | Company profile textarea, competitor chips, Reply facts prompts/documents and Files dropzone in paired desktop/mobile views. | Presentation accepted; persistence/validation/upload behavior untested. Changed source cohorts remain explicit. |
 | Typography/assets | Two loaded stylesheet URLs and two font URLs were inventoried by REA; four separately fetched files are privately hash-verified. CSS declares GeistSans and GeistMono. | Native targeting computed styles/rects at matching desktop/mobile viewports observe GeistSans body, 16px/24px, weight 400 and visible text sizes 12/14/16/18px; 16 visible inline SVGs retained. Complete icon/image/variant catalog pending. Loaded-byte identity and reuse permissions are not inferred from URL matches. |
 
 Initial idle windows recorded zero requests. A subsequent real REA window retained 23 requests, including typed responses for unread counts (`by_project`, `by_segment`: object) and LinkedIn access (`arm`: null observed, `live`: boolean). It did not complete the attempted Docs navigation. Prefetched routes do not establish visited screens, and an opaque page POST has undetermined effects. No validation or save contract is recovered. Existing proposed [workflow/data/API contracts](../specs/contracts.md) remain independent designs until relevant read transitions are observed.
 
+The [16 October group record](../evidence/source-state-leads-docs-20261016.json) contains six privately accepted bounded states. Companies uses a DIV-based `role=grid` with NAME, DOMAIN, DESCRIPTION, GEO, SIZE, INDUSTRIES (NACE), CITY, HIRING, EMAILS and TRAFFIC headers. Scoped native measurement distinguishes this current grid from historical chat tables; UI field labels/attributes are not API-contract proof. Both desktop views are bounded split panes; horizontal/bottom/detail/mobile views remain pending. Project docs paired desktop/mobile views show Company profile, competitors, Reply facts and Files. Clean lower mobile replaces an occluded candidate. Source client cohorts changed on reload; no atomic cross-version or loaded-byte equivalence is asserted. Native style measurements supplement these views, while all other native-only screens remain provisional.
+
 ## Product coverage
 
-The following requirements combine the user's stated goals with documented reference capabilities. The four accepted viewports provide the bounded observations above; every workflow still needs sufficient interaction/mobile/style evidence before faithful reproduction can be claimed.
+The following requirements combine the user's stated goals with documented reference capabilities. The ten accepted viewports provide the bounded observations above; every workflow still needs sufficient interaction/mobile/style evidence before faithful reproduction can be claimed.
 
 | Capability to investigate or reproduce | Current basis | Personal-tool direction |
 | --- | --- | --- |
@@ -100,7 +107,7 @@ The approved direction is a privately hosted cloud UI/API and durable worker, Su
 | Sending and replies | Mailbox/account, API capabilities, sender identity, limits, and incoming sync. Explee-managed warmed mailboxes are a separate service dependency. |
 | Meetings | Booking link/provider or calendar/account, duration, buffers, working hours, time zones, and invitation ownership. |
 | Automation | Sending/reply policies, ceilings, stop conditions, and which ambiguous cases require owner review. |
-| Runtime | Local-machine availability or a continuously running host. |
+| Runtime | Verified private cloud host; Windows remains the owner browser/capture client. |
 | UI fidelity | Accepted source screenshots, responsive states, DOM/style evidence, assets, and interactions. |
 
 App signup and account management are omitted. Provider connection settings remain necessary to make lead data, email, and scheduling work.
@@ -118,11 +125,11 @@ App signup and account management are omitted. Provider connection settings rema
 | --- | --- | --- |
 | Which capabilities are publicly documented? | Answered for retrieved scope | Expand if the signed-in inventory reveals additional features. |
 | What public operations are documented? | Partially answered | Recover full OpenAPI and verify selected contracts when account integration is in scope. |
-| What does the signed-in project show? | Unresolved | Run local capture at the selected project URL. |
+| What does the signed-in project show? | Partially observed | Accepted bounded overview/targeting/leads/Docs evidence. Other native screens remain provisional. |
 | How do each screen and control behave? | Unresolved | Capture actions, stable states, errors, and mobile behavior. |
-| What are the actual visual tokens/assets? | Unresolved | Source screenshots plus supported DOM/CSS/asset collection. |
+| What are the actual visual tokens/assets? | Partially observed | Targeting measurements and retained CSS/fonts; complete component/variant catalog and client-cohort reconciliation remain. |
 | What private requests and frontend modules implement flows? | Unresolved | REA post-attach traces and captured bundle analysis. |
 | How should the personal tool be built? | Proposed specification available | Choose providers/settings before real integration. |
-| Is the capture kit executable? | Confirmed in synthetic Linux verification | Actual source capture and macOS/Windows runtime verification remain pending. |
+| Is the capture kit executable? | Confirmed on Windows for selected source states and historical Linux fixture | Remaining reliability/coverage limits are recorded; macOS execution remains unverified. |
 
 The implementation sequence and measurable exit criteria are in [implementation-roadmap.md](implementation-roadmap.md). [local-capture.md](local-capture.md) makes the remaining source-collection step concrete.

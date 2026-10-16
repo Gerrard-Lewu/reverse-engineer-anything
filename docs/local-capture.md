@@ -14,7 +14,7 @@ python3 -m venv .venv
 npx -y rea-agents@6.4.0 --version
 ```
 
-Windows equivalents use `python -m venv .venv` and `.venv\Scripts\python.exe`. The helper wraps the npm launcher for Windows. On 15 October 2026 its seven unit checks and a real authenticated Explee capture passed on Windows using the adapter below. Earlier synthetic integration evidence is Linux-only; that harness remains POSIX-only.
+Windows equivalents use `python -m venv .venv` and `.venv\Scripts\python.exe`. The helper wraps the npm launcher for Windows. On 15 October 2026 its seven unit checks and a real authenticated Explee capture passed on Windows using the adapter below. On 16 October the expanded helper/series suite passed 21 Windows checks. Earlier synthetic integration evidence is Linux-only; that harness remains POSIX-only.
 
 ## Expose the source browser
 
@@ -46,7 +46,7 @@ A separate profile is required for debugging-port launches on recent Chrome vers
 
 This route was verified on Windows with Chrome 155, REA 6.4.0, Python 3.12.14, Node 24.14.0 and isolated `mcp==1.29.0`. Chrome 144+ can let an owner enable debugging for an already running session ([official Chrome guidance](https://developer.chrome.com/docs/devtools/agents/use-cases/auto-connect)). The owner completes `chrome://inspect/#remote-debugging` and any Chrome Allow prompt manually. This grants profile debugging access; inspect only the selected Explee tab. Never copy cookies or profiles.
 
-In the observed Chrome 155 mode, the advertised browser WebSocket worked but `/json/version` and `/json/list` returned HTTP 404. REA 6.4.0 requires those HTTP discovery endpoints and a matching WebSocket port. `scripts/bridge_chrome_discovery.mjs` provides loopback discovery from real `Browser.getVersion`/`Target.getTargets` replies, then routes CDP sessions over the owner-authorized socket. The REA package and capture helper stay unchanged. The adapter advertises/attaches only the initial Explee target, rejects cross-client sessions and browser commands outside its narrow scope, and stops new attachment if that target leaves the source origin. It is transport scoping, not a sandbox for arbitrary CDP scripts: use the passive helper.
+In the observed Chrome 155 mode, the advertised browser WebSocket worked but `/json/version` and `/json/list` returned HTTP 404. REA 6.4.0 requires those HTTP discovery endpoints and a matching WebSocket port. `scripts/bridge_chrome_discovery.mjs` provides loopback discovery from real `Browser.getVersion`/`Target.getTargets` replies, then routes CDP sessions over the owner-authorized socket. The REA package stays unchanged. The adapter advertises/attaches only the initial Explee target, rejects cross-client sessions and browser commands outside its narrow scope, and stops new attachment if that target leaves the source origin. It is transport scoping, not a sandbox for arbitrary CDP scripts: use the passive helper.
 
 Use the already installed REA **6.4.0** package directory; the adapter loads its existing `ws` dependency and does not install anything. Start it in one PowerShell terminal:
 
@@ -91,6 +91,41 @@ If the visible URL differs, pass that exact URL with `--source-url`. For duplica
 The 10-second observation window collects newly arriving requests. Keep the intended state in view; after the window ends, leave it stable until the command finishes. A route or target change makes the capture fail rather than attributing another page to the selected URL. Same-URL content can still change; the receipt records that cross-call visual/DOM alignment is not proven.
 
 For subsequent UI states, open the relevant control manually and run another capture with its own label/folder. REA saves viewport screenshots, so scroll and capture numbered sections for content below the fold. Capture mobile at 390 × 844 using the browser's supported device emulation; the screenshot receipt preserves the observed viewport.
+
+## Reuse the installed REA package and session
+
+Both capture commands accept optional `--rea-package-root "C:/path/to/node_modules/rea-agents"`. This uses existing Node to run that package's `scripts/rea.mjs mcp`, bypassing npm startup only. Before creating an output directory, the helper checks package name/version (`rea-agents` 6.4.0), expected dispatcher and compiled runtime paths. Supply a trusted official installation; metadata checks are not publisher attestation. The real MCP `binary_session` version check remains required. Omitting the option preserves pinned npx launching. Cached launching alone did not resolve the observed startup timeout; a later warm run initialized successfully.
+
+For a small group of stable states, initialize real REA once:
+
+```powershell
+.venv/Scripts/python.exe scripts/capture_explee_series.py `
+  --rea-package-root "C:/path/to/node_modules/rea-agents" `
+  --cdp-endpoint $taskChromeReady.endpoint `
+  --target-id "ACTUAL_OBSERVED_TARGET_ID"
+```
+
+Wait for `READY`, which follows real initialization and tool discovery. Navigate with the existing Browser controls, let the page settle, then submit one JSON object per line:
+
+```json
+{"source_url":"https://explee.com/app-auto-gtm/p/40610/docs","label":"project-docs-desktop","output":"evidence/captures/project-docs-new","observation_seconds":1}
+```
+
+Commands run sequentially against the fixed selected target and exact supplied Explee URL. Every state needs a new directory; the same screenshot, identity, URL and completeness guards apply. The default observation is one second; 0.1–60 seconds is allowed. The process closes its own MCP session after at most six attempted states, EOF or `{"quit":true}`. A failed state remains reported individually and makes the final process exit code 1. Invalid commands are rejected without creating capture directories.
+
+Each state retains a complete current session export. **Exports are cumulative**, so later folders can include earlier states' private evidence and grow larger; the receipt identifies `cumulative_shared_session`. No retained Evidence is cleared between states. Review and publish each complete private bundle with this scope explicit.
+
+## Completed inspection exceeds the response budget
+
+The helper recovers only REA's explicit completed, untruncated `inspect_web_page` result whose delivery failed at the `mcp-response` receive-buffer boundary. It preserves the original error, requests a real `export_evidence_bundle` into `retained-inspection-bundle.json`, checks the unique exact reported Evidence ID and operation, and saves `inspect_web_page-retained.json`. Both files are hashed. The actual retained normalized result then passes the existing URL/target/completeness guards before screenshot and final export continue. Missing, ambiguous or incompatible records and other tool errors remain failures. The receipt records recovery references, reported limits and the delivery limitation, including when a later operation fails. This recovers retained Evidence; it does not convert failed or incomplete analysis into successful evidence.
+
+Verification command:
+
+```powershell
+.venv/Scripts/python.exe -m unittest discover -s tests -p test_capture_explee.py -v
+```
+
+All 21 Windows checks passed after the final exit-code/failure-provenance fixes. The already-running 16 October source series used its earlier loaded script versions; exact runtime snapshots/hashes were retained separately. Those live captures establish the earlier runtime behavior, while the 21-check result verifies the final minor fixes. Do not attribute later source edits to a process that had already loaded its code.
 
 ## What comes back
 

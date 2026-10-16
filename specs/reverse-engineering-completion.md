@@ -1,8 +1,8 @@
 # Explee reverse-engineering completion plan
 
-> **Current source status (2026-10-15 09:16:18 UTC):** R0 first authenticated REA overview `EX-OV-D-001` accepted for the initial desktop viewport, with complete private export and remote byte verification. Existing signed-in Chrome is connected through a documented loopback discovery adapter. R1–R4 remain open; [the checkpoint](../docs/handover-checkpoint.md) identifies exact artifact/acceptance commits and remaining coverage. Earlier cloud-only findings below are historical.
+> **Current source status (2026-10-16 17:48:05 UTC):** R0 first authenticated REA overview `EX-OV-D-001` accepted for the initial desktop viewport, with complete private export and remote byte verification. Existing signed-in Chrome is connected through a documented loopback discovery adapter. R1–R4 remain open; [the checkpoint](../docs/handover-checkpoint.md) identifies exact artifact/acceptance commits and remaining coverage. Earlier cloud-only findings below are historical.
 
-Status: **planning only, 15 October 2026**. No application build has started. This is the remaining source-investigation plan, not a claim of access to the signed-in app or recovery of Explee's server implementation.
+Status: **planning only, 16 October 2026**. No application build has started. Selected authenticated states are accepted; this is the remaining source-investigation plan, not recovery of Explee's server implementation.
 
 ## Goal and critical path
 
@@ -13,7 +13,7 @@ Finish an evidence-backed product, interaction and technical blueprint for the s
 | Requirements/Ceverio context | Reviewed; 43 requirement IDs and 43 acceptance scenarios in the current planning baseline. |
 | Public Explee research | Nine retained source views; 48 documented public method/path pairs. Selective documentation, not authenticated traffic. |
 | REA MCP | Actual 6.4.0 session/schemas retained; synthetic capture checks passed. |
-| Accepted signed-in Explee states | **Four accepted states:** overview initial desktop, targeting top/lower desktop and 390 × 844 mobile. Remaining groups, variants and contracts await evidence. |
+| Accepted signed-in Explee states | **Ten accepted bounded states:** overview initial desktop, targeting top/lower desktop and mobile, Companies two desktop views, and Project docs top/lower desktop/mobile. Remaining groups, variants and contracts await evidence. |
 | Model/database/cloud design | Pinned model comparison, verified Supabase metadata and named provider dependencies. No app/model deployment or inference benchmark. |
 | Ceverio DNS | Cloudflare active; seven mail records and two CNAMEs match the export. DNSSEC pending; user has not added the registrar DS. Separate infrastructure milestone. |
 
@@ -23,7 +23,7 @@ The critical path is **GitHub/private-evidence preflight → browser connection 
 
 Historical cloud context, before local continuation: the selected tab is on the user's Windows computer. That cloud shell could not reach the machine's loopback browser port. The ambient in-app URL does not expose browser control or a REA transport; no callable desktop-browser surface is currently available here.
 
-Fresh access check, 15 October: the user reconfirmed the existing Codex-browser sign-in. Available-tool and complete skill-catalog checks plus plugin discovery still exposed no desktop Browser/Node REPL connection. The native browser-panel command returned only a queued UI request, not page access. [The access record](../evidence/source-inspection-access-check.json) preserves the outcome. The missing prerequisite is a browser connection for this task, not another login. A question about enabling Browser or using local execution is pending; no Explee source was captured.
+Historical cloud access check, 15 October, before successful local captures: the user reconfirmed the existing Codex-browser sign-in. Available-tool and complete skill-catalog checks plus plugin discovery exposed no desktop Browser/Node REPL connection in that environment. The native browser-panel command returned only a queued UI request. [The access record](../evidence/source-inspection-access-check.json) preserves that historical outcome; later local browser/REA captures supersede its access blocker.
 
 Use the existing [local capture instructions](../docs/local-capture.md): REA runs beside a supported Chromium-family browser with an actual literal-loopback CDP endpoint. If the Codex in-app browser later exposes supported tools/an endpoint, validate that exact connection. Otherwise use the documented dedicated Chrome profile, sign in there and run the existing lightweight capture kit. Heavy inference and the future app are not needed on the laptop.
 
