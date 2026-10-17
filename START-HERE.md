@@ -2,7 +2,7 @@
 
 **Current phase: planning and source inspection only. No application build.**
 
-This repository is the durable project record. Start with [the handover](docs/local-handover.md) and [current checkpoint](docs/handover-checkpoint.md). The project has 43 requirements and 43 acceptance scenarios, a public research baseline and a tested REA capture kit. **Fifteen bounded authenticated REA states are accepted: overview, targeting, Companies, Project docs, Domains/mailboxes three desktop views, integrations top and Needs reply empty inbox. R1–R4 remain open.**
+This repository is the durable project record. Start with [the handover](docs/local-handover.md) and [current checkpoint](docs/handover-checkpoint.md). The project has 43 requirements and 43 acceptance scenarios, a public research baseline and a tested REA capture kit. **Twenty-one bounded authenticated REA states are accepted across overview, targeting, Companies, Project docs, Domains/mailboxes, integrations, inbox/thread/status/Lead info, suppression and schedule. R1–R4 remain open.**
 
 ## On your Windows computer
 

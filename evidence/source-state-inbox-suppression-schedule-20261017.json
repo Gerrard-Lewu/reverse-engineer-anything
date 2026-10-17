@@ -1,0 +1,309 @@
+{
+  "recorded_at": "2026-10-17T05:09:41.566Z",
+  "status": "accepted",
+  "archive_bytes": 3102356,
+  "archive_sha256": "af60460e906fa7447542c762306bd8d7b13c4f950dafa8c03f0556d2818d0c9a",
+  "archive_entries": 64,
+  "evidence_members": 63,
+  "remote_verification": {
+    "files": 14,
+    "archive_parts": 5,
+    "method": "Every complete base64 file retrieved at exact artifact commit matched reviewed local bytes; ordered parts therefore equal verified local archive",
+    "local_archive_check": "All63 member SHA256/byte counts matched, all64 tar entries regular files; an earlier read while compression was running produced EOF and was not used for acceptance"
+  },
+  "visual_review": {
+    "saved_pngs_inspected": [
+      "EX-IB-D-002",
+      "EX-IB-D-003",
+      "EX-IB-D-004",
+      "EX-IG-D-002",
+      "EX-SP-D-001",
+      "EX-SC-D-001"
+    ],
+    "correct_authenticated_project": true,
+    "scopes": {
+      "EX-IB-D-002": "Existing selected conversation, replied list and pre-existing rendered reply composer; current message region only, earlier history not fully covered; text was not edited or sent",
+      "EX-IB-D-003": "Current unassigned lead status popover: five displayed choices plus Add status; no status chosen; reply classification distinct from lead status",
+      "EX-IB-D-004": "Company/fit explanation and empty Notes field in lead-info popover; no notes edited",
+      "EX-IG-D-002": "Wider integrations page including masked API-key example and agent-copy/API docs controls; controls not invoked; displayed API example is not an observed invocation",
+      "EX-SP-D-001": "Organization-wide suppression presentation, People and Companies upload affordances, empty domain input and disabled Add; no file/input/validation/submission action",
+      "EX-SC-D-001": "Project defaults country/day/local-time matrix, Smart sending days on and Saved disabled; no settings changed"
+    }
+  },
+  "runtime": {
+    "recorded_at": "2026-10-17T05:00:00.454Z",
+    "loaded_capture_runtime": {
+      "artifact_commit": "eeae76b19300b49f869bddab5bb2c82c9fbf724c",
+      "archive_path": "supplements/runtime",
+      "capture_explee_sha256": "40ed297b73e721c11704cea470824e741ad2569571b88c80f53790f214cb0b4b",
+      "capture_explee_series_sha256": "5d5e03d3fa6ab2126365f7ca5de20baec43a7c42cdadc6ce7b23d60afb932e78"
+    },
+    "source": "six real successful states captured before observer-import compatibility repair",
+    "rea": "6.4.0",
+    "mcp": "1.29.0",
+    "viewport": {
+      "width": 1534,
+      "height": 881
+    },
+    "application_build": false
+  },
+  "secret_review": {
+    "actual_credential_candidates": 0,
+    "sensitive_fields_or_literal_assignments": 0,
+    "classification": "Generic client/API-key templates and masked UI values; broad sk matches are CSS mask-* false positives; storage values redacted; no actual credential retained for upload"
+  },
+  "limitations": [
+    "All states are desktop1534x881 after owner changed normal browser sizing; separate from prior980x569 states",
+    "Public thread URLs must omit private person identifier and refer to privately retained exact URLs",
+    "Inbox earlier conversation history and other recipients/filters/compose/attachment/submit variants unresolved",
+    "Lead fit text/company attributes and source FAQ/API guidance are presentation claims, not independently verified external facts or executed contracts",
+    "Integrations copied prompts may contain credentials and were not invoked; masked suffix remains private",
+    "Suppression initial viewport only; last67pixels of main scroll extent and actual import/matching/validation unverified",
+    "Schedule country matrix is operational presentation, not approved targeting-country scope; execution/DST/error variants unverified",
+    "Inspections declare attach_limited/policy_filtered sections; idle observations do not prove API absence",
+    "Complete exports cumulative within their source session; cross-call snapshots not atomic"
+  ],
+  "source_boundaries": "Read-only navigation/disclosures/scrolling; existing composer text preserved; no deliberate business-control writes, purchases, sending, configuration, status/notes edits, import or booking; automatic metadata effects not asserted absent",
+  "application_build": false,
+  "r4_status": "open",
+  "states": [
+    {
+      "state_id": "EX-IB-D-002",
+      "viewport": {
+        "width": 1534,
+        "height": 881
+      },
+      "started_at": "2026-10-17T04:46:19.282709+00:00",
+      "finished_at": "2026-10-17T04:46:27.833404+00:00",
+      "status": "accepted",
+      "evidence_ids": [
+        {
+          "operation": "list_browser_targets.json",
+          "evidence_id": "ev_10d243eb1a17d75318c67f6b8b1c343e09cb36c8e50e6435ec198e3abcc1299e"
+        },
+        {
+          "operation": "inspect_web_page.json",
+          "evidence_id": "ev_eedde9dabbdf88c55b25483c200488889159efe0f9057aa68dc541f9fc46080b"
+        },
+        {
+          "operation": "capture_web_screenshot.json",
+          "evidence_id": "ev_81cc52d82793c8701c331df9d4a4713fcc8c0e8424c4f52a6e5b83e2e7c21338"
+        }
+      ],
+      "screenshot": {
+        "path": "screenshot.png",
+        "bytes": 230771,
+        "sha256": "c201ba8ca77d698b326ac4ca651e86bda4e6fad43b3586741802420c9fc301e4"
+      },
+      "session_evidence_scope": "cumulative_shared_session",
+      "source_url_redacted": "https://explee.com/app-auto-gtm/p/40610/inbox?tab=replied&person=<private-person-id>",
+      "exact_url_private_reference": {
+        "artifact_commit": "350071d6a053d4a76b1fb3c30e57a9bfc663b66d",
+        "archive_capture_folder": "rea-inbox-thread-desktop-20261017",
+        "record": "receipt.json"
+      }
+    },
+    {
+      "state_id": "EX-IB-D-003",
+      "viewport": {
+        "width": 1534,
+        "height": 881
+      },
+      "started_at": "2026-10-17T04:48:41.119275+00:00",
+      "finished_at": "2026-10-17T04:48:48.070560+00:00",
+      "status": "accepted",
+      "evidence_ids": [
+        {
+          "operation": "list_browser_targets.json",
+          "evidence_id": "ev_10d243eb1a17d75318c67f6b8b1c343e09cb36c8e50e6435ec198e3abcc1299e"
+        },
+        {
+          "operation": "inspect_web_page.json",
+          "evidence_id": "ev_76f25aad62d23ff1817cd9036b52f585dfe9588015ff353772f0ddd981817d9b"
+        },
+        {
+          "operation": "capture_web_screenshot.json",
+          "evidence_id": "ev_33befee955149e71a501eaac595704b0f9b94b52594fd35c31067916b9786898"
+        }
+      ],
+      "screenshot": {
+        "path": "screenshot.png",
+        "bytes": 236260,
+        "sha256": "72c25f84989480b21e131ceb65d89214a85f41bfa0638c6a72fd80bdbbe3ba0c"
+      },
+      "session_evidence_scope": "cumulative_shared_session",
+      "source_url_redacted": "https://explee.com/app-auto-gtm/p/40610/inbox?tab=replied&person=<private-person-id>",
+      "exact_url_private_reference": {
+        "artifact_commit": "350071d6a053d4a76b1fb3c30e57a9bfc663b66d",
+        "archive_capture_folder": "rea-inbox-status-popover-desktop-20261017",
+        "record": "receipt.json"
+      }
+    },
+    {
+      "state_id": "EX-IB-D-004",
+      "viewport": {
+        "width": 1534,
+        "height": 881
+      },
+      "started_at": "2026-10-17T04:51:33.639781+00:00",
+      "finished_at": "2026-10-17T04:51:40.707549+00:00",
+      "status": "accepted",
+      "evidence_ids": [
+        {
+          "operation": "list_browser_targets.json",
+          "evidence_id": "ev_10d243eb1a17d75318c67f6b8b1c343e09cb36c8e50e6435ec198e3abcc1299e"
+        },
+        {
+          "operation": "inspect_web_page.json",
+          "evidence_id": "ev_4f586cbc09a4fec1a829cf005bcfd395f08f17c89c048bbb82d35d3f54167fb4"
+        },
+        {
+          "operation": "capture_web_screenshot.json",
+          "evidence_id": "ev_015def347c6071890112cc09d95dd7ed4898ad794e1961920767b564230d928c"
+        }
+      ],
+      "screenshot": {
+        "path": "screenshot.png",
+        "bytes": 266970,
+        "sha256": "979bf12f5afeb6b4b01dcfb5a794c9f3438314c35d4784217276c87a4a06c33b"
+      },
+      "session_evidence_scope": "cumulative_shared_session",
+      "source_url_redacted": "https://explee.com/app-auto-gtm/p/40610/inbox?tab=replied&person=<private-person-id>",
+      "exact_url_private_reference": {
+        "artifact_commit": "350071d6a053d4a76b1fb3c30e57a9bfc663b66d",
+        "archive_capture_folder": "rea-inbox-lead-info-desktop-20261017",
+        "record": "receipt.json"
+      }
+    },
+    {
+      "state_id": "EX-IG-D-002",
+      "viewport": {
+        "width": 1534,
+        "height": 881
+      },
+      "started_at": "2026-10-17T04:52:46.100251+00:00",
+      "finished_at": "2026-10-17T04:52:52.463165+00:00",
+      "status": "accepted",
+      "evidence_ids": [
+        {
+          "operation": "list_browser_targets.json",
+          "evidence_id": "ev_283329e01a4796064b84481de7c2ec877d721cec8572ee98cfab2e185083bea2"
+        },
+        {
+          "operation": "inspect_web_page.json",
+          "evidence_id": "ev_c7cbaef709dbe4ebb8ee4cfdd3f3815c633343ba71efba268f4e2d6530cbaab4"
+        },
+        {
+          "operation": "capture_web_screenshot.json",
+          "evidence_id": "ev_f2c896efd2b091d4b1b17443b425aca4c83a7df7fa90ed45af13c95997d99c8a"
+        }
+      ],
+      "screenshot": {
+        "path": "screenshot.png",
+        "bytes": 148195,
+        "sha256": "89ade7f51e26fe3d14979e2b8fed58b3fceafec944cf3c6253ed4cb7d5b6e008"
+      },
+      "session_evidence_scope": "cumulative_shared_session",
+      "source_url": "https://explee.com/app-auto-gtm/p/40610/integrations"
+    },
+    {
+      "state_id": "EX-SP-D-001",
+      "viewport": {
+        "width": 1534,
+        "height": 881
+      },
+      "started_at": "2026-10-17T04:54:20.384111+00:00",
+      "finished_at": "2026-10-17T04:54:27.753599+00:00",
+      "status": "accepted",
+      "evidence_ids": [
+        {
+          "operation": "list_browser_targets.json",
+          "evidence_id": "ev_f79a4387cac540fd3e93870c8c1fe34f74fabd64a2d1ec1631f5b4e9a4b8fa2c"
+        },
+        {
+          "operation": "inspect_web_page.json",
+          "evidence_id": "ev_ef29c52895bb6c40db2b572f433fbde319f3291bb6211731ad55ddfb6045eb9a"
+        },
+        {
+          "operation": "capture_web_screenshot.json",
+          "evidence_id": "ev_db5cc08a55a367dd9bb8f57f0e4ea8e337cf616593e22e939144dca37bde8496"
+        }
+      ],
+      "screenshot": {
+        "path": "screenshot.png",
+        "bytes": 127317,
+        "sha256": "479c9646a58bb9e7f030d0ad1100c2a045ae931deac902b2f337e6755f2d3a8e"
+      },
+      "session_evidence_scope": "cumulative_shared_session",
+      "source_url": "https://explee.com/app-auto-gtm/dedup"
+    },
+    {
+      "state_id": "EX-SC-D-001",
+      "viewport": {
+        "width": 1534,
+        "height": 881
+      },
+      "started_at": "2026-10-17T04:55:31.457086+00:00",
+      "finished_at": "2026-10-17T04:55:37.306743+00:00",
+      "status": "accepted",
+      "evidence_ids": [
+        {
+          "operation": "list_browser_targets.json",
+          "evidence_id": "ev_0ed2b8ad2547817b4b56b7dab2408c73dbad5b37662287233ce2d1965f9dc260"
+        },
+        {
+          "operation": "inspect_web_page.json",
+          "evidence_id": "ev_bd9cd3c8c9142619f224d0d4fc8b185f84274bd4d44baf468436415e5e43d850"
+        },
+        {
+          "operation": "capture_web_screenshot.json",
+          "evidence_id": "ev_1f5f4b49fb3950097a72c6ef999e3af5116d48db36a184337f8e22ddb7dd6eda"
+        }
+      ],
+      "screenshot": {
+        "path": "screenshot.png",
+        "bytes": 120114,
+        "sha256": "e77389df422645426183502162b244ef5ac6659a7fdee2f9b44a8fcd088ddfe7"
+      },
+      "session_evidence_scope": "cumulative_shared_session",
+      "source_url": "https://explee.com/app-auto-gtm/p/40610/schedule"
+    }
+  ],
+  "accepted_rea_states_total": 21,
+  "new_accepted_rea_states": 6,
+  "private_artifact": {
+    "repository": "Gerrard-Lewu/explee-private-evidence",
+    "commit": "350071d6a053d4a76b1fb3c30e57a9bfc663b66d",
+    "prefix": "checkpoints/2026-10-17/rea-inbox-suppression-schedule"
+  },
+  "private_acceptance": {
+    "commit": "c1d05d16e8339de4cbf7401f160cbb622c9c2890",
+    "path": "checkpoints/2026-10-17/rea-inbox-suppression-schedule/acceptance.json"
+  },
+  "requirements": [
+    "REQ-REF-001",
+    "REQ-REF-002",
+    "REQ-REF-003",
+    "REQ-IN-001",
+    "REQ-IN-005",
+    "REQ-INT-001",
+    "REQ-DATA-004",
+    "REQ-OUT-004",
+    "REQ-UI-001",
+    "REQ-REPO-001"
+  ],
+  "acceptance_scenarios": [
+    "ACC-011",
+    "ACC-012",
+    "ACC-016",
+    "ACC-021",
+    "ACC-023",
+    "ACC-024",
+    "ACC-031",
+    "ACC-032",
+    "ACC-043"
+  ],
+  "acceptance_scope": "Bounded source presentation only; no executed application acceptance or complete private workflow/API contract.",
+  "tooling_revision": "A helper response-budget compatibility regression affecting the observer import was corrected with a focused compatibility fix. 22 Windows tests and independent review cover the final code; these six live captures used the separately retained pre-fix runtime snapshot.",
+  "transition_observations": "Schedule-to-Emails observation missed the operator window and remains diagnostic. Later Emails-to-Schedule action occurred inside its 60-second observation window with ten observed requests; private privacy review/paired final-frame acceptance are pending, so it is not a new accepted state or workflow contract."
+}

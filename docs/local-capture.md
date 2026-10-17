@@ -127,6 +127,8 @@ Verification command:
 
 All 21 Windows checks passed after the final exit-code/failure-provenance fixes. The already-running 16 October source series used its earlier loaded script versions; exact runtime snapshots/hashes were retained separately. Those live captures establish the earlier runtime behavior, while the 21-check result verifies the final minor fixes. Do not attribute later source edits to a process that had already loaded its code.
 
+Current 17 October tooling check: 22 Windows tests pass after a focused helper compatibility fix corrected the observer import regression; independent review approved the change. The accepted six-state thread/suppression/schedule series used its earlier loaded runtime snapshot, retained privately. The final-code checks do not retroactively change that runtime. Observer requests and final-frame evidence require separate private review and acceptance.
+
 ## What comes back
 
 - Complete returned REA records for discovery, page inspection, screenshot, and optional static bundle analysis.

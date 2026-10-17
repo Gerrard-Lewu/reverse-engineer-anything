@@ -408,11 +408,13 @@ async def capture(args, artifacts: list, connection=None, receipt_context=None) 
     return receipt
 
 
+def describe_exception(value):
+    if isinstance(value, BaseExceptionGroup):
+        return [detail for child in value.exceptions for detail in describe_exception(child)]
+    return [{"type": type(value).__name__, "message": str(value)}]
+
+
 def failure_receipt(args, artifacts, error, context=None):
-    def describe_exception(value):
-        if isinstance(value, BaseExceptionGroup):
-            return [detail for child in value.exceptions for detail in describe_exception(child)]
-        return [{"type": type(value).__name__, "message": str(value)}]
     print(f"Capture failed; inspect saved records in {args.output}.", file=sys.stderr)
     receipt = {
         "status": "failed", "kind": "passive_source_capture", "label": args.label,

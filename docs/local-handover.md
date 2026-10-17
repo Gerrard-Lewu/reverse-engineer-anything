@@ -1,6 +1,6 @@
 # Local Codex handover
 
-> **Current local status:** fifteen bounded authenticated REA states accepted: overview, targeting, Companies, Project docs, Domains/mailboxes, integrations top and Needs reply empty inbox. See the checkpoint for individual state scope and source cohorts. The owner-enabled existing Chrome connection and private remote verification are established. Continue R1–R4 from [the current checkpoint](handover-checkpoint.md); [existing-Chrome instructions](local-capture.md#existing-signed-in-chrome) document the working route. Earlier proposed-destination and cloud-access statements are historical.
+> **Current local status:** twenty-one bounded authenticated REA states accepted across overview, targeting, Companies, Project docs, Domains/mailboxes, integrations, inbox/thread/status/Lead info, suppression and schedule. See the checkpoint for individual state scope and source cohorts. The owner-enabled existing Chrome connection and private remote verification are established. Continue R1–R4 from [the current checkpoint](handover-checkpoint.md); [existing-Chrome instructions](local-capture.md#existing-signed-in-chrome) document the working route. Earlier proposed-destination and cloud-access statements are historical.
 
 Prepared 15 October 2026. **Planning/source investigation only.** This handover authorizes continuation of inspection and GitHub publication within the existing scope, not application implementation or live outreach.
 

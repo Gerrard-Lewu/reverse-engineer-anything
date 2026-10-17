@@ -28,6 +28,15 @@ SERIES_SPEC.loader.exec_module(SERIES)
 
 
 class CaptureCommandTests(unittest.TestCase):
+    def test_transition_observer_help_imports_shared_helpers_without_connection(self):
+        result = subprocess.run(
+            [sys.executable, str(ROOT / "scripts" / "observe_explee_transition.py"), "--help"],
+            capture_output=True, text=True, timeout=10,
+        )
+        self.assertEqual(result.returncode, 0, result.stderr)
+        self.assertIn("--initial-url", result.stdout)
+        self.assertIn("--final-url", result.stdout)
+
     def run_capture(self, output, *arguments):
         return subprocess.run(
             [sys.executable, str(SCRIPT), "--output", str(output), *arguments],

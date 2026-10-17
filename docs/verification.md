@@ -1,5 +1,11 @@
 # Verification and evidence limits
 
+## Thread, suppression, schedule and wider integrations — 17 October 2026
+
+Six 1534 × 881 states passed saved-PNG review and private verification; accepted total twenty-one. [Group record](../evidence/source-state-inbox-suppression-schedule-20261017.json). All 14 remote files matched complete local bytes; five ordered parts equal the 3,102,356-byte archive, all 64 entries are regular files and all 63 evidence-member hashes/byte counts passed. Artifact `350071d6a053d4a76b1fb3c30e57a9bfc663b66d`; acceptance `c1d05d16e8339de4cbf7401f160cbb622c9c2890` read back. Exact selected-person URLs and private messages remain privately retained; public state references redact identifiers.
+
+A focused helper compatibility fix corrected the observer import regression; 22 Windows tests and independent review cover final code. Six real captures used the separate pre-fix runtime snapshot, which remains privately preserved. Schedule-to-Emails missed its observation window; Emails-to-Schedule acted within 60 seconds and retained ten requests, but private review/paired final-frame acceptance remain pending. Neither observer attempt adds an accepted state here. No application acceptance tests/build or business-control writes.
+
 ## Domains, integrations and empty inbox — 17 October 2026
 
 Five additional REA states at 980 × 569 passed saved-PNG/structure review and private remote verification, bringing the total to fifteen. [Group record](../evidence/source-state-operations-20261017.json). All 11 remote files matched complete local bytes; three ordered XZ parts equal the 1,701,148-byte archive, all 65 entries are regular files and all 64 evidence-member hashes/byte counts passed. Private artifact `eeae76b19300b49f869bddab5bb2c82c9fbf724c`; acceptance `852f50da8c206ad30bf104f379ef0d522c22d875` read back. A mutable native supplement caused an initial packaging mismatch; the reviewed final archive uses immutable per-member byte copies. Five source receipts remained valid. The changed-URL Got reply attempt is diagnostic only. Native-only retention and later source candidates remain distinct from these accepted states. No new app tests, business-control writes or API-contract verification are claimed.
@@ -67,7 +73,7 @@ The real-browser fixture is `tests/fixtures/index.html`; it explicitly identifie
 | Export retained evidence before failure teardown | Confirmed in isolated boundary probes | Export occurs in the session guard; export errors are recorded without replacing the original failure. |
 | Report materially incomplete source capture | Confirmed in unit/boundary probes | Truncated/unavailable/dropped coverage yields `partial`; expected policy/attach limits remain disclosed. |
 | Source-backed product/API baseline | Confirmed for retrieved public scope | Nine source entries and 48 indexed documented public method/path pairs. |
-| Capture signed-in Explee screens and interactions | Partial | Fifteen bounded overview/targeting/leads/Docs/Domains/integrations/empty-inbox states accepted through real REA on Windows; other native views remain provisional. |
+| Capture signed-in Explee screens and interactions | Partial | Twenty-one bounded overview/targeting/leads/Docs/Domains/integrations/inbox/suppression/schedule states accepted through real REA on Windows; other native views remain provisional. |
 | Recover complete public OpenAPI schema | Partial | Only selectively retrieved schema fragments were available. |
 | Verify faithful visual/UI recreation | Unverified | Accepted Explee screenshots and supplemental style evidence exist for a bounded subset; no recreated application exists. |
 | Validate live lead, email, and calendar integration | Unverified | Intended sender/booking configuration and app integrations remain unconfigured. Supabase access/metadata/Free plan are now verified; application grants and host connection are not. No application-level live test was performed. |

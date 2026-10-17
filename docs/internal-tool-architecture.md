@@ -1,6 +1,6 @@
 # Proposed architecture for the internal lead-to-meeting tool
 
-Status: design proposal, updated 14 October 2026. The current [build specification](../specs/README.md) and [contracts](../specs/contracts.md) take precedence where they refine this earlier blueprint. This document specifies the user's future single-user tool, not Explee's backend implementation. Fifteen bounded authenticated REA source states are accepted and privately verified; complete private API/workflow contracts remain unresolved. [Current checkpoint](handover-checkpoint.md) gives exact scope. No application has been built.
+Status: design proposal, updated 14 October 2026. The current [build specification](../specs/README.md) and [contracts](../specs/contracts.md) take precedence where they refine this earlier blueprint. This document specifies the user's future single-user tool, not Explee's backend implementation. Twenty-one bounded authenticated REA source states are accepted and privately verified; complete private API/workflow contracts remain unresolved. [Current checkpoint](handover-checkpoint.md) gives exact scope. No application has been built.
 
 The approved outcome is a product and technical blueprint first, followed by a personal tool that finds leads, contacts them, handles replies, and arranges meetings. The tool has no signup, billing, tenancy, or multi-user account management. Connecting a lead-data service, mailbox, or calendar still requires that provider's account credentials or OAuth authorization.
 
