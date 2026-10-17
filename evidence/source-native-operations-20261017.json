@@ -1,0 +1,107 @@
+{
+  "recorded_date_utc": "2026-10-17",
+  "status": "retained_provisional_private_verified",
+  "planning_baseline": "4c7aa8873767ed07306e22b98cc9db8436e51046",
+  "accepted_rea_states_total": 10,
+  "new_accepted_rea_states": 0,
+  "source": "Codex Chrome native browser/CDP; not REA Evidence",
+  "scope": [
+    "People desktop top and lower/pagination views at 980 x 569",
+    "Domains desktop and FAQ disclosure views",
+    "People-to-Domains request/response metadata observation"
+  ],
+  "network": {
+    "events": 79,
+    "request_events": 39,
+    "response_events": 40,
+    "request_methods": {
+      "GET": 25,
+      "POST": 12,
+      "OPTIONS": 2
+    },
+    "response_statuses": {
+      "200": 34,
+      "204": 5,
+      "202": 1
+    },
+    "retained_fields": [
+      "sequence",
+      "event",
+      "request_id",
+      "origin",
+      "path",
+      "query_keys",
+      "method",
+      "status",
+      "resource_type"
+    ],
+    "omitted": [
+      "query values",
+      "headers",
+      "payloads",
+      "response bodies"
+    ],
+    "attribution": "Native event metadata only. Static assets and route/prefetch candidates do not establish visited screens or private API contracts. No JSON body shapes were retained. Request and response event counts are not a completed-operation count."
+  },
+  "rea_attempt": {
+    "first_launch": "Argument validation exited 1 before connection because the required package argument was omitted.",
+    "corrected_launch": "Two corrected scoped discovery-adapter attempts each timed out during the 180-second opening handshake and exited 1; no REA source capture resulted.",
+    "limitation": "Native control and an observed Chrome target do not prove a usable REA transport. No endpoint/nonce/profile data is published.",
+    "cleanup": "Both task-owned adapter processes closed; owner browser preserved.",
+    "connectivity": "Advertised loopback TCP was reachable; discovery returned HTTP 404, consistent with existing-session debugging but not proof of authorization or REA attachment."
+  },
+  "private_artifact": {
+    "repository": "Gerrard-Lewu/explee-private-evidence",
+    "commit": "8a598070b25922f60f16f4c99bb9f3ca825326fd",
+    "prefix": "checkpoints/2026-10-17/native-operations",
+    "verified_at": "2026-10-17T04:32:58Z",
+    "remote_files": 19,
+    "native_files": 18,
+    "native_bytes": 563405,
+    "proof": "All 19 complete base64 file contents retrieved at the exact commit matched the reviewed local bytes; the 18 native files also matched their manifest SHA-256 hashes and byte counts.",
+    "acceptance": "No new REA state; native evidence stays provisional under DEC-28.",
+    "manifest_bytes": 3320,
+    "manifest_sha256": "2882a5cbcc63497c01903e3256496e61866842d56292075963e3deef2db0e194",
+    "uploaded_bytes": 566725
+  },
+  "review": {
+    "files": 18,
+    "bytes": 563405,
+    "text_json_files": 12,
+    "credential_pattern_counts": {
+      "jwt": 0,
+      "github_token": 0,
+      "private_key": 0,
+      "sk_token": 0,
+      "bearer_token": 0
+    },
+    "credential_field_hits": 0,
+    "scope": "Pattern/field scans supplement operator saved-image review; no exhaustive secret-detection claim.",
+    "saved_images_inspected": 6
+  },
+  "limitations": [
+    "All new native-only material remains provisional under DEC-28, even after private byte verification.",
+    "Source DOM/FAQ text and UI field labels do not establish validated behavior, delivery, booking outcomes or API semantics.",
+    "Existing account values do not override approved Ceverio audience, automation or zero-spending rules.",
+    "Native screenshots, accessibility text and account data are retained privately; this record contains sanitized metadata only.",
+    "People top view shows breakdown and grid start; lower split pane shows a narrow subset and pagination. The support bubble overlaps Next. No full grid/column/row or pagination behavior claim.",
+    "Two expanded Domains FAQ variants record source guidance about DNS changes and bringing an existing domain. These statements were not exercised and do not override approved independent Ceverio architecture.",
+    "Intermediate FAQ screenshot clips the lower disclosure; clean lower view contains it. Neither native view is accepted REA Evidence."
+  ],
+  "source_boundaries": "Read-only navigation, disclosures and scrolling. No deliberate source business-control writes; automatic metadata/telemetry POST effects are not asserted absent.",
+  "requirements": [
+    "REQ-REF-001",
+    "REQ-REF-002",
+    "REQ-REF-003",
+    "REQ-REPO-001"
+  ],
+  "acceptance_scenarios": [
+    "ACC-023",
+    "ACC-031",
+    "ACC-043"
+  ],
+  "r4_status": "open",
+  "application_build": "not started",
+  "recorded_at": "2026-10-17T04:31:58.106Z",
+  "next_action": "Owner bring existing Chrome forward and reply Ready for connection prompt; no further dependent REA attempt until owner is present."
+}
