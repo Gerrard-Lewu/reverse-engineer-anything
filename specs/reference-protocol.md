@@ -1,12 +1,12 @@
 # REA and source acceptance protocol
 
-> Current evidence: ten bounded accepted REA states; [leads/Docs record](../evidence/source-state-leads-docs-20261016.json) supplements overview/targeting. Remaining native-only screens/drawer remain provisional under DEC-28.
+> Current evidence: fifteen bounded accepted REA states; [Domains/integrations/inbox record](../evidence/source-state-operations-20261017.json) adds five desktop presentations; [leads/Docs record](../evidence/source-state-leads-docs-20261016.json) supplements overview/targeting. Remaining native-only screens/drawer remain provisional under DEC-28.
 
 > **Current local status:** `EX-OV-D-001` is accepted for the initial desktop overview through real REA 6.4.0, complete private export and remote-byte verification. Existing signed-in Chrome is connected through the documented discovery adapter. [Current checkpoint](../docs/handover-checkpoint.md) and [sanitized state record](../evidence/source-state-overview-20261015.json). Earlier cloud-access observations below are historical.
 
 ## Current state
 
-The [reverse-engineering completion plan](reverse-engineering-completion.md) separates remaining R0–R4 evidence/contract work from future cloud integration and implementation. As of 2026-10-16 17:48:05 UTC, ten bounded overview/targeting/leads/Docs states are accepted; broader visual/workflow coverage remains pending.
+The [reverse-engineering completion plan](reverse-engineering-completion.md) separates remaining R0–R4 evidence/contract work from future cloud integration and implementation. As of 2026-10-17 04:50:46 UTC, fifteen bounded overview/targeting/leads/Docs/Domains/integrations/empty-inbox states are accepted; broader visual/workflow coverage remains pending.
 
 The user selected `https://explee.com/app-auto-gtm/p/40610` in their signed-in browser on Windows. The in-app browser snapshot identifies the requested reference; it is not a capture. The earlier cloud execution environment had no callable desktop-browser control tool or desktop CDP endpoint; local access is now established as recorded above.
 

@@ -2,7 +2,7 @@
 
 The current [spec-driven build package](../specs/README.md) incorporates the user's Ceverio profile, three-country HVAC audience, autonomous workflow, Windows browser client, approved cloud/Supabase direction, and zero-spending constraint. It takes precedence over earlier implementation recommendations in this investigation blueprint.
 
-Prepared 14 October 2026 for a personal internal tool. Status: **documented product/API baseline complete for the retrieved scope; authenticated source capture in progress; ten bounded REA states accepted**.
+Prepared 14 October 2026 for a personal internal tool. Status: **documented product/API baseline complete for the retrieved scope; authenticated source capture in progress; fifteen bounded REA states accepted**.
 
 The required outcome is a tool that finds relevant leads, researches and scores them, prepares and sends outreach, handles replies, and helps arrange meetings. It should cover the relevant Explee workflows without signup, billing, resale, or multi-user account management. External data, email, and scheduling providers remain real dependencies.
 
@@ -12,7 +12,7 @@ The required outcome is a tool that finds relevant leads, researches and scores 
 | --- | --- |
 | Official product copy | Retrieved homepage, pricing, integration, and dataset descriptions. These establish advertised scope, not tested operation. |
 | Published public contracts | Indexed 48 documented method/path pairs across selected API page views. No endpoint was executed; complete OpenAPI JSON is still unavailable. |
-| REA runtime evidence for Explee | Ten authenticated REA 6.4.0 states privately verified: overview initial desktop, targeting top/lower desktop/mobile, Companies two desktop views, and Project docs top/lower desktop/mobile. Targeting has supplemental native style measurements and bounded request observations. Other source groups and full interaction coverage remain pending. |
+| REA runtime evidence for Explee | Fifteen authenticated REA 6.4.0 states privately verified: overview/targeting/Companies/Docs plus Domains three desktop views, integrations top and Needs reply empty inbox. Targeting has supplemental native style measurements and bounded request observations. Other source groups and full interaction coverage remain pending. |
 | REA tool verification | Real MCP connection, passive capture, network body shapes, screenshot pixels, bundle analysis, and Evidence export verified against a synthetic local page. |
 | Internal-tool architecture | Explicit design proposal, separated from claims about Explee's backend. |
 
@@ -20,7 +20,7 @@ The source register is in [source-inventory.md](source-inventory.md). Machine-re
 
 ## Accepted source states and component catalog
 
-This ledger covers saved overview initial desktop, targeting top/lower desktop/mobile, Companies desktop and Project docs desktop/mobile viewports. Full interaction/fidelity acceptance is still pending. Private references and hashes are in the [overview record](../evidence/source-state-overview-20261015.json) and [targeting record](../evidence/source-state-targeting-20261015.json), with the [responsive checkpoint](../evidence/source-state-targeting-responsive-20261015.json).
+This ledger covers saved overview initial desktop, targeting top/lower desktop/mobile, Companies desktop, Project docs desktop/mobile, Domains desktop, integrations top and empty Needs reply inbox viewports. Full interaction/fidelity acceptance is still pending. Private references and hashes are in the [overview record](../evidence/source-state-overview-20261015.json) and [targeting record](../evidence/source-state-targeting-20261015.json), with the [responsive checkpoint](../evidence/source-state-targeting-responsive-20261015.json).
 
 | State | Observed presentation | Remaining evidence | Requirement / acceptance links |
 | --- | --- | --- | --- |
@@ -28,10 +28,12 @@ This ledger covers saved overview initial desktop, targeting top/lower desktop/m
 | `EX-TG-D-001` | Targeting inheritance selector, Geography and Company size criteria blocks with suggestion controls. | Variant states and validation/save semantics; see lower/mobile additions below. | REQ-REF-001/002/003, REQ-DATA-001; ACC-023/025/031 |
 | `EX-TG-D-002` | Lower targeting form and disabled Save & re-search; main scroll extent aligned with top view. | Drawer/variants and persistence semantics. | REQ-REF-001/002/003; ACC-023/031 |
 | `EX-TG-M-001` | Whole criteria form at 390 × 844, hidden sidebar and Open navigation control. | Drawer REA screenshot, criteria editing and validation. | REQ-REF-001/002/003; ACC-023/031 |
-
 | `EX-LD-D-001/002` | Existing campaign Companies list and agent/history split pane at 980 × 569 and 1366 × 577. | Horizontal/bottom/detail/mobile states, scoring/selection/import and API semantics. | REQ-REF-001/002/003, REQ-DATA-002/006; ACC-023/025/031/032 |
 | `EX-PD-D-001/002` | Project docs top/lower desktop: Company profile, competitors, Reply facts and Files. | Editing/validation/persistence, competitor disclosure and file behavior; failed source imagery retained. | REQ-REF-001/002/003, REQ-DATA-001; ACC-023/025/031 |
 | `EX-PD-M-001/002` | Project docs paired 390 × 844 top/clean lower views. | Interaction variants; source cohorts changed on reload, so no atomic cross-version composite claim. | REQ-REF-001/002/003, REQ-UI-001; ACC-023/024/031 |
+| `EX-DM-D-001/002/003` | Domains/mailboxes top, middle and FAQ lower at 980 × 569; DNS/existing-domain disclosures expanded. | Initial timeline end clipped; horizontal/mobile/configuration behavior unresolved. FAQ is source guidance. | REQ-REF-001/002/003, REQ-INT-001; ACC-023/031/032 |
+| `EX-IG-D-001` | Integrations initial desktop at 980 × 569. | Lower custom/API region, connection states/permissions and mobile unresolved. | REQ-REF-001/002/003, REQ-INT-001; ACC-021/023/031/032 |
+| `EX-IB-D-001` | Needs reply empty queue and unselected conversation pane at 980 × 569. | Thread/list/status/Lead info/mobile and classification/reply workflow semantics pending. | REQ-REF-001/002/003, REQ-IN-001, REQ-UI-001; ACC-011/023/024/031 |
 
 | Component family | Observed evidence | Contract/style status |
 | --- | --- | --- |
@@ -46,9 +48,11 @@ Initial idle windows recorded zero requests. A subsequent real REA window retain
 
 The [16 October group record](../evidence/source-state-leads-docs-20261016.json) contains six privately accepted bounded states. Companies uses a DIV-based `role=grid` with NAME, DOMAIN, DESCRIPTION, GEO, SIZE, INDUSTRIES (NACE), CITY, HIRING, EMAILS and TRAFFIC headers. Scoped native measurement distinguishes this current grid from historical chat tables; UI field labels/attributes are not API-contract proof. Both desktop views are bounded split panes; horizontal/bottom/detail/mobile views remain pending. Project docs paired desktop/mobile views show Company profile, competitors, Reply facts and Files. Clean lower mobile replaces an occluded candidate. Source client cohorts changed on reload; no atomic cross-version or loaded-byte equivalence is asserted. Native style measurements supplement these views, while all other native-only screens remain provisional.
 
+The [17 October operations record](../evidence/source-state-operations-20261017.json) adds five accepted source presentations. Domain/mailbox controls and expanded FAQ are observed without configuration/order effects. Integrations acceptance covers its top viewport only. Needs reply acceptance covers an empty queue/unselected pane only. The selected-thread attempt was rejected when its exact URL changed; later thread candidates require separate acceptance and redacted public URL attribution. No private API/workflow contract or application acceptance scenario is established by these presentation captures.
+
 ## Product coverage
 
-The following requirements combine the user's stated goals with documented reference capabilities. The ten accepted viewports provide the bounded observations above; every workflow still needs sufficient interaction/mobile/style evidence before faithful reproduction can be claimed.
+The following requirements combine the user's stated goals with documented reference capabilities. The fifteen accepted viewports provide the bounded observations above; every workflow still needs sufficient interaction/mobile/style evidence before faithful reproduction can be claimed.
 
 | Capability to investigate or reproduce | Current basis | Personal-tool direction |
 | --- | --- | --- |

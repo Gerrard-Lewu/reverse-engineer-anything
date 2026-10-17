@@ -1,6 +1,6 @@
 # Authenticated source capture checklist
 
-Status: ten bounded REA states accepted: overview initial desktop, targeting top/lower desktop/mobile, Companies two desktop views and Project docs top/lower desktop/mobile. Broader screen/interaction coverage pending. Entries below are investigation targets from the user request and public documentation, not a claim that these exact routes/layouts were observed.
+Status: fifteen bounded REA states accepted: overview/targeting/Companies/Project docs plus Domains three desktop views, integrations top and Needs reply empty inbox. Broader screen/interaction coverage pending. Entries below are investigation targets from the user request and public documentation, not a claim that these exact routes/layouts were observed.
 
 The [15 October completion plan](../specs/reverse-engineering-completion.md) gives the R0–R4 sequence and planning exit criteria. Cloudflare activation does not establish source access; the first initial desktop overview has passed private remote verification; full vertical/mobile coverage remains pending.
 
@@ -12,10 +12,11 @@ The [15 October completion plan](../specs/reverse-engineering-completion.md) giv
 | Project docs | Company profile, competitors, Reply facts and Files; vertical desktop/mobile layout | Four bounded states accepted; source-update cohorts recorded separately. No save/upload/delete behavior tested. |
 | Import | Existing import controls, field mapping, validation/progress/row errors | Documented public contracts only |
 | Campaign | Existing targeting/copy/schedule fields, lead/draft review, lifecycle indicators | Documented public contracts only |
-| Inbox | Tabs, hot-lead view, an existing thread, reply preview, notes, attachments/CC controls | Documented public contracts only |
+| Inbox | Tabs, hot-lead view, an existing thread, reply preview, notes, attachments/CC controls | Needs reply empty desktop accepted (`EX-IB-D-001`). Selected-thread/status/Lead info and other variants/mobile remain pending; no workflow validation. |
 | Controls | Budget/analytics views, pause/autopilot/reply-policy controls in their current states | Documented public contracts only |
 | Meetings | Existing booking-link setting and meeting/outcome indicators | Advertised booking-link routing only |
-| Integrations | Existing mailbox/HubSpot/booking connection surfaces and current status | Public HubSpot setup documentation only |
+| Integrations | Existing mailbox/HubSpot/booking connection surfaces and current status | Initial desktop accepted (`EX-IG-D-001`); lower/custom/API region, connection variants and mobile pending. |
+| Domains/mailboxes | Existing counts/sender field, offer/setup timeline and FAQ disclosures | Top/middle/FAQ desktop accepted (`EX-DM-D-001/002/003`); timeline end clipped at initial horizontal position. Configuration, horizontal variants and mobile unverified. |
 | Responsive | 390 × 844 layout and meaningful control states for the primary journey | Targeting accepted; Project docs top/lower accepted with source-cohort limits. Other groups and interaction variants unresolved. |
 | Visual source | Fonts, icons/assets, colors, spacing, computed styles, component states | Targeting CSS/fonts and desktop/mobile measurements retained; leads/Docs supplements privately retained with explicit scope/cohort limits. Complete component/assets/variant coverage unresolved. |
 

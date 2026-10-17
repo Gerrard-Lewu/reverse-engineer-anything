@@ -1,6 +1,6 @@
 # Explee reverse-engineering completion plan
 
-> **Current source status (2026-10-16 17:48:05 UTC):** R0 first authenticated REA overview `EX-OV-D-001` accepted for the initial desktop viewport, with complete private export and remote byte verification. Existing signed-in Chrome is connected through a documented loopback discovery adapter. R1–R4 remain open; [the checkpoint](../docs/handover-checkpoint.md) identifies exact artifact/acceptance commits and remaining coverage. Earlier cloud-only findings below are historical.
+> **Current source status (2026-10-17 04:50:46 UTC):** R0 first authenticated REA overview `EX-OV-D-001` accepted for the initial desktop viewport, with complete private export and remote byte verification. Existing signed-in Chrome is connected through a documented loopback discovery adapter. R1–R4 remain open; [the checkpoint](../docs/handover-checkpoint.md) identifies exact artifact/acceptance commits and remaining coverage. Earlier cloud-only findings below are historical.
 
 Status: **planning only, 16 October 2026**. No application build has started. Selected authenticated states are accepted; this is the remaining source-investigation plan, not recovery of Explee's server implementation.
 
@@ -13,7 +13,7 @@ Finish an evidence-backed product, interaction and technical blueprint for the s
 | Requirements/Ceverio context | Reviewed; 43 requirement IDs and 43 acceptance scenarios in the current planning baseline. |
 | Public Explee research | Nine retained source views; 48 documented public method/path pairs. Selective documentation, not authenticated traffic. |
 | REA MCP | Actual 6.4.0 session/schemas retained; synthetic capture checks passed. |
-| Accepted signed-in Explee states | **Ten accepted bounded states:** overview initial desktop, targeting top/lower desktop and mobile, Companies two desktop views, and Project docs top/lower desktop/mobile. Remaining groups, variants and contracts await evidence. |
+| Accepted signed-in Explee states | **Fifteen accepted bounded states:** prior overview/targeting/Companies/Docs plus Domains three desktop views, integrations top and Needs reply empty inbox. Remaining groups, variants and contracts await evidence. |
 | Model/database/cloud design | Pinned model comparison, verified Supabase metadata and named provider dependencies. No app/model deployment or inference benchmark. |
 | Ceverio DNS | Cloudflare active; seven mail records and two CNAMEs match the export. DNSSEC pending; user has not added the registrar DS. Separate infrastructure milestone. |
 

@@ -1,5 +1,9 @@
 # Verification and evidence limits
 
+## Domains, integrations and empty inbox — 17 October 2026
+
+Five additional REA states at 980 × 569 passed saved-PNG/structure review and private remote verification, bringing the total to fifteen. [Group record](../evidence/source-state-operations-20261017.json). All 11 remote files matched complete local bytes; three ordered XZ parts equal the 1,701,148-byte archive, all 65 entries are regular files and all 64 evidence-member hashes/byte counts passed. Private artifact `eeae76b19300b49f869bddab5bb2c82c9fbf724c`; acceptance `852f50da8c206ad30bf104f379ef0d522c22d875` read back. A mutable native supplement caused an initial packaging mismatch; the reviewed final archive uses immutable per-member byte copies. Five source receipts remained valid. The changed-URL Got reply attempt is diagnostic only. Native-only retention and later source candidates remain distinct from these accepted states. No new app tests, business-control writes or API-contract verification are claimed.
+
 ## Leads/Project docs checkpoint — 16 October 2026
 
 Six new real REA states passed saved-pixel/structure review, receipt/hash/credential checks and private retrieval/acceptance verification, bringing the accepted total to ten. The [group record](../evidence/source-state-leads-docs-20261016.json) identifies exact state IDs, screenshot hashes, Evidence IDs and limits. The clean mobile lower Docs recapture is selected; the occluded attempt is excluded. Companies field measurements are scoped to its current DIV grid, excluding historical chat tables. Source cohorts changed on reload; composites do not claim one atomic client version.
@@ -63,7 +67,7 @@ The real-browser fixture is `tests/fixtures/index.html`; it explicitly identifie
 | Export retained evidence before failure teardown | Confirmed in isolated boundary probes | Export occurs in the session guard; export errors are recorded without replacing the original failure. |
 | Report materially incomplete source capture | Confirmed in unit/boundary probes | Truncated/unavailable/dropped coverage yields `partial`; expected policy/attach limits remain disclosed. |
 | Source-backed product/API baseline | Confirmed for retrieved public scope | Nine source entries and 48 indexed documented public method/path pairs. |
-| Capture signed-in Explee screens and interactions | Partial | Ten bounded overview/targeting/leads/Docs states accepted through real REA on Windows; other native views remain provisional. |
+| Capture signed-in Explee screens and interactions | Partial | Fifteen bounded overview/targeting/leads/Docs/Domains/integrations/empty-inbox states accepted through real REA on Windows; other native views remain provisional. |
 | Recover complete public OpenAPI schema | Partial | Only selectively retrieved schema fragments were available. |
 | Verify faithful visual/UI recreation | Unverified | Accepted Explee screenshots and supplemental style evidence exist for a bounded subset; no recreated application exists. |
 | Validate live lead, email, and calendar integration | Unverified | Intended sender/booking configuration and app integrations remain unconfigured. Supabase access/metadata/Free plan are now verified; application grants and host connection are not. No application-level live test was performed. |

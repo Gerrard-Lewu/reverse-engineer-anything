@@ -1,0 +1,243 @@
+{
+  "recorded_at": "2026-10-17T04:50:46.882Z",
+  "status": "accepted",
+  "archive_bytes": 1701148,
+  "archive_sha256": "3a269a9a43b3572303a6298113f1e8e0282179cf61ef7423edecb719abc39100",
+  "archive_entries": 65,
+  "evidence_members": 64,
+  "remote_verification": {
+    "files": 11,
+    "archive_parts": 3,
+    "method": "Every complete base64 file retrieved at exact artifact commit matched reviewed local bytes; ordered part bytes therefore match verified local archive",
+    "local_archive_check": "All64 evidence-member SHA256 hashes and byte counts matched; all65 entries regular files"
+  },
+  "visual_review": {
+    "saved_pngs_inspected": [
+      "EX-DM-D-001",
+      "EX-DM-D-002",
+      "EX-DM-D-003",
+      "EX-IG-D-001",
+      "EX-IB-D-001"
+    ],
+    "correct_authenticated_project": true,
+    "view_scopes": {
+      "EX-DM-D-001": "domain/mailbox top; observed source counts and sender-name field; no order/configuration action",
+      "EX-DM-D-002": "domain offer/setup timeline initial horizontal position; end of timeline clipped; other horizontal positions unresolved",
+      "EX-DM-D-003": "FAQ lower view with DNS and existing-domain disclosures expanded; source UI guidance only",
+      "EX-IG-D-001": "integrations initial desktop; lower custom/API region and other connection variants unresolved",
+      "EX-IB-D-001": "Needs reply empty queue and unselected conversation pane; UI copy not verified state mutation"
+    }
+  },
+  "secret_review": {
+    "independent_review": "no unmasked account API key/auth credential found; API-key keywords classify as generic code/templates and masked presentation; inline SSR flight-data absent; storage values redacted; broad sk matches were CSS mask false positives",
+    "credentials_uploaded": false
+  },
+  "limitations": [
+    "Initial viewport source presentation only; R1-R4 remain open",
+    "Inspections declare attach_limited and policy_filtered sections; idle observation does not establish API absence",
+    "Paired domain scroll positions0/512/913 at980x569; source-client cohort paths retained in native supplement, not byte-hashed stylesheet acceptance",
+    "Shared-session exports are cumulative; failed attempt bundle includes previous states",
+    "Source UI account values/pricing/dates and FAQ claims do not override approved Ceverio decisions",
+    "Owner browser later became1534x881; next group recorded separately",
+    "Native supplement for failed Got reply is diagnostic, not an accepted first-group state"
+  ],
+  "source_boundaries": "No deliberate Save/Resume/Send/Order/Connect/Copy/Notify/configuration/enrichment/booking action; automatic metadata effects are not asserted absent",
+  "application_build": false,
+  "r4_status": "open",
+  "states": [
+    {
+      "state_id": "EX-DM-D-001",
+      "source_url": "https://explee.com/app-auto-gtm/p/40610/domains",
+      "viewport": {
+        "width": 980,
+        "height": 569
+      },
+      "started_at": "2026-10-17T04:37:24.302400+00:00",
+      "finished_at": "2026-10-17T04:37:33.629425+00:00",
+      "status": "accepted",
+      "evidence_ids": [
+        {
+          "operation": "list_browser_targets.json",
+          "evidence_id": "ev_fb17a58b57dac8a13c1e4a3641b6ec827e08cceb9767073026ce46af2ce82b6d"
+        },
+        {
+          "operation": "inspect_web_page.json",
+          "evidence_id": "ev_ece526e27f4a70408ac5ce6541c314f0f8b337c0c74420f6dc47bfdd76760582"
+        },
+        {
+          "operation": "capture_web_screenshot.json",
+          "evidence_id": "ev_62843c52d36daf4786c57bd07c0abdb20dbedb45641a1ef653ca7dfaad5a0696"
+        }
+      ],
+      "screenshot": {
+        "path": "screenshot.png",
+        "bytes": 93353,
+        "sha256": "e727aaf6ce896d9d761843059e99ceca6bdbcd993a1d2b4a04d44b163338ed6f"
+      },
+      "session_evidence_scope": "cumulative_shared_session"
+    },
+    {
+      "state_id": "EX-DM-D-002",
+      "source_url": "https://explee.com/app-auto-gtm/p/40610/domains",
+      "viewport": {
+        "width": 980,
+        "height": 569
+      },
+      "started_at": "2026-10-17T04:38:04.818781+00:00",
+      "finished_at": "2026-10-17T04:38:11.663267+00:00",
+      "status": "accepted",
+      "evidence_ids": [
+        {
+          "operation": "list_browser_targets.json",
+          "evidence_id": "ev_fb17a58b57dac8a13c1e4a3641b6ec827e08cceb9767073026ce46af2ce82b6d"
+        },
+        {
+          "operation": "inspect_web_page.json",
+          "evidence_id": "ev_f10dca2dcb330bd43b9f0b2a5e79a2860e44fe9b75998133a182270a9410a385"
+        },
+        {
+          "operation": "capture_web_screenshot.json",
+          "evidence_id": "ev_9be254f510fdb62fccb62b4106dc364fd728244f875af68dc55f4ddd5b4bded1"
+        }
+      ],
+      "screenshot": {
+        "path": "screenshot.png",
+        "bytes": 88009,
+        "sha256": "f70e796325a10b3beaa4eaa7f1bee2d722d04d50a9c8b96fa423d37c11c935a0"
+      },
+      "session_evidence_scope": "cumulative_shared_session"
+    },
+    {
+      "state_id": "EX-DM-D-003",
+      "source_url": "https://explee.com/app-auto-gtm/p/40610/domains",
+      "viewport": {
+        "width": 980,
+        "height": 569
+      },
+      "started_at": "2026-10-17T04:38:47.340932+00:00",
+      "finished_at": "2026-10-17T04:38:55.198476+00:00",
+      "status": "accepted",
+      "evidence_ids": [
+        {
+          "operation": "list_browser_targets.json",
+          "evidence_id": "ev_fb17a58b57dac8a13c1e4a3641b6ec827e08cceb9767073026ce46af2ce82b6d"
+        },
+        {
+          "operation": "inspect_web_page.json",
+          "evidence_id": "ev_629d13d03e785469854895d1c60f234ef422a2d1c3da549d418a7119b2527a56"
+        },
+        {
+          "operation": "capture_web_screenshot.json",
+          "evidence_id": "ev_57c147a6b3546efdd57aa26ebcbaa4ccff4d683290456994d0fa67106b825cf3"
+        }
+      ],
+      "screenshot": {
+        "path": "screenshot.png",
+        "bytes": 89874,
+        "sha256": "fc9030471458dea0c40793c1e8e8782d80d672fc15f269a57d9822793e5883a5"
+      },
+      "session_evidence_scope": "cumulative_shared_session"
+    },
+    {
+      "state_id": "EX-IG-D-001",
+      "source_url": "https://explee.com/app-auto-gtm/p/40610/integrations",
+      "viewport": {
+        "width": 980,
+        "height": 569
+      },
+      "started_at": "2026-10-17T04:40:07.828305+00:00",
+      "finished_at": "2026-10-17T04:40:15.625816+00:00",
+      "status": "accepted",
+      "evidence_ids": [
+        {
+          "operation": "list_browser_targets.json",
+          "evidence_id": "ev_283329e01a4796064b84481de7c2ec877d721cec8572ee98cfab2e185083bea2"
+        },
+        {
+          "operation": "inspect_web_page.json",
+          "evidence_id": "ev_94a967cec4c1730d457d0efc9991ecb84b2d674a1c15e6521ab34b212cf78b59"
+        },
+        {
+          "operation": "capture_web_screenshot.json",
+          "evidence_id": "ev_1b1a435ac11637ab628cd04eb4daec50866c1e5b7e3d4ff483939f7375dad07f"
+        }
+      ],
+      "screenshot": {
+        "path": "screenshot.png",
+        "bytes": 91346,
+        "sha256": "7a05f2f7d0be49474ee9f340a3e86941ae3381c92168b744265b736860aa54d9"
+      },
+      "session_evidence_scope": "cumulative_shared_session"
+    },
+    {
+      "state_id": "EX-IB-D-001",
+      "source_url": "https://explee.com/app-auto-gtm/p/40610/inbox",
+      "viewport": {
+        "width": 980,
+        "height": 569
+      },
+      "started_at": "2026-10-17T04:41:26.244893+00:00",
+      "finished_at": "2026-10-17T04:41:33.688668+00:00",
+      "status": "accepted",
+      "evidence_ids": [
+        {
+          "operation": "list_browser_targets.json",
+          "evidence_id": "ev_1deb162d27f8cd1c45d3a36285378925668246be33d745a1f48b7cababde9fd9"
+        },
+        {
+          "operation": "inspect_web_page.json",
+          "evidence_id": "ev_e4493477ecc9532b86dcccbe0d42c30100272a47829982f7d69d82b4fcd8787b"
+        },
+        {
+          "operation": "capture_web_screenshot.json",
+          "evidence_id": "ev_f50955a5b7c12dabb27b848acfe15afd5133bd85d02cccf5dc182f4d49cc713a"
+        }
+      ],
+      "screenshot": {
+        "path": "screenshot.png",
+        "bytes": 71935,
+        "sha256": "a00bf6d08fb5e3f25de963dbb367e57bbfaa40b79fe6748d20542df0cfcb45f8"
+      },
+      "session_evidence_scope": "cumulative_shared_session"
+    }
+  ],
+  "accepted_rea_states_total": 15,
+  "new_accepted_rea_states": 5,
+  "private_artifact": {
+    "repository": "Gerrard-Lewu/explee-private-evidence",
+    "commit": "eeae76b19300b49f869bddab5bb2c82c9fbf724c",
+    "prefix": "checkpoints/2026-10-17/rea-domains-integrations-inbox"
+  },
+  "private_acceptance": {
+    "commit": "852f50da8c206ad30bf104f379ef0d522c22d875",
+    "path": "checkpoints/2026-10-17/rea-domains-integrations-inbox/acceptance.json"
+  },
+  "rejected_attempt": {
+    "scope": "Got reply attempted with stale exact URL",
+    "reason": "Source added a selected-contact query parameter before discovery. Exact-URL guard rejected the changed URL; no inspection/screenshot accepted. Complete cumulative diagnostic export retained privately."
+  },
+  "packaging_diagnostics": [
+    "Initial archive rejected because a supplemental native context changed during packaging. Five source receipts/source files remained valid.",
+    "Final archive built from immutable per-member bytes and all member hashes validated before private publication."
+  ],
+  "requirements": [
+    "REQ-REF-001",
+    "REQ-REF-002",
+    "REQ-REF-003",
+    "REQ-IN-001",
+    "REQ-INT-001",
+    "REQ-OPS-002",
+    "REQ-UI-001",
+    "REQ-REPO-001"
+  ],
+  "acceptance_scenarios": [
+    "ACC-011",
+    "ACC-021",
+    "ACC-023",
+    "ACC-024",
+    "ACC-031",
+    "ACC-032",
+    "ACC-043"
+  ],
+  "acceptance_scope": "Bounded source presentation only; no application acceptance scenario or private workflow/API contract is claimed passed."
+}
